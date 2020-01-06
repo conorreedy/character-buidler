@@ -68,10 +68,19 @@ function Upload() {
   return (
     <div>
       <h2>Character Upload</h2>
+
+      This should be a display of the uploaded character data in it's final form.
     </div>
   );
 }
 
+{/* The `Setup` component is the form and actions for creating the character
+  it is responsible for displaying the form as the attributes are being chosen.
+
+  When a form has been submitted in completion we will pass the user data to another 
+  component to handle persistence. (TBD datastore)
+
+ */}
 class Setup extends React.Component {
   
   constructor(props) {
@@ -157,7 +166,7 @@ class Setup extends React.Component {
     />
   );
 
-  createCheckboxes = () => ['hello'].map(this.createCheckbox);
+  createCheckboxes = ['hello'].map(this.createCheckbox);
 
   render() {
     return (
@@ -179,10 +188,11 @@ class Setup extends React.Component {
           </select>
         </label>
 
+        <br />
+
         <label>
           Choose attributes:
           { this.createCheckboxes }
-
         </label>
 
         <input type="submit" value="Submit" />
