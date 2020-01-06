@@ -159,14 +159,14 @@ class Setup extends React.Component {
 
   createCheckbox = option => (
     <Checkbox
-      label={option}
-      // isSelected={false}
-      // onCheckboxChange={this.handleCheckboxChange}
-      key={option}
+      label={option.name}
+      isSelected={option.active}
+      onCheckboxChange={this.handleCheckboxChange}
+      key={option.name}
     />
   );
 
-  createCheckboxes = ['hello'].map(this.createCheckbox);
+  createCheckboxes = [{name: 'attr-1', active: 1}, {name: 'attr-2', active: 0}].map(this.createCheckbox);
 
   render() {
     return (
@@ -194,6 +194,8 @@ class Setup extends React.Component {
           Choose attributes:
           { this.createCheckboxes }
         </label>
+
+        <br />
 
         <input type="submit" value="Submit" />
       </form>
