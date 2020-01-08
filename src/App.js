@@ -146,22 +146,22 @@ class Setup extends React.Component {
     event.preventDefault();
   }
 
-  handleCheckboxChange = changeEvent => {
-    const { name } = changeEvent.target;
+  // handleCheckboxChange = changeEvent => {
+  //   const { name } = changeEvent.target;
 
-    this.setState(prevState => ({
-      checkboxes: {
-        ...prevState.checkboxes,
-        [name]: !prevState.checkboxes[name]
-      }
-    }));
-  };
+  //   this.setState(prevState => ({
+  //     checkboxes: {
+  //       ...prevState.checkboxes,
+  //       [name]: !prevState.checkboxes[name]
+  //     }
+  //   }));
+  // };
 
   createCheckbox = option => (
     <Checkbox
       label={option.name}
       isSelected={option.active}
-      onCheckboxChange={this.handleCheckboxChange}
+      // onCheckboxChange={this.handleCheckboxChange}
       key={option.name}
     />
   );
@@ -210,16 +210,19 @@ function App() {
     <Router>
       <div>
         <Switch>
-          
+
           <Route exact path="/">
             <Home />
           </Route>
 
-          <Route path="/setup" component={SetupComponent} />
+          <Route path="/setup">
+            <SetupComponent />
+          </Route>
 
           <Route path="/upload">
             <Upload />
           </Route>
+
         </Switch>
       </div>
     </Router>
