@@ -11,7 +11,7 @@ class Races extends React.Component {
             <div>
                 <label>Choose a Race</label>
                 <select className="form-control">
-                    <option value="" key="0" selected disabled>Make a selection</option>
+                    <option value="" key="0000000" selected disabled>Make a selection</option>
                     {races.map(x => <option value={x.id} key={+x.id}>{x.name}</option>)}
                 </select>
             </div>

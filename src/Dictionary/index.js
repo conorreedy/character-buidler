@@ -33,7 +33,7 @@ const AppDictionary = {
         {
             id: 2,
             name: 'Aasimar',
-            summary: '',
+            summary: 'Aasimar are placed in the world to serve as guardians of law and good. Their patrons expect them to strike at evil, lead by example, and further the cause of justice.',
             asis: [
                 { 'Cha': 2 }
             ],

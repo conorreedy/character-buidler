@@ -19,7 +19,8 @@ class RaceSelectionForm extends React.Component {
 
         this.handleRaceSelection = event => {
             this.setState({
-                selectedRaceId: event.target.value
+                selectedRaceId: event.target.value,
+                selectedSubraceId: null,
             })
         }
 
@@ -49,7 +50,7 @@ class RaceSelectionForm extends React.Component {
 
             const racialFeatureHtmlBlocks = activeRace.features.length ? _buildRacialFeatureHtmlBlocks(activeRace.features) : '';
             const languagesString = _buildLanguagesString(activeRace.languages);
-            const asiString = _buildAsiString(activeRace.asis);
+            const racialTraitsStr = _buildRacialTraitsString(activeRace);
 
             raceDetailHtml = (
                 <div >
@@ -58,8 +59,8 @@ class RaceSelectionForm extends React.Component {
                         <div>{activeRace.name}</div>
                     </div>
                     <div className="content-block">
-                        <div>Ability Score Increase</div>
-                        <div>{asiString}</div>
+                        <div>Racial Traits:</div>
+                        <div>{racialTraitsStr}</div>
                     </div>
                     <div className="content-block">
                         <div>Summary:</div>
@@ -67,7 +68,7 @@ class RaceSelectionForm extends React.Component {
                     </div>
                     <div className="content-block">
                         <div>Movement:</div>
-                        <div>{activeRace.movement}</div>
+                        <div>{activeRace.movement} feet</div>
                     </div>
                     <div className="content-block">
                         <div>Languages:</div>
@@ -95,11 +96,11 @@ class RaceSelectionForm extends React.Component {
             subraceDetailHtml = (
                 <div>
                     <div className="content-block">
-                        <div>Subrace Name</div>
+                        <div>Subrace Name:</div>
                         <div>{activeSubrace.name}</div>
                     </div>
                     <div className="content-block">
-                        <div>Ability Score increase</div>
+                        <div>Ability Score Increase:</div>
                         <div>{asiString}</div>
                     </div>
 
@@ -143,14 +144,17 @@ function _buildRacialFeatureHtmlBlocks(features) {
     const racialFeatureHtmlArray = [];
         
         for (const feat of features) {
+
             const featName = Object.keys(feat)[0];
             const featDesc = feat[featName];
+
             const block = (
                 <div className="content-block">
                     <div>{featName}</div>
                     <div>{featDesc}</div>
                 </div>
             )
+            
             racialFeatureHtmlArray.push(block);
         }
 
@@ -192,26 +196,43 @@ function _buildLanguagesString(languages) {
     return languagesStr;
 }
 
+function _buildRacialTraitsString(race) {
+    // string format: +2 Dex, +1 Whatev, Feature1, Feature2, Feature3
 
-function _buildAsiString(asis) {
-    let asiStr = new String;
-
-    for (let i=0; i < asis.length; i++) {
-        
-        const asi = asis[i];
-        const key = Object.keys(asi)[0];
-        const plusOrMinusSymbol = Math.sign(asi[key]) == 1 ? '+' : '-'; 
-        //start it
-        if (i == 0) {
-            asiStr += `${plusOrMinusSymbol}${asi[key]} ${key}`;
-        }
-        //continue
-        else {
-            asiStr += `,${plusOrMinusSymbol}${asi[key]} ${key}`;
-        }
+    let racialTraitsArr = [];
+    
+    if (race.asis.length) {
+        const asiString = _buildAsiString(race.asis);
+        racialTraitsArr.push(asiString);
     }
 
-    return asiStr;
+    if (race.features.length) {
+        
+        for (const feat of race.features) {
+            const featName = Object.keys(feat)[0];
+            racialTraitsArr.push(featName);
+        }
+
+    }
+
+    return racialTraitsArr.join(', ');
+}
+
+
+function _buildAsiString(asis) {
+    let asiArr = [];
+
+    for (const asi of asis) {
+        const attribute = Object.keys(asi)[0];
+        const numVal = asi[attribute];
+        const plusOrMinusSymbol = Math.sign(asi[attribute]) == 1 ? '+' : '-'; 
+
+        const stringChunk = `${plusOrMinusSymbol}${numVal} ${attribute}`;
+
+        asiArr.push(stringChunk)
+    }
+
+    return asiArr.join(', ');
 }
 
 export default RaceSelectionForm;
