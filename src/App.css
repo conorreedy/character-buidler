@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+/* these are lazy AF, do this better */
+form {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: -5px;   
+}
+
+.container.setup  {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

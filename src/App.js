@@ -118,14 +118,14 @@ class Setup extends React.Component {
       <div>
         <RaceSelectionForm></RaceSelectionForm>
 
-        <form onSubmit={this.handleSubmit}>
+        {/* <form onSubmit={this.handleSubmit}>
           <DndClasses></DndClasses>
           <label>
             Choose attributes:
             { this.createCheckboxes }
           </label>
           <input type="submit" value="Submit" />
-        </form>
+        </form> */}
       </div>
     );
   }
@@ -136,7 +136,6 @@ const SetupComponent = withTitle({ component: Setup, title: 'Setup' });
 function App() {
   return (
     <Router>
-      <div class="container">
         <Switch>
           
           <Route exact path="/">
@@ -144,14 +143,15 @@ function App() {
           </Route>
 
           <Route path="/setup" >
+            <div className="container setup">
             <Setup />
+            </div>
           </Route>
             
           <Route path="/upload">
             <Upload />
           </Route>
         </Switch>
-      </div>
     </Router>
   );
 }
