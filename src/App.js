@@ -6,14 +6,13 @@ import {
   Link
 } from "react-router-dom";
 
-import logo from './logo.svg';
-import './App.css';
-
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
-import Alert from "react-bootstrap/Alert";
+import DndClasses from './Components/DndClasses';
 import Helmet from 'react-helmet';
+
+import './App.css';
+import RaceSelectionForm from './Components/RaceForm';
+
+
 
 const TitleComponent = ({ title }) => {
     var defaultTitle = '⚛️ app';
@@ -78,52 +77,8 @@ class Setup extends React.Component {
 
     super(props);
 
-    this.state = {class: props.class, race: props.race};
-
-    this.classes = [
-      'barbarian',
-      'bard',
-      'cleric',
-      'druid',
-      'fighter',
-      'monk',
-      'paladin',
-      'ranger',
-      'rogue',
-      'sorcerer',
-      'warlock',
-      'wizard',
-    ];
-
-    this.races = [
-      'aarakocra',
-      'asimaar',
-      'dragonborn',
-      'bugbear',
-      'dwarf',
-      'elf',
-      'feral tiefling',
-      'firblog',
-      'genasi',
-      'goblin',
-      'kenku',
-      'koblod',
-      'lizardfolk',
-      'half ORC',
-      'gnome',
-      'goliath',
-      'half-Elf',
-      'halfling',
-      'hobgoblin',
-      'human',
-      'oRC',
-      'tabaxi',
-      'yuan-ti purebloods',
-      'triton',
-      'warforged',
-      'tortle'
-    ];
-
+    // this.state = {class: props.class, race: props.race};
+    
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -133,7 +88,6 @@ class Setup extends React.Component {
   }
 
   handleSubmit(event) {
-    
     event.preventDefault();
   }
 
@@ -161,32 +115,18 @@ class Setup extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        
-        <label>
-          Pick your class: 
-          <select value={this.state.class}>
-            {this.classes.map(x => <option value={x} key={x}>{x}</option>)}
-          </select>
-        </label>
+      <div>
+        <RaceSelectionForm></RaceSelectionForm>
 
-        <br />
-        
-        <label>
-          Pick your race: 
-          <select value={this.state.race}>
-            {this.races.map(x => <option value={x} key={x}>{x}</option>)}
-          </select>
-        </label>
-
-        <label>
-          Choose attributes:
-          { this.createCheckboxes }
-
-        </label>
-
-        <input type="submit" value="Submit" />
-      </form>
+        <form onSubmit={this.handleSubmit}>
+          <DndClasses></DndClasses>
+          <label>
+            Choose attributes:
+            { this.createCheckboxes }
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     );
   }
 }
@@ -196,15 +136,17 @@ const SetupComponent = withTitle({ component: Setup, title: 'Setup' });
 function App() {
   return (
     <Router>
-      <div>
+      <div class="container">
         <Switch>
           
           <Route exact path="/">
             <Home />
           </Route>
 
-          <Route path="/setup" component={SetupComponent} />
-
+          <Route path="/setup" >
+            <Setup />
+          </Route>
+            
           <Route path="/upload">
             <Upload />
           </Route>
