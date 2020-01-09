@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.css';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,21 +8,20 @@ import {
   Link
 } from "react-router-dom";
 
-import DndClasses from './Components/DndClasses';
 import Helmet from 'react-helmet';
 
-import './App.css';
+// import DndClasses from './Components/DndClasses';
 import RaceSelectionForm from './Components/RaceForm';
-
+import Asi from './Components/AbilityScore';
 
 
 const TitleComponent = ({ title }) => {
-    var defaultTitle = '⚛️ app';
-    return (
-        <Helmet>
-            <title>{title ? title : defaultTitle}</title>
-        </Helmet>
-    );
+  var defaultTitle = '⚛️ app';
+  return (
+    <Helmet>
+      <title>{title ? title : defaultTitle}</title>
+    </Helmet>
+  );
 };
 
 export { TitleComponent };
@@ -43,22 +44,35 @@ const Checkbox = ({ label, isSelected, onCheckboxChange }) => (
 export { Checkbox };
 
 const withTitle = ({ component: Component, title }) => {
-    return class Title extends Component {
-        render() {
-            return (
-                <React.Fragment>
-                    <TitleComponent title={title} />
-                    <Component {...this.props} />
-                </React.Fragment>
-            );
-        }
-    };
+  return class Title extends Component {
+    render() {
+      return (
+        <React.Fragment>
+          <TitleComponent title={title} />
+          <Component {...this.props} />
+        </React.Fragment>
+      );
+    }
+  };
 };
+
+function NavBar() {
+  return (
+    <div>
+      <div>This is what we have so far:</div>
+      <div><a href="/setup">Choose a Race</a></div>
+      <div><a href="/asi">Set Ability Scores</a></div>
+      <div><a href="">Choose a Class</a></div>
+    </div>
+  );
+}
 
 function Home() {
   return (
     <div>
-      <h2>Home</h2>
+      <div className="site-wrap">
+        <h2>Home</h2>
+      </div>
     </div>
   );
 }
@@ -72,19 +86,19 @@ function Upload() {
 }
 
 class Setup extends React.Component {
-  
+
   constructor(props) {
 
     super(props);
 
     // this.state = {class: props.class, race: props.race};
-    
+
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.setState({ value: event.target.value });
   }
 
   handleSubmit(event) {
@@ -131,27 +145,35 @@ class Setup extends React.Component {
   }
 }
 
-const SetupComponent = withTitle({ component: Setup, title: 'Setup' });
+// const SetupComponent = withTitle({ component: Setup, title: 'Setup' });
 
 function App() {
   return (
-    <Router>
-        <Switch>
-          
-          <Route exact path="/">
-            <Home />
-          </Route>
 
-          <Route path="/setup" >
-            <div className="container setup">
+    <Router>
+      <div className="navbar">
+        <NavBar />
+      </div>
+      <Switch>
+
+        <Route exact path="/">
+          <Home />
+        </Route>
+
+        <Route path="/setup" >
+          <div className="container setup">
             <Setup />
-            </div>
-          </Route>
-            
-          <Route path="/upload">
-            <Upload />
-          </Route>
-        </Switch>
+          </div>
+        </Route>
+        <Route path="/asi" >
+          <div className="container asi">
+            <AsiGenerator />
+          </div>
+        </Route>
+        <Route path="/upload">
+          <Upload />
+        </Route>
+      </Switch>
     </Router>
   );
 }

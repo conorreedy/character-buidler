@@ -20,7 +20,7 @@ class RaceSelectionForm extends React.Component {
         this.handleRaceSelection = event => {
             this.setState({
                 selectedRaceId: event.target.value,
-                selectedSubraceId: null,
+                selectedSubraceId: '',
             })
         }
 
