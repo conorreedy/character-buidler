@@ -68,10 +68,19 @@ function Upload() {
   return (
     <div>
       <h2>Character Upload</h2>
+
+      This should be a display of the uploaded character data in it's final form.
     </div>
   );
 }
 
+{/* The `Setup` component is the form and actions for creating the character
+  it is responsible for displaying the form as the attributes are being chosen.
+
+  When a form has been submitted in completion we will pass the user data to another 
+  component to handle persistence. (TBD datastore)
+
+ */}
 class Setup extends React.Component {
   
   constructor(props) {
@@ -137,27 +146,27 @@ class Setup extends React.Component {
     event.preventDefault();
   }
 
-  handleCheckboxChange = changeEvent => {
-    const { name } = changeEvent.target;
+  // handleCheckboxChange = changeEvent => {
+  //   const { name } = changeEvent.target;
 
-    this.setState(prevState => ({
-      checkboxes: {
-        ...prevState.checkboxes,
-        [name]: !prevState.checkboxes[name]
-      }
-    }));
-  };
+  //   this.setState(prevState => ({
+  //     checkboxes: {
+  //       ...prevState.checkboxes,
+  //       [name]: !prevState.checkboxes[name]
+  //     }
+  //   }));
+  // };
 
   createCheckbox = option => (
     <Checkbox
-      label={option}
-      // isSelected={false}
+      label={option.name}
+      isSelected={option.active}
       // onCheckboxChange={this.handleCheckboxChange}
-      key={option}
+      key={option.name}
     />
   );
 
-  createCheckboxes = () => ['hello'].map(this.createCheckbox);
+  createCheckboxes = [{name: 'attr-1', active: 1}, {name: 'attr-2', active: 0}].map(this.createCheckbox);
 
   render() {
     return (
@@ -179,11 +188,14 @@ class Setup extends React.Component {
           </select>
         </label>
 
+        <br />
+
         <label>
           Choose attributes:
           { this.createCheckboxes }
-
         </label>
+
+        <br />
 
         <input type="submit" value="Submit" />
       </form>
@@ -198,16 +210,19 @@ function App() {
     <Router>
       <div>
         <Switch>
-          
+
           <Route exact path="/">
             <Home />
           </Route>
 
-          <Route path="/setup" component={SetupComponent} />
+          <Route path="/setup">
+            <SetupComponent />
+          </Route>
 
           <Route path="/upload">
             <Upload />
           </Route>
+
         </Switch>
       </div>
     </Router>
