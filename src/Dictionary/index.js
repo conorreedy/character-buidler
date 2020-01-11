@@ -1,15 +1,16 @@
 // import React from 'react';
 
-const AppDictionary = {
 
-    // TODO: 
-    // languages need to be converted to object with string display and array of languages
-    // subraces need to be added 
-    // separate racial features into their own object for cleaner reference
-    // justifications: 
-    // 1. darkvision is repeated multiple times 
-    // 2. some features allow for spells to be added
-    // 3. some add extra skill proficiency options, which prob need to be used later
+// TODO: 
+// languages need to be converted to object with string display and array of languages
+// subraces need to be added 
+// separate racial features into their own object for cleaner reference
+// justifications: 
+// 1. darkvision is repeated multiple times 
+// 2. some features allow for spells to be added
+// 3. some add extra skill proficiency options, which prob need to be used later
+
+const AppDictionary = {
 
     'RACE_DATA': [
         {
@@ -1065,26 +1066,118 @@ const AppDictionary = {
             subraces: []
         },
     ],
-    'ASI_ABBREV': {
-        "Str": {
-            name: 'Strength'
+    'LANGUAGES': [
+        {
+            'Language': '',
+            'Script': '',
+            'Typical_Speakers': ''
         },
-        "Dex": {
-            name: 'Dexterity'
+        {
+            'Language': '',
+            'Script': '',
+            'Typical_Speakers': ''
         },
-        "Con": {
-            name: "Constitution"
+        {
+            'Language': '',
+            'Script': '',
+            'Typical_Speakers': ''
         },
-        "Int": {
-            name: "Intelligence"
+        {
+            'Language': '',
+            'Script': '',
+            'Typical_Speakers': ''
         },
-        "Wis": {
-            name: "Wisdom"
+        {
+            'Language': '',
+            'Script': '',
+            'Typical_Speakers': ''
         },
-        "Cha": {
-            name: "Charisma"
-        }
-
+        {
+            'Language': '',
+            'Script': '',
+            'Typical_Speakers': ''
+        },
+        {
+            'Language': '',
+            'Script': '',
+            'Typical_Speakers': ''
+        },
+        {
+            'Language': '',
+            'Script': '',
+            'Typical_Speakers': ''
+        },
+        {
+            'Language': '',
+            'Script': '',
+            'Typical_Speakers': ''
+        },
+        {
+            'Language': '',
+            'Script': '',
+            'Typical_Speakers': ''
+        },
+    ],
+    'ATTRIBUTES': [
+        'Strength',
+        'Dexterity',
+        'Constitution',
+        'Intelligence',
+        'Wisdom',
+        'Charisma',
+    ],
+    'SKILLS': {
+        ByAttrDep: {
+            'Strength': [
+                'Athletics'
+            ],
+            'Dexterity': [
+                'Acrobatics',
+                'Sleight of Hand',
+                'Stealth',
+            ],
+            'Constitution': [],
+            'Intelligence': [
+                'Arcana',
+                'History',
+                'Investigation',
+                'Nature',
+                'Religion',
+            ],
+            'Wisdom': [
+                'Animal Handling',
+                'Insight',
+                'Medicine',
+                'Perception',
+                'Survival'
+            ],
+            'Charisma': [
+                'Deception',
+                'Intimidation',
+                'Performance',
+                'Persuasion',
+            ]
+        },
+        ByAlphabet: [
+            "Acrobatics",
+            "Animal Handling",
+            "Arcana",
+            "Athletics",
+            "Deception",
+            "History",
+            "Insight",
+            "Intimidation",
+            "Investigation",
+            "Medicine",
+            "Nature",
+            "Perception",
+            "Performance",
+            "Persuasion",
+            "Religion",
+            "Sleight of Hand",
+            "Stealth",
+            "Survival",
+        ]
     }
 }
 
