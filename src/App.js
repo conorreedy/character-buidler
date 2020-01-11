@@ -33,6 +33,13 @@ function Home() {
   )
 }
 
+{/* The `Setup` component is the form and actions for creating the character
+  it is responsible for displaying the form as the attributes are being chosen.
+
+  When a form has been submitted in completion we will pass the user data to another 
+  component to handle persistence. (TBD datastore)
+
+ */}
 class Setup extends React.Component {
 
   constructor(props) {
@@ -53,9 +60,11 @@ function App() {
   return (
 
     <Router>
-      <div className="navbar">
+    
+    <div className="navbar">
         <NavBar />
       </div>
+    
       <Switch>
 
         <Route exact path="/">
