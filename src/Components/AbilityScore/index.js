@@ -16,4 +16,4 @@ class AsiGenerator extends React.Component {
 }
 
 
-export default AsiGenerator
+export default AsiGenerator;
