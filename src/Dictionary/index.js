@@ -1076,114 +1076,114 @@ const AppDictionary = {
     ],
     'LANGUAGES': [
         {
-            'Language': 'Abyssal',
-            'Script': 'Infernal',
-            'Typical_Speakers': 'Demons, chaotic evil outsiders'
+            'name': 'Abyssal',
+            'script': 'Infernal',
+            'typicalSpeakers': 'Demons, chaotic evil outsiders'
         },
         {
-            'Language': 'Aquan',
-            'Script': 'Elvish',
-            'Typical_Speakers': 'Water-based creatures'
+            'name': 'Aquan',
+            'script': 'Elvish',
+            'typicalSpeakers': 'Water-based creatures'
         },
         {
-            'Language': 'Auran',
-            'Script': 'Draconic',
-            'Typical_Speakers': 'Air-based creatures'
+            'name': 'Auran',
+            'script': 'Draconic',
+            'typicalSpeakers': 'Air-based creatures'
         },
         {
-            'Language': 'Celestial',
-            'Script': 'Celestial',
-            'Typical_Speakers': 'Celestials (angels, devas)'
+            'name': 'Celestial',
+            'script': 'Celestial',
+            'typicalSpeakers': 'Celestials (angels, devas)'
         },
         {
-            'Language': 'Common',
-            'Script': 'Common',
-            'Typical_Speakers': 'Humans, halflings, half-elves, half-orcs'
+            'name': 'Common',
+            'script': 'Common',
+            'typicalSpeakers': 'Humans, halflings, half-elves, half-orcs'
         },
         {
-            'Language': 'Deep Speech',
-            'Script': '--',
-            'Typical_Speakers': 'Mind flayers, beholders'
+            'name': 'Deep Speech',
+            'script': '--',
+            'typicalSpeakers': 'Mind flayers, beholders'
         },
         {
-            'Language': 'Draconic',
-            'Script': 'Draconic',
-            'Typical_Speakers': 'Kobolds, troglodytes, lizardfolk, dragons, dragonborn'
+            'name': 'Draconic',
+            'script': 'Draconic',
+            'typicalSpeakers': 'Kobolds, troglodytes, lizardfolk, dragons, dragonborn'
         },
         {
-            'Language': 'Druidic',
-            'Script': 'Druidic',
-            'Typical_Speakers': 'Druids (only)'
+            'name': 'Druidic',
+            'script': 'Druidic',
+            'typicalSpeakers': 'Druids (only)'
         },
         {
-            'Language': 'Dwarvish',
-            'Script': 'Dwarvish',
-            'Typical_Speakers': 'Dwarves'
+            'name': 'Dwarvish',
+            'script': 'Dwarvish',
+            'typicalSpeakers': 'Dwarves'
         },
         {
-            'Language': 'Elvish',
-            'Script': 'Elvish',
-            'Typical_Speakers': 'Elves'
+            'name': 'Elvish',
+            'script': 'Elvish',
+            'typicalSpeakers': 'Elves'
         },
         {
-            'Language': 'Giant',
-            'Script': 'Dwarvish',
-            'Typical_Speakers': 'Ogres, giants',
+            'name': 'Giant',
+            'script': 'Dwarvish',
+            'typicalSpeakers': 'Ogres, giants',
         },
         {
-            'Language': 'Gnomish',
-            'Script': 'Dwarvish',
-            'Typical_Speakers': 'Gnomes',
+            'name': 'Gnomish',
+            'script': 'Dwarvish',
+            'typicalSpeakers': 'Gnomes',
         },
         {
-            'Language': 'Goblin',
-            'Script': 'Dwarvish',
-            'Typical_Speakers': 'Goblinoids, hobgoblins, bugbears',
+            'name': 'Goblin',
+            'script': 'Dwarvish',
+            'typicalSpeakers': 'Goblinoids, hobgoblins, bugbears',
         },
         {
-            'Language': 'Gnoll',
-            'Script': 'Common',
-            'Typical_Speakers': 'Gnolls'
+            'name': 'Gnoll',
+            'script': 'Common',
+            'typicalSpeakers': 'Gnolls'
         },
         {
-            'Language': 'Halfling',
-            'Script': 'Common',
-            'Typical_Speakers': 'Halflings'
+            'name': 'Halfling',
+            'script': 'Common',
+            'typicalSpeakers': 'Halflings'
         },
         {
-            'Language': 'Ignan',
-            'Script': 'Draconic',
-            'Typical_Speakers': 'Fire-based creatures',
+            'name': 'Ignan',
+            'script': 'Draconic',
+            'typicalSpeakers': 'Fire-based creatures',
         },
         {
-            'Language': 'Infernal',
-            'Script': 'Infernal',
-            'Typical_Speakers': 'Devils, Tieflings',
+            'name': 'Infernal',
+            'script': 'Infernal',
+            'typicalSpeakers': 'Devils, Tieflings',
         },
         {
-            'Language': 'Orc',
-            'Script': 'Dwarvish',
-            'Typical_Speakers': 'Orcs',
+            'name': 'Orc',
+            'script': 'Dwarvish',
+            'typicalSpeakers': 'Orcs',
         },
         {
-            'Language': 'Primordial',
-            'Script': 'Dwarvish',
-            'Typical_Speakers': 'Elementals',
+            'name': 'Primordial',
+            'script': 'Dwarvish',
+            'typicalSpeakers': 'Elementals',
         },
         {
-            'Language': 'Sylvan',
-            'Script': 'Elvish',
-            'Typical_Speakers': 'Fey creatures (dryads, brownies, leprechauns)',
+            'name': 'Sylvan',
+            'script': 'Elvish',
+            'typicalSpeakers': 'Fey creatures (dryads, brownies, leprechauns)',
         },
         {
-            'Language': 'Terran',
-            'Script': 'Dwarvish',
-            'Typical_Speakers': 'Xorns and other earth-based creatures',
+            'name': 'Terran',
+            'script': 'Dwarvish',
+            'typicalSpeakers': 'Xorns and other earth-based creatures',
         },
         {
-            'Language': 'Undercommon',
-            'Script': 'Elvish',
-            'Typical_Speakers': 'Drow, Underdark traders',
+            'name': 'Undercommon',
+            'script': 'Elvish',
+            'typicalSpeakers': 'Drow, Underdark traders',
         },
         
         
@@ -1240,7 +1240,13 @@ const AppDictionary = {
             "Stealth",
             "Survival",
         ]
-    }
+    },
+    'BACKGROUNDS': [
+        {
+            'name': 'Custom Background',
+        },
+
+    ]
 }
 
 
