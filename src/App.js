@@ -8,8 +8,6 @@ import {
   Link
 } from "react-router-dom";
 
-import Helmet from 'react-helmet';
-
 // import DndClasses from './Components/DndClasses';
 import RaceSelectionForm from './Components/RaceForm';
 import AsiGenerator from './Components/AbilityScore';

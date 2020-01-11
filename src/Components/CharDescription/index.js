@@ -2,7 +2,8 @@ import React from 'react';
 import './CharDescription.css';
 import AppDictionary from '../../Dictionary';
 
-const Skills_Data = AppDictionary.SKILLS;
+const skillsData = AppDictionary.SKILLS;
+const languagesData = AppDictionary.LANGUAGES;
 
 class CharDescription extends React.Component {
     constructor(props) {

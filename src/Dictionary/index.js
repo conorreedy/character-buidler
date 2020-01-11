@@ -1066,58 +1066,6 @@ const AppDictionary = {
             subraces: []
         },
     ],
-    'LANGUAGES': [
-        {
-            'Language': '',
-            'Script': '',
-            'Typical_Speakers': ''
-        },
-        {
-            'Language': '',
-            'Script': '',
-            'Typical_Speakers': ''
-        },
-        {
-            'Language': '',
-            'Script': '',
-            'Typical_Speakers': ''
-        },
-        {
-            'Language': '',
-            'Script': '',
-            'Typical_Speakers': ''
-        },
-        {
-            'Language': '',
-            'Script': '',
-            'Typical_Speakers': ''
-        },
-        {
-            'Language': '',
-            'Script': '',
-            'Typical_Speakers': ''
-        },
-        {
-            'Language': '',
-            'Script': '',
-            'Typical_Speakers': ''
-        },
-        {
-            'Language': '',
-            'Script': '',
-            'Typical_Speakers': ''
-        },
-        {
-            'Language': '',
-            'Script': '',
-            'Typical_Speakers': ''
-        },
-        {
-            'Language': '',
-            'Script': '',
-            'Typical_Speakers': ''
-        },
-    ],
     'ATTRIBUTES': [
         'Strength',
         'Dexterity',
@@ -1125,6 +1073,120 @@ const AppDictionary = {
         'Intelligence',
         'Wisdom',
         'Charisma',
+    ],
+    'LANGUAGES': [
+        {
+            'Language': 'Abyssal',
+            'Script': 'Infernal',
+            'Typical_Speakers': 'Demons, chaotic evil outsiders'
+        },
+        {
+            'Language': 'Aquan',
+            'Script': 'Elvish',
+            'Typical_Speakers': 'Water-based creatures'
+        },
+        {
+            'Language': 'Auran',
+            'Script': 'Draconic',
+            'Typical_Speakers': 'Air-based creatures'
+        },
+        {
+            'Language': 'Celestial',
+            'Script': 'Celestial',
+            'Typical_Speakers': 'Celestials (angels, devas)'
+        },
+        {
+            'Language': 'Common',
+            'Script': 'Common',
+            'Typical_Speakers': 'Humans, halflings, half-elves, half-orcs'
+        },
+        {
+            'Language': 'Deep Speech',
+            'Script': '--',
+            'Typical_Speakers': 'Mind flayers, beholders'
+        },
+        {
+            'Language': 'Draconic',
+            'Script': 'Draconic',
+            'Typical_Speakers': 'Kobolds, troglodytes, lizardfolk, dragons, dragonborn'
+        },
+        {
+            'Language': 'Druidic',
+            'Script': 'Druidic',
+            'Typical_Speakers': 'Druids (only)'
+        },
+        {
+            'Language': 'Dwarvish',
+            'Script': 'Dwarvish',
+            'Typical_Speakers': 'Dwarves'
+        },
+        {
+            'Language': 'Elvish',
+            'Script': 'Elvish',
+            'Typical_Speakers': 'Elves'
+        },
+        {
+            'Language': 'Giant',
+            'Script': 'Dwarvish',
+            'Typical_Speakers': 'Ogres, giants',
+        },
+        {
+            'Language': 'Gnomish',
+            'Script': 'Dwarvish',
+            'Typical_Speakers': 'Gnomes',
+        },
+        {
+            'Language': 'Goblin',
+            'Script': 'Dwarvish',
+            'Typical_Speakers': 'Goblinoids, hobgoblins, bugbears',
+        },
+        {
+            'Language': 'Gnoll',
+            'Script': 'Common',
+            'Typical_Speakers': 'Gnolls'
+        },
+        {
+            'Language': 'Halfling',
+            'Script': 'Common',
+            'Typical_Speakers': 'Halflings'
+        },
+        {
+            'Language': 'Ignan',
+            'Script': 'Draconic',
+            'Typical_Speakers': 'Fire-based creatures',
+        },
+        {
+            'Language': 'Infernal',
+            'Script': 'Infernal',
+            'Typical_Speakers': 'Devils, Tieflings',
+        },
+        {
+            'Language': 'Orc',
+            'Script': 'Dwarvish',
+            'Typical_Speakers': 'Orcs',
+        },
+        {
+            'Language': 'Primordial',
+            'Script': 'Dwarvish',
+            'Typical_Speakers': 'Elementals',
+        },
+        {
+            'Language': 'Sylvan',
+            'Script': 'Elvish',
+            'Typical_Speakers': 'Fey creatures (dryads, brownies, leprechauns)',
+        },
+        {
+            'Language': 'Terran',
+            'Script': 'Dwarvish',
+            'Typical_Speakers': 'Xorns and other earth-based creatures',
+        },
+        {
+            'Language': 'Undercommon',
+            'Script': 'Elvish',
+            'Typical_Speakers': 'Drow, Underdark traders',
+        },
+        
+        
     ],
     'SKILLS': {
         ByAttrDep: {
