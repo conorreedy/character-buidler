@@ -49,9 +49,10 @@ form label {
 }
 
 
-.site-wrap {
+/* these should be converted into a utility func when scss gets integrated */
+.space-sequence-20 > * + * {
   margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
 }
+.space-sequence-20 > *:first-child {
+  margin-top: 0;
+} 
