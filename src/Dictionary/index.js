@@ -1185,8 +1185,8 @@ const AppDictionary = {
             'script': 'Elvish',
             'typicalSpeakers': 'Drow, Underdark traders',
         },
-        
-        
+
+
     ],
     'SKILLS': {
         ByAttrDep: {
@@ -1242,12 +1242,1163 @@ const AppDictionary = {
         ]
     },
     'BACKGROUNDS': [
+        // {
+        //     'name': 'Custom Background',
+        // },
         {
-            'name': 'Custom Background',
+            'name': 'Acolyte',
+            "description": "You have spent your life in the service of a temple to a specific god or pantheon of gods. You act as an intermediary between the realm of the holy and the mortal world, performing sacred rites and offering sacrifices in order to conduct worshipers into the presence of the divine. You are not necessarily a cleric—performing sacred rites is not the same thing as channeling divine power. Choose a god, a pantheon of gods, or some other quasi-divine being, and work with your DM to detail the nature of your religious service. The Gods of the Multiverse section contains a sample pantheon, from the Forgotten Realms setting. Were you a lesser functionary in a temple, raised from childhood to assist the priests in the sacred rites? Or were you a high priest who suddenly experienced a call to serve your god in a different way? Perhaps you were the leader of a small cult outside of any established temple structure, or even an occult group that served a fiendish master that you now deny.",
+            'numberOfExtraLanguages': 2,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 0,
+            'toolOptions': [],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Insight', 'isAutoGranted': true },
+                { 'name': 'Religion', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Shelter of the Faithful",
+                "description": "As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle. You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple."
+            },
         },
-
-    ]
+        {
+            'name': 'Anthropologist',
+            "description": "You have always been fascinated by other cultures, from the most ancient and primeval lost lands to the most modern civilizations. By studying other cultures' customs, philosophies, laws, rituals, religious beliefs, languages, and art, you have learned how tribes, empires, and all forms of society in between craft their own destinies and doom. This knowledge came to you not only through books and scrolls, but also through firsthand observation – by visiting far-flung settlements and exploring local histories and customs.",
+            'numberOfExtraLanguages': 2,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+                { 'name': 'ANY', 'isAutoGranted': false }
+            ],
+            'numberOfExtraTools': 0,
+            'toolOptions': [],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Insight', 'isAutoGranted': true },
+                { 'name': 'Religion', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Cultural Chameleon",
+                "description": "Before becoming an adventurer, you spent much of your adult life away from your homeland, living among people different from your kin. You came to understand these foreign cultures and the ways of their people, who eventually treated you as one of their own. One culture had more of an influence on you than any other, shaping your beliefs and customs. Choose a race whose culture you've adopted.",
+            },
+            'alternateBackgroundFeature': {
+                "name": "Adept Linguist",
+                "description": "You can communicate with humanoids who don't speak any language you know. You must observe the humanoids interacting with one another for at least 1 day, after which you learn a handful of important words, expressions, and gestures – enough to communicate on a rudimentary level.",
+            },
+        },
+        {
+            'name': 'Archaeologist',
+            "description": "An archaeologist learns about the long-lost and fallen cultures of the past by studying their remains – their bones, their ruins, their surviving masterworks, and their tombs. Those who practice archaeology travel to the far corners of the world to root through crumbled cities and lost dungeons, digging in search of artifacts that might tell the stories of monarchs and high priests, wars and cataclysms.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false }
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Cartographer\'s Tools', 'isAutoGranted': false },
+                { 'name': 'Navigator\'s Tools', 'isAutoGranted': false },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'History', 'isAutoGranted': true },
+                { 'name': 'Survival', 'isAutoGranted': true },
+            ],
+            'backgroundFeature':
+            {
+                "name": "Dust Digger",
+                "description": "Prior to becoming an adventurer, you spent most of your young life crawling around in the dust, pilfering relics of questionable value from crypts and ruins. Though you managed to sell a few of your discoveries and earn enough coin to buy proper adventuring gear, you have held onto an item that has great emotional value to you. Roll on the Signature Item table to see what you have, or choose an item from the table.",
+            },
+        },
+        {
+            'name': 'Black Fist Double Agent',
+            "description": "You are an informant for the Tears of Virulence who now lord over Phlan, but are also a double agent for original town guard of Phlan, the Black Fists. For the Tears you’ve been tasked with ferreting out the secrets of Phlan's criminal underworld, insurgency, and the common peoples of Phlan. In exchange for reporting on the activities of dissenters, criminals, and other rebel elements, the Tears of Virulence leave you alone to conduct your affairs in peace. In reality you work for the deposed Black Fists, sharing misinformation with the Tears of Virulence that often helps the Black Fists and other Phlan insurgents. Since the evacuation of Phlan, you are even busier today than you ever were previously, as the number of dissenters among the refugees grows daily, while you are afforded many opportunities to spy on the peoples of Mulmaster and Elventree, to the pleasure of your contact(s) within the Tears of Virulence. ",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Disguise Kit', 'isAutoGranted': true },
+                { 'name': 'Artisan\'s Tools', 'isAutoGranted': false },
+                { 'name': 'Gaming Set', 'isAutoGranted': false },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Deception', 'isAutoGranted': true },
+                { 'name': 'Insight', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Double Agent",
+                "description": "You have a reliable and trusty contact within the Tears of Virulence garrison in Phlan to whom you pass information and secrets. In exchange, you can get away with minor criminal offenses within the town of Phlan. In addition, your Black Fists contacts can help you secure an audience with the Lord Regent, the Lord Sage, members of the Black Fists, or deposed nobles and authority figures who are sympathetic to the Phlan refugees and insurgents. Note: This feature is a variant of the Noble feature. ",
+            },
+        },
+        {
+            'name': 'Caravan Specialist',
+            "description": "You are used to life on the road. You pride yourself at having traveled every major tradeway in the Moonsea region, includ-ing the best backroads and shortcuts. When traveling these roads, you know where the best inns, campsites, and water sources are located, as well as potential locations of danger such as ambush. Having worked the roads as long as you have, you have made many aquaintences and find it easy to pick up information and rumors floating from town to town. You are skilled with beasts of burden and handling and repair-ing wagons of all kinds.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false }
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Vehicles (land)', 'isAutoGranted': true }
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Animal Handling', 'isAutoGranted': true },
+                { 'name': 'Survival', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Wagonmaster",
+                "description": "You are used to being in charge of the operation and your reputation for reliability has you on a short list when the job is critical. Experience has taught you to rely on your gut. Othersrecognize this and look to you for direction when a situation gets serious. You are able to identify the most defensible loca-tions for camping. If you are part of a caravan outfit, you areable to attract two additional workers that are loyal to you based on your reputation. You have an excellent memory for maps and geography and can always determine your cardinal directions while traveling. [Note: This feature is a variant of the Outlander feature.]",
+            },
+        },
+        {
+            'name': 'Charlatan',
+            "description": "You have always had a way with people. You know what makes them tick, you can tease out their hearts’ desires after a few minutes of conversation, and with a few leading questions you can read them like they were children’s books. It’s a useful talent, and one that you’re perfectly willing to use for your advantage. You know what people want and you deliver, or rather, you promise to deliver. Common sense should steer people away from things that sound too good to be true, but common sense seems to be in short supply when you’re around. The bottle of pink-colored liquid will surely cure that unseemly rash, this ointment — nothing more than a bit of fat with a sprinkle of silver dust — can restore youth and vigor, and there’s a bridge in the city that just happens to be for sale. These marvels sound implausible, but you make them sound like the real deal.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Disguise Kit', 'isAutoGranted': true },
+                { 'name': 'Forgery kit', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Deception', 'isAutoGranted': true },
+                { 'name': 'Sleight of Hand', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "False Identity",
+                "description": "You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona. Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy.",
+            },
+        },
+        {
+            'name': 'City Watch',
+            "description": "You have served the community where you grew up, standing as its first line of defense against crime. You aren’t a soldier, directing your gaze outward at possible enemies. Instead, your service to your hometown was to help police its populace, protecting the citizenry from lawbreakers and malefactors of every stripe. You might have been part of the City Watch of Waterdeep, the baton-wielding police force of the City of Splendors, protecting the common folk from thieves and rowdy nobility alike. Or you might have been one of the valiant defenders of Silverymoon, a member of the Silverwatch or even one of the magic-wielding Spellguard. Perhaps you hail from Neverwinter and have served as one of its Wintershield watchmen, the newly founded branch of guards who vow to keep safe the City of Skilled Hands. Even if you’re not city-born or city-bred, this background can describe your early years as a member of law enforcement. Most settlements of any size have their own constables and police forces, and even smaller communities have sheriffs and bailiffs who stand ready to protect their community.",
+            'numberOfExtraLanguages': 2,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 0,
+            'toolOptions': [],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Athletics', 'isAutoGranted': true },
+                { 'name': 'Insight', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Watcher’s Eye",
+                "description": "Your experience in enforcing the law, and dealing with lawbreakers, gives you a feel for local laws and criminals. You can easily find the local outpost of the watch or a similar organization, and just as easily pick out the dens of criminal activity in a community, although you’re more likely to be welcome in the former locations rather than the latter.",
+            },
+        },
+        {
+            'name': 'Clan Crafter',
+            "description": "The Stout Folk are well known for their artisanship and the worth of their handiworks, and you have been trained in that ancient tradition. For years you labored under a dwarf master of the craft, enduring long hours and dismissive, sour-tempered treatment in order to gain the fine skills you possess today. You are most likely a dwarf, but not necessarily—particularly in the North, the shield dwarf clans learned long ago that only proud fools who are more concerned for their egos than their craft turn away promising apprentices, even those of other races. If you aren’t a dwarf, however, you have taken a solemn oath never to take on an apprentice in the craft: it is not for non-dwarves to pass on the skills of Moradin’s favored children. You would have no difficulty, however, finding a dwarf master who was willing to receive potential apprentices who came with your recommendation.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': true }
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Artisan\'s Tools', 'isAutoGranted': true }
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'History', 'isAutoGranted': true },
+                { 'name': 'Insight', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Respect of the Stout Folk",
+                "description": "As well respected as clan crafters are among outsiders, no one esteems them quite so highly as dwarves do. You always have free room and board in any place where shield dwarves or gold dwarves dwell, and the individuals in such a settlement might vie among themselves to determine who can offer you (and possibly your compatriots) the finest accommodations and assistance.",
+            },
+        },
+        {
+            'name': 'Cloistered Scholar',
+            "description": "As a child, you were inquisitive when your playmates were possessive or raucous. In your formative years, you found your way to one of Faerûn’s great institutes of learning , where you were apprenticed and taught that knowledge is a more valuable treasure than gold or gems. Now you are ready to leave your home—not to abandon it, but to quest for new lore to add to its storehouse of knowledge. The most well known of Faerûn’s fonts of knowledge is Candlekeep. The great library is always in need of workers and attendants, some of whom rise through the ranks to assume roles of greater responsibility and prominence. You might be one of Candlekeep’s own, dedicated to the curatorship of what is likely the most complete body of lore and history in all the world. Perhaps instead you were taken in by the scholars of the Vault of the Sages or the Map House in Silverymoon, and now you have struck out to increase your knowledge and to make yourself available to help those in other places who seek your expertise. You might be one of the few who aid Herald’s Holdfast, helping to catalogue and maintain records of the information that arrives daily from across Faerûn.",
+            'numberOfExtraLanguages': 2,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 0,
+            'toolOptions': [],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'History', 'isAutoGranted': true },
+                { 'name': 'Arcanda', 'isAutoGranted': false },
+                { 'name': 'Nature', 'isAutoGranted': false },
+                { 'name': 'Religion', 'isAutoGranted': false },
+            ],
+            'backgroundFeature': {
+                "name": "Library Access",
+                "description": "Though others must often endure extensive interviews and significant fees to gain access to even the most common archives in your library, you have free and easy access to the majority of the library, though it might also have repositories of lore that are too valuable, magical, or secret to permit anyone immediate access. You have a working knowledge of your cloister’s personnel and bureaucracy, and you know how to navigate those connections with some ease. Additionally, you are likely to gain preferential treatment at other libraries across the Realms, as professional courtesy shown to a fellow scholar.",
+            },
+        },
+        {
+            'name': 'Cormanthor Refugee',
+            "description": "You are one of hundreds of refugees that were driven from Hillsfar or that fled the destruction of Myth Drannor and who now shelter in hidden camps under the northern eaves of the Cormanthor Forest. If you up grew in the camps, you have never been to a settlement other than the village of Elventree. As a guest of the elves, you have learned their ways and the ways of the forest. You are also a traumatized, as residual wild magic, energies released by the fall of Thultanar upon Myth Drannor, and the constant fear of raids hunting for nonhumans to fight in Hillsfar's Arena have taken their toll on you, as they have on everyone in the camps. ",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'Elvish', 'isAutoGranted': true }
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Artisan\'s Tools', 'isAutoGranted': true }
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Nature', 'isAutoGranted': true },
+                { 'name': 'Survival', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Shelter of the Elven Clergy",
+                "description": "The clerics of Elventree have vowed to care for the Cormanthor refugees. They will help you when they can, including providing you and your companions with free healing and care at temples, shrines, and other established presences in Elventree. They will also provide you (but only you) with a poor lifestyle. [Note: This feature is a variant of the Acolyte feature.]",
+            },
+        },
+        {
+            'name': 'Courtier',
+            "description": "In your earlier days, you were a personage of some significance in a noble court or a bureaucratic organization. You might or might not come from an upper-class family; your talents, rather than the circumstances of your birth, could have secured you this position. You might have been one of the many functionaries, attendants, and other hangers-on in the Court of Silverymoon, or perhaps you traveled in Waterdeep’s baroque and sometimes cutthroat conglomeration of guilds, nobles, adventurers, and secret societies. You might have been one of the behind-the-scenes law-keepers or functionaries in Baldur’s Gate or Neverwinter, or you might have grown up in and around the castle of Daggerford. Even if you are no longer a full-fledged member of the group that gave you your start in life, your relationships with your former fellows can be an advantage for you and your adventuring comrades. You might undertake missions with your new companions that further the interest of the organization that gave you your start in life. In any event, the abilities that you honed while serving as a courtier will stand you in good stead as an adventurer.",
+            'numberOfExtraLanguages': 2,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 0,
+            'toolOptions': [],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Insight', 'isAutoGranted': true },
+                { 'name': 'Persuasion', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Court Functionary",
+                "description": "Your knowledge of how bureaucracies function lets you gain access to the records and inner workings of any noble court or government you encounter. You know who the movers and shakers are, whom to go to for the favors you seek, and what the current intrigues of interest in the group are.",
+            },
+        },
+        {
+            'name': 'Criminal',
+            "description": "You are an experienced criminal with a history of breaking the law. You have spent a lot of time among other criminals and still have contacts within the criminal underworld. You’re far closer than most people to the world of murder, theft, and violence that pervades the underbelly of civilization, and you have survived up to this point by flouting the rules and regulations of society.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Gaming Set', 'isAutoGranted': true },
+                { 'name': 'Thieves\' Tools', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Deception', 'isAutoGranted': true },
+                { 'name': 'Stealth', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Criminal Contact",
+                "description": "You have a reliable and trustworthy contact who acts as your liaison to a network of other criminals. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you.",
+            },
+        },
+        {
+            'name': 'Earthspur Miner',
+            "description": "You are a down-on your luck miner from the Earthspur Mountains who is no stranger to hardship. You have spent a great deal of time living among the dwarves, goliaths, and denizens of the Underdark that also work mines in the area. At this point, you're just as comfortable working underground as above. You know how to read a seam, dicker for supplies with the deep gnomes, party with dwarves, and find your way back to the surface afterwards. Unfortunately, you haven't struck it rich...yet. Although you've come to Mulmaster looking for work, the tall peaks and deep mines of the Earthspurs still call to you.",
+            'numberOfExtraLanguages': 2,
+            'languageOptions': [
+                { 'name': 'Dwarvish', 'isAutoGranted': true },
+                { 'name': 'Undercommon', 'isAutoGranted': true },
+            ],
+            'numberOfExtraTools': 0,
+            'toolOptions': [],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Athletics', 'isAutoGranted': true },
+                { 'name': 'Survival', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Deep Mine",
+                "description": "You are used to navigating the deep places of the earth. You never get lost in caves or mines if you have either seen an accurate map of them or have been through them before. Furthermore, you are able to scrounge fresh water and food for yourself and as many as five other people each day if you are in a mine or natural caves. [Note: This feature is a variant of the Outlander feature.]",
+            },
+        },
+        {
+            'name': 'Entertainer',
+            "description": "You thrive in front of an audience. You know how to entrance them, entertain them, and even inspire them. Your poetics can stir the hearts of those who hear you, awakening grief or joy, laughter or anger. Your music raises their spirits or captures their sorrow. Your dance steps captivate, your humor cuts to the quick. Whatever techniques you use, your art is your life.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Disguise Kit', 'isAutoGranted': true },
+                { 'name': 'Musical Instrument', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Acrobatics', 'isAutoGranted': true },
+                { 'name': 'Performance', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "By Popular Demand",
+                "description": "You can always find a place to perform, usually in an inn or tavern but possibly with a circus, at a theater, or even in a noble’s court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you.",
+            },
+        },
+        {
+            'name': 'Faceless',
+            "description": "Being who you are, you could never be a hero. Whether due to your class, your people, your family, or your sins, something about you prevents you from effectively pursuing the path you’ve chosen. Even so, that doesn’t stop you. You’ve left your old face behind, taking on a new persona, becoming something more. Characters with the faceless background don a disguise — literally or otherwise — as they adventure. This persona might be dramatic or subtle. In a way, though, many characters have such larger than life personalities. Therefore, this background largely focuses on detailing the hero behind the mask.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Disguise Kit', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Deception', 'isAutoGranted': true },
+                { 'name': 'Intimidation', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Dual Personalities",
+                "description": "Most of your fellow adventurers and the world know you as your persona. Those who seek to learn more about you—your weaknesses, your origins, your purpose—find themselves stymied by your disguise. Upon donning a disguise and behaving as your persona, you are unidentifiable as your true self. By removing your disguise and revealing your true face, you are no longer identifiable as your persona. This allows you to change appearances between your two personalities as often as you wish, using one to hide the other or serve as convenient camouflage. However, should someone realize the connection between your persona and your true self, your deception might lose its effectiveness.",
+            },
+        },
+        {
+            'name': 'Faction Agent',
+            "description": "Many organizations active in the North and across the face of Faerûn aren’t bound by strictures of geography. These factions pursue their agendas without regard for political boundaries, and their members operate anywhere the organization deems necessary. These groups employ listeners, rumormongers, smugglers, sellswords, cache-holders (people who guard caches of wealth or magic for use by the faction’s operatives), haven keepers, and message drop minders, to name a few. At the core of every faction are those who don’t merely fulfill a small function for that organization, but who serve as its hands, head, and heart. As a prelude to your adventuring career (and in preparation for it), you served as an agent of a particular faction in Faerûn. You might have operated openly or secretly, depending on the faction and its goals, as well as how those goals mesh with your own. Becoming an adventurer doesn’t necessarily require you to relinquish membership in your faction (though you can choose to do so), and it might enhance your status in the faction.",
+            'numberOfExtraLanguages': 2,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 0,
+            'toolOptions': [],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Insight', 'isAutoGranted': true },
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'backgroundFeature': {
+                "name": "Safe Haven",
+                "description": "As a faction agent, you have access to a secret network of supporters and operatives who can provide assistance on your adventures. You know a set of secret signs and passwords you can use to identify such operatives, who can provide you with access to a hidden safe house, free room and board, or assistance in finding information. These agents never risk their lives for you or risk revealing their true identities.",
+            },
+        },
+        {
+            'name': 'Far Traveler',
+            "description": "Almost all of the common people and other folk that one might encounter along the Sword Coast or in the North have one thing in common: they live out their lives without ever traveling more than a few miles from where they were born. You aren’t one of those folk. You are from a distant place, one so remote that few of the common folk in the North realize that it exists, and chances are good that even if some people you meet have heard of your homeland, they know merely the name and perhaps a few outrageous stories. You have come to this part of Faerûn for your own reasons, which you might or might not choose to share. Although you will undoubtedly find some of this land’s ways to be strange and discomfiting, you can also be sure that some things its people take for granted will be to you new wonders that you’ve never laid eyes on before. By the same token, you’re a person of interest, for good or ill, to those around you almost anywhere you go.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Musical Instrument', 'isAutoGranted': false },
+                { 'name': 'Gaming Set', 'isAutoGranted': false },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Insight', 'isAutoGranted': true },
+                { 'name': 'Perception', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "All Eyes on You",
+                "description": "Your accent, mannerisms, figures of speech, and perhaps even your appearance all mark you as foreign. Curious glances are directed your way wherever you go, which can be a nuisance, but you also gain the friendly interest of scholars and others intrigued by far-off lands, to say nothing of everyday folk who are eager to hear stories of your homeland. You can parley this attention into access to people and places you might not otherwise have, for you and your traveling companions. Noble lords, scholars, and merchant princes, to name a few, might be interested in hearing about your distant homeland and people.",
+            },
+        },
+        {
+            'name': 'Folk Hero',
+            "description": "You come from a humble social rank, but you are destined for so much more. Already the people of your home village regard you as their champion, and your destiny calls you to stand against the tyrants and monsters that threaten the common folk everywhere.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Artisan\'s Tools', 'isAutoGranted': true },
+                { 'name': 'Vehicles (Land)', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Animal Handling', 'isAutoGranted': true },
+                { 'name': 'Survival', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Rustic Hospitality",
+                "description": "Since you come from the ranks of the common folk, you fit in among them with ease. You can find a place to hide, rest, or recuperate among other commoners, unless you have shown yourself to be a danger to them. They will shield you from the law or anyone else searching for you, though they will not risk their lives for you.",
+            },
+        },
+        {
+            'name': 'Gate Urchin',
+            "description": "All traffic into and out of the City of Trade passes through the Hillsfar Gate, making it the ideal place for the destitute to gather to panhandle, busk, gossip, and pick pockets. You grew up on the streets in the shadow of that great steel edifice, which houses both Red Plumes and Guild Mages. Though you may have moved on, you still have friends among them, and that life has had a lasting impact on you.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Musical Instrument', 'isAutoGranted': true },
+                { 'name': 'Thives\' Tools', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Deception', 'isAutoGranted': true },
+                { 'name': 'Sleight of Hand', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Red Plume and Mage Guild Contacts",
+                "description": "You made a number of friends among the Red Plumes and the Mage's Guild when you lived at the Hillsfar Gate. They remember you fondly and help you in little ways when they can. You can invoke their assistance in and around Hillsfar to obtain food, as well as simple equipment for temporary use. You can also invoke it to gain access to the low-security areas of their garrisons, halls, and encampments. Note: This feature is a variant of the Soldier feature.",
+            },
+        },
+        {
+            'name': 'Gladiator',
+            "description": "A gladiator is as much an entertainer as any minstrel or circus performer, trained to make the arts of combat into a spectacle the crowd can enjoy. This kind of flashy combat is your entertainer routine, though you might also have some skills as a tumbler or actor.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Disguise Kit', 'isAutoGranted': true },
+                { 'name': 'Unusual Weapon x1', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Acrobatics', 'isAutoGranted': true },
+                { 'name': 'Performance', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "By Popular Demand",
+                "description": "You can always find a place to perform in any place that features combat for entertainment — perhaps a gladiatorial arena or secret pit fighting club. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you.",
+            },
+        },
+        {
+            'name': 'Guild Artisan',
+            "description": "You are a member of an artisan’s guild, skilled in a particular field and closely associated with other artisans. You are a well-established part of the mercantile world, freed by talent and wealth from the constraints of a feudal social order. You learned your skills as an apprentice to a master artisan, under the sponsorship of your guild, until you became a master in your own right.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': true },
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Artisan\'s Tools', 'isAutoGranted': true }
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Insight', 'isAutoGranted': true },
+                { 'name': 'Persuasion', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Guild Membership",
+                "description": "As an established and respected member of a guild, you can rely on certain benefits that membership provides. Your fellow guild members will provide you with lodging and food if necessary, and pay for your funeral if needed. In some cities and towns, a guildhall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings. Guilds often wield tremendous political power. If you are accused of a crime, your guild will support you if a good case can be made for your innocence or the crime is justifiable. You can also gain access to powerful political figures through the guild, if you are a member in good standing. Such connections might require the donation of money or magic items to the guild’s coffers. You must pay dues of 5 gp per month to the guild. If you miss payments, you must make up back dues to remain in the guild’s good graces.",
+            },
+        },
+        {
+            'name': 'Guild Merchant',
+            "description": "You are a member of an artisan’s guild, skilled in a particular field and closely associated with other artisans. You are a well-established part of the mercantile world, freed by talent and wealth from the constraints of a feudal social order. You learned your skills as an apprentice to a master artisan, under the sponsorship of your guild, until you became a master in your own right.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': true },
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Navigator\'s Tools', 'isAutoGranted': true }
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Insight', 'isAutoGranted': true },
+                { 'name': 'Persuasion', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Guild Membership",
+                "description": "As an established and respected member of a guild, you can rely on certain benefits that membership provides. Your fellow guild members will provide you with lodging and food if necessary, and pay for your funeral if needed. In some cities and towns, a guildhall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings. Guilds often wield tremendous political power. If you are accused of a crime, your guild will support you if a good case can be made for your innocence or the crime is justifiable. You can also gain access to powerful political figures through the guild, if you are a member in good standing. Such connections might require the donation of money or magic items to the guild’s coffers. You must pay dues of 5 gp per month to the guild. If you miss payments, you must make up back dues to remain in the guild’s good graces.",
+            },
+        },
+        {
+            'name': 'Harborfolk',
+            "description": "You are one of the hundreds of small-time fishermen and women who haul the bounty of Mulmaster's freshwater harbor to the city's markets each morning. You have spent countless days rowing in the waters in and around Mulmaster and know them and the other fisherfolk, dockworkers, and port inhabitants better than anyone. Though you have left that life behind, you still visit once in a while.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Gaming Set', 'isAutoGranted': true },
+                { 'name': 'Vehicles (Water)', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Athletics', 'isAutoGranted': true },
+                { 'name': 'Sleight of Hand', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Harborfolk",
+                "description": "You grew up on the docks and waters of Mulmaster Harbor. The harborfolk remember you and still treat you as one of them. They welcome you and your companions. While they might charge you for it, they'll always offer what food and shelter they have; they'll even hide you if the City Watch is after you (but not if the Hawks are). [Note: This feature is a variant of the Folk Hero feature.]",
+            },
+        },
+        {
+            'name': 'Haunted One',
+            "description": "You are haunted by something so terrible that you dare not speak of it. You’ve tried to bury it and run away from it, to no avail. Whatever this thing is that haunts you can’t be slain with a sword or banished with a spell. It might come to you as a shadow on the wall, a bloodcurdling nightmare, a memory that refuses to die, or a demonic whisper in the dark. The burden has taken its toll, isolating you from most people and making you question your sanity. You must find a way to overcome it before it destroys you.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 0,
+            'toolOptions': [],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Arcana', 'isAutoGranted': false },
+                { 'name': 'Investigation', 'isAutoGranted': false },
+                { 'name': 'Religion', 'isAutoGranted': false },
+                { 'name': 'Survival', 'isAutoGranted': false },
+            ],
+            'backgroundFeature': {
+                "name": "Heart of Darkness",
+                "description": "Those who look into your eyes can see that you have faced unimaginable horror and that you are no stranger to darkness. Though they might fear you, commoners will extend you every courtesy and do their utmost to help you. Unless you have shown yourself to be a danger to them, they will even take up arms to fight alongside you, should you find yourself facing an enemy alone.",
+            },
+        },
+        {
+            'name': 'Hermit',
+            "description": "You lived in seclusion — either in a sheltered community such as a monastery, or entirely alone — for a formative part of your life. In your time apart from the clamor of society, you found quiet, solitude, and perhaps some of the answers you were looking for.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Herbalism Kit', 'isAutoGranted': true }
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Medicine', 'isAutoGranted': true },
+                { 'name': 'Religion', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Discovey",
+                "description": "The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. It might be information that would be damaging to the people who or consigned you to exile, and hence the reason for your return to society. Work with your DM to determine the details of your discovery and its impact on the campaign.",
+            },
+        },
+        {
+            'name': 'Hillsfar Merchant',
+            "description": "Before becoming an adventurer, you were a successful merchant operating out Hillsfar, the City of Trade. Your family operated warehouses, organized caravans, managed stores, or owned a ship and has trade contacts throughout the Moonsea region, as well as up and down the length of the Sword Coast. Perhaps they import ore, uncut gems, untreated furs, or grain into the City of Trade, or they export fine cloth, faceted gems, fine furs, or Dragon's Breath, a brandy-like liquor. Regardless, you've largely given that life up for some reason and have chosen to seek adventure instead. Nevertheless, the training you received then, and perhaps the contacts you made, serve you well as an adventurer.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Vehicles (Land)', 'isAutoGranted': true },
+                { 'name': 'Vehicles (Water)', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Insight', 'isAutoGranted': true },
+                { 'name': 'Persuasion', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Factor",
+                "description": "Although you've left the day-to-day life of a merchant behind, your family has assigned you the services of a loyal retainer from the business, a factor, husbanding agent, seafarer, caravan guard, or clerk. This individual is a commoner who can perform mundane tasks for you such as making purchases, delivering messages, and running errands. He or she will not fight for you and will not follow you into obviously dangerous areas (such as dungeons), and will leave if frequently endangered or abused. If he or she is killed, the family assigns you another within a few days. Note: This feature is a variant of the Noble Knight's Retainers feature.",
+            },
+            'alternateBackgroundFeature': {
+                "name": "Trade Contact",
+                "description": "You and your family have trade contacts such as caravan masters, shopkeepers, sailors, artisans, and farmers throughout the Moonsea region and all along the Sword Coast. Once per game session, when adventuring in either of those areas, you can use those contacts to get information about the local area or to pass a message to someone in those areas, even across the great distance between the two areas. Note: This feature is a variant of the Criminal Contact and Researcher features.",
+            },
+        },
+        {
+            'name': 'Hillsfar Smuggler',
+            "description": "Hillsfar is the City of Trade. However, the Great Law of Trade only protects 'legitimate' trade, trade that passes through the city's sole gate, which the Red Plumes monitor and tax. And the Great Law of Humanity banishes non- humans from the city altogether. The two Great Laws create great demand and great risk for smugglers, who shepherd illicit goods and non-humans into and out of the city by secret routes. The Rogues Guild tightly controls all of this activity, taking its cut from sanctioned jobs and exacting punishment for independent jobs. Perhaps you trafficked Dragon's Breath (a brandy-like liquor) to avoid tariffs or contraband to avoid seizure, or maybe you are a human who sympathizes with the non- humans and worked as part of the network of secret routes and safe houses that helps them pass through Hillsfar. Either way, you have contacts in the smuggling community who can help you slip into and out of the city unnoticed, for a price. ",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Forgery Kit', 'isAutoGranted': true }
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Perception', 'isAutoGranted': true },
+                { 'name': 'Stealth', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Secret Passage",
+                "description": "You can call on your contacts within the smuggling community to secure secret passage into or out of Hillsfar for yourself and your adventuring companions, no questions asked, and no Red Plume entanglements. Because you’re calling in a favor, you can’t be certain they will be able to help on your timetable or at all. Your Dungeon Master will determine whether you can be smuggled into or out of the city. In return for your passage, you and your companions may owe the Rogue's Guild a favor and/or may have to pay bribes. [Note: This feature is a variant of the Sailor feature.]",
+            },
+        },
+        {
+            'name': 'Inheritor',
+            "description": "You are the heir to something of great value — not mere coin or wealth, but an object that has been entrusted to you and you alone. Your inheritance might have come directly to you from a member of your family, by right of birth, or it could have been left to you by a friend, a mentor, a teacher, or someone else important in your life. The revelation of your inheritance changed your life, and might have set you on the path to adventure, but it could also come with many dangers, including those who covet your gift and want to take it from you — by force, if need be.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Gaming Set', 'isAutoGranted': true },
+                { 'name': 'Musical Instrument', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Survival', 'isAutoGranted': true },
+                { 'name': 'Arcana', 'isAutoGranted': false },
+                { 'name': 'History', 'isAutoGranted': false },
+                { 'name': 'Religion', 'isAutoGranted': false },
+            ],
+            'backgroundFeature': {
+                "name": "Inheritance",
+                "description": "Choose or randomly determine your inheritance from among the possibilities in the table below. Work with your Dungeon Master to come up with details: Why is your inheritance so important, and what is its full story? You might prefer for the DM to invent these details as part of the game, allowing you to learn more about your inheritance as your character does. The Dungeon Master is free to use your inheritance as a story hook, sending you on quests to learn more about its history or true nature, or confronting you with foes who want to claim it for themselves or prevent you from learning what you seek. The DM also determines the properties of your inheritance and how they figure into the item’s history and importance. For instance, the object might be a minor magic item, or one that begins with a modest ability and increases in potency with the passage of time. Or, the true nature of your inheritance might not be apparent at first and is revealed only when certain conditions are met. When you begin your adventuring career, you can decide whether to tell your companions about your inheritance right away. Rather than attracting attention to yourself, you might want to keep your inheritance a secret until you learn more about what it means to you and what it can do for you. Item options: A document such as a map, a letter, or a journal; a trinket; an article of clothing; a piece of jewelry; an arcane book or formulary; a written story, song, poem, or secret; a tattoo or other body marking.",
+            },
+        },
+        {
+            'name': 'Inquisitor',
+            "description": "Historically, inquisitors were cathar detectives who investigated crimes both mundane and supernatural. They were known for traveling to remote parishes plagued by unexplained murders, and for exposing werewolves living among normal humans. During Avacyn's absence, when the archangel was trapped within the demonic prison known as the Helvault, the inquisitors led a series of brutal forays into Kessig and the Gavony Moorland. They executed suspected lycanthropes with little or no proof, and punished accused heretics in unsanctioned trials. With Avacyn's madness, this savage form of inquisition has become the norm, and inquisitors who still pry into dark mysteries have become a minority.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Artisan\'s Tools', 'isAutoGranted': true },
+                { 'name': 'Thieves\' Tools', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Investigation', 'isAutoGranted': true },
+                { 'name': 'Religion', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Legal Authority",
+                "description": "As an inquisitor of the church, you have the authority to arrest criminals. In the absence of other authorities, you are authorized to pass judgment and even carry out sentencing. If you abuse this power, however, your superiors in the church might strip it from you.",
+            },
+        },
+        {
+            'name': 'Investigator',
+            "description": "Though you hold no special title or position, you are an inveterate seeker of truths. To this end, you find yourself compelled to search in dangerous locations, and are the first to broach understanding or gather clandestine pieces of information. These traits can bring you to intense danger, but they do not hinder their quest for knowledge. You are likely to gather teams meant to explore the unknown, pushing them into action despite any of their natural misgivings. It is your bravado and ingenuity that keeps your team anchored and united against the darkness and its denizens. What you do not anticipate, however, is that your search for the truth may lead you to your own end, or worse.",
+            'numberOfExtraLanguages': 2,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 0,
+            'toolOptions': [],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Insight', 'isAutoGranted': true },
+                { 'name': 'Investigation', 'isAutoGranted': true },
+            ],
+            'backgroundFeature':
+            {
+                "name": "Trusted Source",
+                "description": "People may see you as a madman seeking information that no one wishes to unearth, but they realize that you are likely to know more than most about the horrors that rampage across the countryside. You may, in fact, have a tidbit of information that may help fell a marauding beast or cure an obscure disease, poison or curse. But more than that, people see in you a hope against the helplessness that plagues their daily existence. As the days grow ever further towards the lip of oblivion, you will be among the few trusted to help the beleaguered, as long as they don’t happen to think that you propagated these terrible events. You are likely to be sought as a voice of reason and are even given information on various perils. A noble may trust you to keep his dark secrets, provided you can help rid him of a supernatural problem. A group of cloistered clerics may turn to you in their darkest hour when their monastery is beset by some unimaginable monster, and these people can become valuable allies and informants as you continue to seek new and mind-numbing truths.",
+            },
+            'alternateBackgroundFeature': {
+                "name": "Agent of the Crown",
+                "description": "You are investigating directly under the auspice of some organizational sanction. You may or may not share this information with everyone, but your objectives are aligned with your benefactors. As such, you have a more focused and supportive network of contacts. While you may not garner sympathy or trust from others, you are backed by your organization, and can regularly expect to receive supplies and equipment as long as you are doing your duty, as well as safe houses and assistance from other agents that share your cause. If you are in a large population center, you can make contact with a fellow agent within 1d12 hours, and receive a tangible resupply within 3d12 hours.",
+            },
+        },
+        {
+            'name': 'Iron Route Bandit',
+            "description": "The Iron Route, once the primary trade route between Phlan and Zhentil Keep, used to be a site of extensive banditry until the Phlan's recent occupation. Your time as an erstwhile bandit has given you plenty of experience in the saddle and a knack for acquiring and appraising other people's mounts, pets, and vehicles among other things. This particular set of skills has become very lucrative for you by working for the underground as a horse thief for a local guild of thieves and other shadowy organizations.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Gaming Set', 'isAutoGranted': true },
+                { 'name': 'Vehicles (Land)', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Animal Handling', 'isAutoGranted': true },
+                { 'name': 'Stealth', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Black-Market Breeder",
+                "description": "You know how to find people who are always looking for stolen animals & vehicles, whether to provide for animal pit fights, or to supply some desperate rogues the means to get away faster on mounts during an illegal job. This contact not only provides you with information of what such animals & vehicles are in high demand in the area, but also offer to give you favors and information (DM choice) if you bring such animals & vehicles to them. Note: This is a variant of the Criminal Contact feature.",
+            },
+        },
+        {
+            'name': 'Knight',
+            "description": "You understand wealth, power, and privilege. You carry a noble title, and your family owns land, collects taxes, and wields significant political influence. You might be a pampered aristocrat unfamiliar with work or discomfort, a former merchant just elevated to the nobility, or a disinherited scoundrel with a disproportionate sense of entitlement. Or you could be an honest, hard-working landowner who cares deeply about the people who live and work on your land, keenly aware of your responsibility to them. Work with your DM to come up with an appropriate title and determine how much authority that title carries. A noble title doesn’t stand on its own—it’s connected to an entire family, and whatever title you hold, you will pass it down to your own children. Not only do you need to determine your noble title, but you should also work with the DM to describe your family and their influence on you. Is your family old and established, or was your title only recently bestowed? How much influence do they wield, and over what area? What kind of reputation does your family have among the other aristocrats of the region? How do the common people regard them? What’s your position in the family? Are you the heir to the head of the family? Have you already inherited the title? How do you feel about that responsibility? Or are you so far down the line of inheritance that no one cares what you do, as long as you don’t embarrass the family? How does the head of your family feel about your adventuring career? Are you in your family’s good graces, or shunned by the rest of your family? Does your family have a coat of arms? An insignia you might wear on a signet ring? Particular colors you wear all the time? An animal you regard as a symbol of your line or even a spiritual member of the family? These details help establish your family and your title as features of the world of the campaign. A knighthood is among the lowest noble titles in most societies, but it can be a path to higher status. If you wish to be a knight, choose the Retainers feature (see the sidebar) instead of the Position of Privilege feature. One of your commoner retainers is replaced by a noble who serves as your squire, aiding you in exchange for training on his or her own path to knighthood. Your two remaining retainers might include a groom to care for your horse and a servant who polishes your armor (and even helps you put it on). As an emblem of chivalry and the ideals of courtly love, you might include among your equipment a banner or other token from a noble lord or lady to whom you have given your heart — in a chaste sort of devotion. (This person could be your bond.)",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Gaming Set', 'isAutoGranted': true }
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'History', 'isAutoGranted': true },
+                { 'name': 'Persuasion', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Retainers",
+                "description": "You have the service of three retainers loyal to your family. These retainers can be attendants or messengers, and one might be a majordomo. Your retainers are commoners who can perform mundane tasks for you, but they do not fight for you, will not follow you into obviously dangerous areas (such as dungeons), and will leave if they are frequently endangered or abused.",
+            },
+        },
+        {
+            'name': 'Knight of the Order',
+            "description": "You belong to an order of knights who have sworn oaths to achieve a certain goal. The nature of this goal depends on the order you serve, but in your eyes it is without question a vital and honorable endeavor. Faerûn has a wide variety of knightly orders, all of which have a similar outlook concerning their actions and responsibilities. Though the term “knight” conjures ideas of mounted, heavily armored warriors of noble blood, most knightly orders in Faerûn don’t restrict their membership to such individuals. The goals and philosophies of the order are more important than the gear and fighting style of its members, and so most of these orders aren’t limited to fighting types, but are open to all sorts of folk who are willing to battle and die for the order’s cause. The “Knightly Orders of Faerûn” sidebar details several of the orders that are active at present and is designed to help inform your decision about which group you owe allegiance to. KNIGHTLY ORDERS OF FAERÛN: Many who rightfully call themselves “knight” earn that title as part of an order in service to a deity, such as Kelemvor’s Eternal Order or Mystra’s Knights of the Mystic Fire. Other knightly orders serve a government, royal family, or are the elite military of a feudal state, such as the brutal Warlock Knights of Vaasa. Other knighthoods are secular and nongovernmental organizations of warriors who follow a particular philosophy, or consider themselves a kind of extended family, similar to an order of monks. Although there are organizations, such as the Knights of the Shield, that use the trappings of knighthood without necessarily being warriors, most folk of Faerûn who hear the word “knight” think of a mounted warrior in armor beholden to a code. Below are a few knightly organizations. Knights of the Unicorn. The Knights of the Unicorn began as a fad of romantically minded sons and daughters of patriar families in Baldur’s Gate. On a lark, they took the unicorn goddess Lurue as their mascot and went on various adventures for fun. The reality of the dangers they faced eventually sank in, as did Lurue’s tenets. Over time the small group grew and spread, gaining a following in places as far as Cormyr. The Knights of the Unicorn are chivalric adventurers who follow romantic ideals: life is to be relished and lived with laughter, quests should be taken on a dare, impossible dreams should be pursued for the sheer wonder of their completion, and everyone should be praised for their strengths and comforted in their weaknesses.  Knights of Myth Drannor. Long ago, the Knights of Myth Drannor were a famous adventuring band, and Dove Falconhand, one of the famous Seven Sisters, was one of them. The band took its name to honor the great but fallen city, just as the new Knights of Myth Drannor do today. With the city once again in ruins, Dove Falconhand decided to reform the group with the primary goal of building alliances and friendship between the civilized races of the world and goodly people in order to combat evil. The Knights of Myth Drannor once again ride the roads of the Dalelands, and they’ve begun to spread to the lands beyond. Their members, each accepted by Dove herself, are above all valiant and honest.  Knights of the Silver Chalice. The Knights of the Silver Chalice was formed by edict of the demigod Siamorphe in Waterdeep a century ago. Siamorphe’s ethos is the nobility’s right and responsibility to rule, and the demigod is incarnated as a different noble mortal in each generation. By the decree of the Siamorphe at that time, the Knights of the Silver Chalice took it upon themselves to put a proper heir on the throne of Tethyr and reestablish order in that kingdom. Since then they have grown to be the most popular knighthood in Tethyr, a nation that has hosted many knighthoods in fealty to the crown.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Gaming Set', 'isAutoGranted': false },
+                { 'name': 'Musical Instrument', 'isAutoGranted': false },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Persuasion', 'isAutoGranted': true },
+                { 'name': 'Arcana', 'isAutoGranted': false },
+                { 'name': 'History', 'isAutoGranted': false },
+                { 'name': 'Nature', 'isAutoGranted': false },
+                { 'name': 'Religion', 'isAutoGranted': false },
+            ],
+            'backgroundFeature': {
+                "name": "Knightly Regard",
+                "description": "You receive shelter and succor from members of your knightly order and those who are sympathetic to its aims. If your order is a religious one, you can gain aid from temples and other religious communities of your deity. Knights of civic orders can get help from the community—whether a lone settlement or a great nation—that they serve, and knights of philosophical orders can find help from those they have aided in pursuit of their ideals, and those who share those ideals. This help comes in the form of shelter and meals, and healing when appropriate, as well as occasionally risky assistance, such as a band of local citizens rallying to aid a sorely pressed knight in a fight, or those who support the order helping to smuggle a knight out of town when he or she is being hunted unjustly.",
+            },
+        },
+        {
+            'name': 'Mercenary Veteran',
+            "description": "As a sell-sword who fought battles for coin, you’re well acquainted with risking life and limb for a chance at a share of treasure. Now, you look forward to fighting foes and reaping even greater rewards as an adventurer. Your experience makes you familiar with the ins and outs of mercenary life, and you likely have harrowing stories of events on the battlefield. You might have served with a large outfit such as the Zhentarim or the soldiers of Mintarn, or a smaller band of sell-swords, maybe even more than one. (See the “Mercenaries of the North” sidebar for a collection of possibilities.) Now you’re looking for something else, perhaps greater reward for the risks you take, or the freedom to choose your own activities. For whatever reason, you’re leaving behind the life of a soldier for hire, but your skills are undeniably suited for battle, so now you fight on in a different way.  MERCENARIES OF THE NORTH: Countless mercenary companies operate up and down the Sword Coast and throughout the North. Most are small-scale operations that employ a dozen to a hundred folk who offer security services, hunt monsters and brigands, or go to war in exchange for gold. Some organizations, such as the Zhentarim, Flaming Fist, and the nation of Mintarn have hundreds or thousands of members and can provide private armies to those with enough funds. A few organizations operating in the North are described below.  The Chill. The cold and mysterious Lurkwood serves as the home of numerous groups of goblinoids that have banded together into one tribe called the Chill. Unlike most of their kind, the Chill refrains from raiding the people of the North and maintains relatively good relations so that they can hire themselves out as warriors. Few city-states in the North are willing to field an army alongside the Chill, but several are happy to quietly pay the Chill to battle the Uthgardt, orcs, trolls of the Evermoors, and other threats to civilization.  Silent Rain. Consisting solely of elves, Silent Rain is a legendary mercenary company operating out of Evereska. Caring little for gold or fame, Silent Rain agrees only to jobs that either promote elven causes or involve destroying orcs, gnolls, and the like. Prospective employers must leave written word (in Elvish) near Evereska, and the Silent Rain sends a representative if interested.  The Bloodaxes. Founded in Sundabar nearly two centuries ago, the Bloodaxes were originally a group of dwarves outcast from their clans for crimes against the teachings of Moradin Soulforger. They began hiring out as mercenaries to whoever in the North would pay them. Since then the mercenary company has broadened its membership to other races, but every member is an exile, criminal, or misfit of some sort looking for a fresh start and a new family among the bold Bloodaxes.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Gaming Set', 'isAutoGranted': true },
+                { 'name': 'Vehicles (Land)', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Athletics', 'isAutoGranted': true },
+                { 'name': 'Persuasion', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Mercenary Life",
+                "description": "You know the mercenary life as only someone who has experienced it can. You are able to identify mercenary companies by their emblems, and you know a little about any such company, including the names and reputations of its commanders and leaders, and who has hired them recently. You can find the taverns and festhalls where mercenaries abide in any area, as long as you speak the language. You can find mercenary work between adventures sufficient to maintain a comfortable lifestyle (see “Practicing a Profession” under “Downtime Activities” in chapter 8 of the Player’s Handbook).",
+            },
+        },
+        {
+            'name': 'Mulmaster Aristocrat',
+            "description": "From your hilltop home, you have looked down (literally and perhaps figuratively) on the unwashed masses of Mulmaster for your entire life. Your fur-trimmed robes and training in the visual and performing arts mark you as wealthy and perhaps well-born; you are a member of the City of Danger's aristocracy. None of your immediate family members sits on the Council of Blades or is even a Zor or Zora...yet. Nevertheless, you are one of Mulmaster's elite, and whether you personally covet a higher standing or not, you are at home in the dance halls where the aristocracy gathers to plot, to scheme, to do business, to discuss the arts, and, above all, tosee, and to be seen.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Artisan\'s Tools', 'isAutoGranted': true },
+                { 'name': 'Musical Instrument', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Deception', 'isAutoGranted': true },
+                { 'name': 'Performance', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Highborn",
+                "description": "Mulmaster is run by and for its aristoracy. Every other class of citizen in the city defers to you, and even the priesthood, Soldiery, Hawks, and Cloaks treat you with deference. Other aristocrats and nobles accept you in their circles and likely know you or of you. Your connections can get you the ear of a Zor or Zora under the right circumstances. [Note: This feature is a variant of the Noble feature.]",
+            },
+        },
+        {
+            'name': 'Noble',
+            "description": "You understand wealth, power, and privilege. You carry a noble title, and your family owns land, collects taxes, and wields significant political influence. You might be a pampered aristocrat unfamiliar with work or discomfort, a former merchant just elevated to the nobility, or a disinherited scoundrel with a disproportionate sense of entitlement. Or you could be an honest, hard-working landowner who cares deeply about the people who live and work on your land, keenly aware of your responsibility to them. Work with your DM to come up with an appropriate title and determine how much authority that title carries. A noble title doesn’t stand on its own—it’s connected to an entire family, and whatever title you hold, you will pass it down to your own children. Not only do you need to determine your noble title, but you should also work with the DM to describe your family and their influence on you. Is your family old and established, or was your title only recently bestowed? How much influence do they wield, and over what area? What kind of reputation does your family have among the other aristocrats of the region? How do the common people regard them? What’s your position in the family? Are you the heir to the head of the family? Have you already inherited the title? How do you feel about that responsibility? Or are you so far down the line of inheritance that no one cares what you do, as long as you don’t embarrass the family? How does the head of your family feel about your adventuring career? Are you in your family’s good graces, or shunned by the rest of your family? Does your family have a coat of arms? An insignia you might wear on a signet ring? Particular colors you wear all the time? An animal you regard as a symbol of your line or even a spiritual member of the family? These details help establish your family and your title as features of the world of the campaign.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Gaming Set', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'History', 'isAutoGranted': true },
+                { 'name': 'Persuasion', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Position of Privilege",
+                "description": "Thanks to your noble birth, people are inclined to think the best of you. You are welcome in high society, and people assume you have the right to be wherever you are. The common folk make every effort to accommodate you and avoid your displeasure, and other people of high birth treat you as a member of the same social sphere. You can secure an audience with a local noble if you need to.",
+            },
+        },
+        {
+            'name': 'Outlander',
+            "description": "You grew up in the wilds, far from civilization and the comforts of town and technology. You’ve witnessed the migration of herds larger than forests, survived weather more extreme than any city-dweller could comprehend, and enjoyed the solitude of being the only thinking creature for miles in any direction. The wilds are in your blood, whether you were a nomad, an explorer, a recluse, a hunter-gatherer, or even a marauder. Even in places where you don’t know the specific features of the terrain, you know the ways of the wild.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Musical Instrument', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Athletics', 'isAutoGranted': true },
+                { 'name': 'Survival', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Wanderer",
+                "description": "You have an excellent memory for maps and geography, and you can always recall the general layout of terrain, settlements, and other features around you. In addition, you can find food and fresh water for yourself and up to five other people each day, provided that the land offers berries, small game, water, and so forth.",
+            },
+        },
+        {
+            'name': 'Phlan Insurgent',
+            "description": "The taking of Phlan by Vorgansharax is a clear memory in your mind. You were going about your everyday business when the green dragon's forces spilled out of the sewers and assailed your home. Many of Phlan's citizens, young and old alike, were captured, killed, or offered as tribute to the Maimed Virulence. You, yourself were one of those captured. But, either with the help of adventurers or through your own wits and sheer determination, you escaped. Rather than flee the region, you've chosen to stay and fight. Finding refuge outside the town and the deadly thicket surrounding it, you strike out against the Tears of the Virulence and their monstrous allies. You've learned to survive in dire and desperate circumstances, with supplies running low and the arrival of reinforcements uncertain. You've grown accustomed to acting under the cover of night, dealing what blows you can to avenge the friends and family you lost within the currently occupied Phlan. You will drive Vorgansharax out, or you die trying. Removed from your life as a townsperson, you've adapted to rough life in the wilds surrounding Phlan. The trade you practiced still influences your outlook, the manner in which you approach situations, and the way you contribute to the resistance movement against the Maimed Virulence. You can roll on the following table to determine what your occupation was before the fall, or choose one that best fits your character (select from either the general column or the specific column, but not both) Fisher /Stojanow River Worker; Hunter / Twilight Marsh Worker; Craftsperson /Mantor's Library Scribe;Priest/Priestess / Clergy of Ilmater; Cook / Laughing Goblin Server; City Watch / Black Fist Guard; Servant / House Sokol Retainer; Unskilled Laborer / Bay of Phlan Dockworker",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Artisan\'s Tools', 'isAutoGranted': true },
+                { 'name': 'Vehicles (Land)', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Stealth', 'isAutoGranted': true },
+                { 'name': 'Survival', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Guerrilla",
+                "description": "You've come to know the surrounding forests, streams, caves, and other natural features in which you can take refuge — or set up ambushes. You can quickly survey your environment for advantageous features. Additionally, you can scavenge around your natural surroundings to cobble together simple supplies (such as improvised torches, rope, patches of fabric, etc.) that are consumed after use. [Note: This feature is a variant of the Outlander feature.]",
+            },
+        },
+        {
+            'name': 'Phlan Refugee',
+            "description": "Gone are the happier days of walking into the Laughing Goblin Inn after a hard day’s labor. Everything has changed, and you are lucky to be alive. Back in Phlan you could count yourself among those street-wise folks who knew when to pay a bribe and who to work with to make a living.  Your ability to listen to the winds of change have saved you before, and this time they allowed you to be one of the lucky few who escaped Phlan with something more than just the shirt on your back. ",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Artisan\'s Tools', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Athletics', 'isAutoGranted': true },
+                { 'name': 'Insight', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Phlan Survivor",
+                "description": "Whatever your prior standing was, you are now one of the many refugees that have come to Mulmaster. You are able to find refuge with others from Phlan and those who sympathize with your plight. Within Mulmaster this means that you can find a place to bed down, recover, and hide from the watch with either other refugees from Phlan, or the Zhents within the ghettos. [Note: This feature is a variant of the Folk Hero feature.]",
+            },
+        },
+        {
+            'name': 'Pirate',
+            "description": "You sailed on a seagoing vessel for years. In that time, you faced down mighty storms, monsters of the deep, and those who wanted to sink your craft to the bottomless depths. Your first love is the distant line of the horizon, but the time has come to try your hand at something new. Discuss the nature of the ship you previously sailed with your Dungeon Master. Was it a merchant ship, a naval vessel, a ship of discovery, or a pirate ship? How famous (or infamous) is it? Is it widely traveled? Is it still sailing, or is it missing and presumed lost with all hands? What were your duties on board — boatswain, captain, navigator, cook, or some other position? Who were the captain and first mate? Did you leave your ship on good terms with your fellows, or on the run? You spent your youth under the sway of a dread pirate, a ruthless cutthroat who taught you how to survive in a world of sharks and savages. You’ve indulged in larceny on the high seas and sent more than one deserving soul to a briny grave. Fear and bloodshed are no strangers to you, and you’ve garnered a somewhat unsavory reputation in many a port town.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Navigator\'s Tools', 'isAutoGranted': true },
+                { 'name': 'Vehicles (Water)', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Athletics', 'isAutoGranted': true },
+                { 'name': 'Perception', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Bad Reputation",
+                "description": "No matter where you go, people are afraid of you due to your reputation. When you are in a civilized settlement, you can get away with minor criminal offenses, such as refusing to pay for food at a tavern or breaking down doors at a local shop, since most people will not report your activity to the authorities.",
+            },
+        },
+        {
+            'name': 'Sage',
+            "description": "You spent years learning the lore of the multiverse. You scoured manuscripts, studied scrolls, and listened to the greatest experts on the subjects that interest you. Your efforts have made you a master in your fields of study.",
+            'numberOfExtraLanguages': 2,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 0,
+            'toolOptions': [],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Arcana', 'isAutoGranted': true },
+                { 'name': 'History', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Researcher",
+                "description": "When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an almost inaccessible place, or that it simply cannot be found. Unearthing the deepest secrets of the multiverse can require an adventure or even a whole campaign.",
+            },
+        },
+        {
+            'name': 'Sailor',
+            "description": "You sailed on a seagoing vessel for years. In that time, you faced down mighty storms, monsters of the deep, and those who wanted to sink your craft to the bottomless depths. Your first love is the distant line of the horizon, but the time has come to try your hand at something new. Discuss the nature of the ship you previously sailed with your Dungeon Master. Was it a merchant ship, a naval vessel, a ship of discovery, or a pirate ship? How famous (or infamous) is it? Is it widely traveled? Is it still sailing, or is it missing and presumed lost with all hands? What were your duties on board — boatswain, captain, navigator, cook, or some other position? Who were the captain and first mate? Did you leave your ship on good terms with your fellows, or on the run?",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Navigator\'s Tools', 'isAutoGranted': true },
+                { 'name': 'Vehicles (Water)', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Athletics', 'isAutoGranted': true },
+                { 'name': 'Perception', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Ship's Passage",
+                "description": "When you need to, you can secure free passage on a sailing ship for yourself and your adventuring companions. You might sail on the ship you served on, or another ship you have good relations with (perhaps one captained by a former crewmate). Because you’re calling in a favor, you can’t be certain of a schedule or route that will meet your every need. Your Dungeon Master will determine how long it takes to get where you need to go. In return for your free passage, you and your companions are expected to assist the crew during the voyage.",
+            },
+        },
+        {
+            'name': 'Secret Identity',
+            "description": "Even though you are a non-human, despite Hillsfar's Great Law of Humanity, you continue to live in the City of Trade. You do so by maintaining a secret identity, forging documents, and wearing a disguise. Few, if any, know you aren't human. If you're a halfling or gnome, you pass as a little person or a child. If you're a half-elf, half-orc, or genasi, you disguise your non-human features. Other races use a combination of disguise and concealing clothing to hide. Your reasons for doing so are your own. Perhaps you're a dissident or the agent of a foreign power. Maybe you have a relationship with someone you cannot bear to leave. Regardless, this way of life has taken a heavy toll on you.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Disguise Kit', 'isAutoGranted': true },
+                { 'name': 'Forgery Kit', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Deception', 'isAutoGranted': true },
+                { 'name': 'Stealth', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Secret Identity",
+                "description": "You have created a secret identity that you use to conceal your true race and that offers a covering explanation for your presence in Hillsfar. In addition, you can forge documents, including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy Note: This feature is a variant of the Charlatan feature.",
+            },
+        },
+        {
+            'name': 'Shade Fanatic',
+            "description": "You grew up at a time when the wizards of Netheril were at war with the elves of Cormanthor. You recall sitting cross-legged hearing the stories of the glorious Thultanthar, also called the Shade Enclave and the City of Shade, and aspired to study there and maybe even did, for a time. Your dreams came crashing down a few years ago when Thultanthar fell from the sky upon Myth Drannor. You know that there was a Netherese Garrison stationed near Hillsfar and have heard rumors that its downfall came from traitors within the ranks.  You remain loyal to Netheril and seek other Shade loyalists and fanatics in the Cormanthor for-est and the areassurroundingHillsfar.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'Netherese', 'isAutoGranted': true },
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Forgery Kit', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Deception', 'isAutoGranted': true },
+                { 'name': 'Intimidation', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Secret Society",
+                "description": "You have a special way of communicating with others who feel the same way you do about the Shade.  When you enter a village or larger city you can identify contact who will give you information on those that would hinder your goals and those would help yousimply because of your desire to see the Shade Enclave return in all its glory.  [Note: This feature is a variant of the Criminal feature.]",
+            },
+        },
+        {
+            'name': 'Soldier',
+            "description": "War has been your life for as long as you care to remember. You trained as a youth, studied the use of weapons and armor, learned basic survival techniques, including how to stay alive on the battlefield. You might have been part of a standing national army or a mercenary company, or perhaps a member of a local militia who rose to prominence during a recent war. When you choose this background, work with your DM to determine which military organization you were a part of, how far through its ranks you progressed, and what kind of experiences you had during your military career. Was it a standing army, a town guard, or a village militia? Or it might have been a noble’s or merchant’s private army, or a mercenary company.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Gaming Set', 'isAutoGranted': true },
+                { 'name': 'Vehicles (Land)', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Athletics', 'isAutoGranted': true },
+                { 'name': 'Intimidation', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Military Rank",
+                "description": "You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized.",
+            },
+        },
+        {
+            'name': 'Spy',
+            "description": "At some point or another you secretly gathered information on a group of people or maybe one person. Maybe you were hired by a rival or political enemy, maybe you were searching for military information to help the opposing army, maybe you were trying to fulfil your own agenda, but regardless you are good at finding things and hiding your true self. You are used to living on the edge of danger, and doubly used to doubting people's intentions. Who did you spy for, yourself or some benefactor? Who or what did you spy on? What secrets did you uncover? Why did you stop? Or did you? ",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Gaming Set', 'isAutoGranted': true },
+                { 'name': 'Thieves\' Tools', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Deception', 'isAutoGranted': true },
+                { 'name': 'Stealth', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Echo of the Great Game",
+                "description": "You have learnt so much of techniques from years of stealth and also trickery about how to not draw attention to yourself. You have an utterly un extraordinary way of walk and also way of talk and also move are deliberately forgettable. Whenever while you’re wearing the common clothes, nobody can remember your face nor any special features of you too, unless until they actively make an effort to do so. You have In an extra advantage that is you know how to write in the special codes that can only be readable by the people who trained in deciphering of it.",
+            },
+        },
+        {
+            'name': 'Stojanow Prisoner',
+            "description": "'We need to leave, now!' Those words still haunt your dreams at night. When everyone was fleeing Phlan, you choose to stay. Whether out of an emotional attachment, or pursuit of riches, you made the decision that would affect the rest of your life. Food became scarcer for those without connections. You became a beggar and to stay alive you bartered information to any interested party with food or gold to spare. You were good at what you did, and thought you were invincible. That changed when you were captured by the Tears of Virulence, the soldiers of Vorgansharax, the Maimed Virulence, for selling secrets to those bent on overthrowing the dragon. They locked you in the cells of Stojanow Gate. The first weeks you hoped to stay alive. As the weeks turned into months and the interrogations continued, you began to pray for death.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Gaming Set', 'isAutoGranted': true },
+                { 'name': 'Thieves\' Tools', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Deception', 'isAutoGranted': true },
+                { 'name': 'Perception', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Ex-Convict",
+                "description": "The knowledge gained during your incarceration lets you gain insight into local guards and jailors. You know which will accept bribes, or look the other way for you. You can also seek shelter for yourself from authorities with other criminals in the area. [Note: This feature is a variant of the Courtier feature.]",
+            },
+        },
+        {
+            'name': 'Ticklebelly Nomad',
+            "description": "You were born into a nomadic tribe that called the Ticklebelly Hills home. You migrated from location to location, living off the land with your tribe. The tribewould seasonally travel south into the Grass Sea and the Giant’s Cairn, north into the Dragonspine Mountains, and even occasionally east across the Stojanow River to the borders of the Quivering forest.In your migrations, your people have come to know the stone giant tribes that populate the Giant’s Cairn. The dragon cultists came to the hills one day—magic-users wearing purple and riding horrid beasts, black-clad warriors wearing wicked masks, and even soldiers from the nearby town of Phlan. Then the dragon called Vorgansharax arrived and laired in the hills, causing horrid thickets to grow and animals to act unusually. The cultists began raiding nomad camps for victims to offer to the wyrm. Eventually, the dragon moved on to attack Phlan, but life was never again the same for the nomads of the Ticklebelly Hills.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'Giant', 'isAutoGranted': true }
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Herbalism Kit', 'isAutoGranted': true }
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Animal Handling', 'isAutoGranted': true },
+                { 'name': 'Nature', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "At Home in the Wild",
+                "description": "The wilderness is your home and you are comfortable dwelling in it. You can find a place to hide, rest, or recuperate when out in the wild. This place of rest is secure enough to conceal you from most natural threats. Threats that are supernatural, magical, or are actively seeking you out might do so with difficulty depending on the nature of the threat (as determined by the DM). However, this feature doesn’t shield or conceal you from scrying, mental probing, nor from threats that don’t necessarily require the five senses to find you.[Note:This feature is a variant of the Folk Hero feature.]",
+            },
+        },
+        {
+            'name': 'Trade Sheriff',
+            "description": "You are one of the many people that make sure the trade routes are clear at ALL times. You assure that the Great Law of Trade is followed at all costs. You work by yourself or in groups to quell bandits and brigands who might stop trade routes from going through. You investigate potential ambushes and possible rumors as to someone wanting to rob or stop caravans. You are as much an investigator as you are law enforcement. You are able to go into a town/village around the Hillsfar area and find a contact that is willing to give you information from rumor to fact. This sometimes comes at a cost of a minor bribe of 1-9 silver pieces.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'Elvish', 'isAutoGranted': true }
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Thieves\' Tools', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Investigation', 'isAutoGranted': true },
+                { 'name': 'Persuasion', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Investigative Services",
+                "description": "You are part of a small force outside of Hillsfar. You have a special way of communicating with others and they seem to be at ease around you. You can invoke your rank to allow you access to a crime scene or to requisition equipment or horses on a temporary basis. When you enter a town or village around Hillsfar you can identify a contact who will give you information on the local rumors and would help you simply because of your desire to get answers and information for anyone wanting to disrupt trade. Note: This feature is a variant of the Soldier feature.",
+            },
+        },
+        {
+            'name': 'Urban Bounty Hunter',
+            "description": "Before you became an adventurer, your life was already full of conflict and excitement, because you made a living tracking down people for pay. Unlike some people who collect bounties, though, you aren’t a savage who follows quarry into or through the wilderness. You’re involved in a lucrative trade, in the place where you live, that routinely tests your skills and survival instincts. What’s more, you aren’t alone, as a bounty hunter in the wild would be: you routinely interact with both the criminal subculture and other bounty hunters, maintaining contacts in both areas to help you succeed. You might be a cunning thief-catcher, prowling the rooftops to catch one of the myriad burglars of the city. Perhaps you are someone who has your ear to the street, aware of the doings of thieves’ guilds and street gangs. You might be a “velvet mask” bounty hunter, one who blends in with high society and noble circles in order to catch the criminals that prey on the rich, whether pickpockets or con artists. The community where you plied your trade might have been one of Faerûn’s great metropolises, such as Waterdeep or Baldur’s Gate, or a less populous location, perhaps Luskan or Yartar — any place that’s large enough to have a steady supply of potential quarries. As a member of an adventuring party, you might find it more difficult to pursue a personal agenda that doesn’t fit with the group’s objectives — but on the other hand, you can take down much more formidable targets with the help of your companions.",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Gaming Set', 'isAutoGranted': false },
+                { 'name': 'Musical Instrument', 'isAutoGranted': false },
+                { 'name': 'Thieves\' Tools', 'isAutoGranted': false },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Deception', 'isAutoGranted': false },
+                { 'name': 'Insight', 'isAutoGranted': false },
+                { 'name': 'Persuasion', 'isAutoGranted': false },
+                { 'name': 'Stealth', 'isAutoGranted': false },
+            ],
+            'backgroundFeature': {
+                "name": "Ear to the Ground",
+                "description": "You are in frequent contact with people in the segment of society that your chosen quarries move through. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area.",
+            },
+        },
+        {
+            'name': 'Urchin',
+            "description": "You grew up on the streets alone, orphaned, and poor. You had no one to watch over you or to provide for you, so you learned to provide for yourself. You fought fiercely over food and kept a constant watch out for other desperate souls who might steal from you. You slept on rooftops and in alleyways, exposed to the elements, and endured sickness without the advantage of medicine or a place to recuperate. You’ve survived despite all odds, and did so through cunning, strength, speed, or some combination of each. You begin your adventuring career with enough money to live modestly but securely for at least ten days. How did you come by that money? What allowed you to break free of your desperate circumstances and embark on a better life?",
+            'numberOfExtraLanguages': 0,
+            'languageOptions': [],
+            'numberOfExtraTools': 2,
+            'toolOptions': [
+                { 'name': 'Disguise Kit', 'isAutoGranted': true },
+                { 'name': 'Thieves\' Tools', 'isAutoGranted': true },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Sleight of Hand', 'isAutoGranted': true },
+                { 'name': 'Stealth', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "City Secrets",
+                "description": "You know the secret patterns and flow to cities and can find passages through the urban sprawl that others would miss. When you are not in combat, you (and companions you lead) can travel between any two locations in the city twice as fast as your speed would normally allow.",
+            },
+        },
+        {
+            'name': 'Uthgardt Tribe Member',
+            "description": "Though you might have only recently arrived in civilized lands, you are no stranger to the values of cooperation and group effort when striving for supremacy. You learned these principles, and much more, as a member of an Uthgardt tribe. Your people have always tried to hold to the old ways. Tradition and taboo have kept the Uthgardt strong while the kingdoms of others have collapsed into chaos and ruin. But for the last few generations, some bands among the tribes were tempted to settle, make peace, trade, and even to build towns. Perhaps this is why Uthgar chose to raise up the totems among the people as living embodiments of his power. Perhaps they needed a reminder of who they were and from whence they came. The Chosen of Uthgar led bands back to the old ways, and most of your people abandoned the soft ways of civilization. BARBARIAN TRIBES OF FAERÛN: Though this section details the Uthgardt specifically, either it or the outlander background from the Player’s Handbook can be used for a character whose origin lies with one of the other barbarian tribes in Faerûn. You might be a fair-haired barbarian of the Reghed, dwelling in the shadow of the Reghed Glacier in the far North near Icewind Dale. You might also be of the nomadic Rashemi, noted for their savage berserkers and their masked witches. Perhaps you hail from one of the wood elf tribes in the Chondalwood, or the magic-hating human tribes of the sweltering jungles of Chult. You might have grown up in one of the tribes that had decided to settle down, and now that they have abandoned that path, you find yourself adrift. Or you might come from a segment of the Uthgardt that adheres to tradition, but you seek to bring glory to your tribe by achieving great things as a formidable adventurer. See the “Uthgardt Lands” section of chapter 2 for details on each tribe’s territory and its activities that will help you choose your affiliation.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Artisan\'s Tools', 'isAutoGranted': false },
+                { 'name': 'Musical Instrument', 'isAutoGranted': false },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'Athletics', 'isAutoGranted': true },
+                { 'name': 'Survival', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Uthgardt Heritage",
+                "description": "You have an excellent knowledge of not only your tribe’s territory, but also the terrain and natural resources of the rest of the North. You are familiar enough with any wilderness area that you find twice as much food and water as you normally would when you forage there. Additionally, you can call upon the hospitality of your people, and those folk allied with your tribe, often including members of druid circles, tribes of nomadic elves, the Harpers, and the priesthoods devoted to the gods of the First Circle.",
+            },
+        },
+        {
+            'name': 'Waterdhavian Noble',
+            "description": "You are a scion of one of the great noble families of Waterdeep. Human families who jealously guard their privilege and place in the City of Splendors, Waterdhavian nobles have a reputation across Faerûn for being eccentric, spoiled, venal, and, above all else, rich. Whether you are a shining example of the reason for this reputation or one who proves the rule by being an exception, people expect things of you when they know your surname and what it means. Your reasons for taking up adventuring likely involve your family in some way: Are you the family rebel, who prefers delving in filthy dungeons to sipping zzar at a ball? Or have you taken up sword or spell on your family’s behalf, ensuring that they have someone of renown to see to their legacy? Work with your DM to come up with the family you are part of —there are around seventy-five lineages in Waterdeep, each with its own financial interests, specialties, and schemes. You might be part of the main line of your family, possibly in line to become its leader one day. Or you might be one of any number of cousins, with less prestige but also less responsibility.",
+            'numberOfExtraLanguages': 1,
+            'languageOptions': [
+                { 'name': 'ANY', 'isAutoGranted': false },
+            ],
+            'numberOfExtraTools': 1,
+            'toolOptions': [
+                { 'name': 'Gaming Set', 'isAutoGranted': false },
+                { 'name': 'Musical Instrument', 'isAutoGranted': false },
+            ],
+            'numberOfSkillsGranted': 2,
+            'skillOptions': [
+                { 'name': 'History', 'isAutoGranted': true },
+                { 'name': 'Persuasion', 'isAutoGranted': true },
+            ],
+            'backgroundFeature': {
+                "name": "Kept in Style",
+                "description": "While you are in Waterdeep or elsewhere in the North, your house sees to your everyday needs. Your name and signet are sufficient to cover most of your expenses; the inns, taverns, and festhalls you frequent are glad to record your debt and send an accounting to your family’s estate in Waterdeep to settle what you owe. This advantage enables you to live a comfortable lifestyle without having to pay 2 gp a day for it, or reduces the cost of a wealthy or aristocratic lifestyle by that amount. You may not maintain a less affluent lifestyle and use the difference as income—the benefit is a line of credit, not an actual monetary reward.",
+            },
+        },
+    ],
+    'EQUIPMENT': {
+        'ARTISAN_TOOLS': [
+            "Alchemist’s supplies",
+            "Brewer’s supplies",
+            "Calligrapher's Supplies",
+            "Carpenter’s tools",
+            "Cartographer’s tools",
+            "Cobbler’s tools",
+            "Cook’s utensils",
+            "Glassblower’s tools",
+            "Jeweler’s tools",
+            "Leatherworker’s tools",
+            "Mason’s tools",
+            "Painter’s supplies",
+            "Potter’s tools",
+            "Smith’s tools",
+            "Tinker’s tools",
+            "Weaver’s tools",
+            "Woodcarver’s tools",
+        ],
+        'MUSICAL_INSTRUMENTS': [
+            "Bagpipes",
+            "Drum",
+            " Dulcimer ",
+            "Flute",
+            "Lute",
+            "Lyre",
+            "Horn",
+            "Pan Flute",
+            "Shawm",
+            "Viol",
+        ],
+        'MISC': [
+            "Navigator’s tools",
+            "Thieves’ tools",
+            "Vehicles (land or water)",
+        ]
+    },
 }
 
 
 export default AppDictionary;
+
