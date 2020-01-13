@@ -30,7 +30,6 @@ class CharDescription extends React.Component {
 
             for (const bg of this.state.backgroundData) {
                 if (chosenBgName == bg.name) {
-                    debugger;
                     this.setState({
                         selectedBg: bg,
                     });
@@ -38,6 +37,12 @@ class CharDescription extends React.Component {
                 }
             }
         }
+
+        this.handleToolSelection = event => {
+
+        
+        }
+        
 
         this.buildHtmlChunks = () => {
 

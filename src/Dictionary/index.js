@@ -1076,114 +1076,114 @@ const AppDictionary = {
     ],
     'LANGUAGES': {
         'ALL': [
-        {
-            'name': 'Abyssal',
-            'script': 'Infernal',
-            'typicalSpeakers': 'Demons, chaotic evil outsiders',
-        },
-        {
-            'name': 'Aquan',
-            'script': 'Elvish',
-            'typicalSpeakers': 'Water-based creatures',
-        },
-        {
-            'name': 'Auran',
-            'script': 'Draconic',
-            'typicalSpeakers': 'Air-based creatures'
-        },
-        {
-            'name': 'Celestial',
-            'script': 'Celestial',
-            'typicalSpeakers': 'Celestials (angels, devas)',
-        },
-        {
-            'name': 'Common',
-            'script': 'Common',
-            'typicalSpeakers': 'Humans, halflings, half-elves, half-orcs'
-        },
-        {
-            'name': 'Deep Speech',
-            'script': '--',
-            'typicalSpeakers': 'Mind flayers, beholders',
-        },
-        {
-            'name': 'Draconic',
-            'script': 'Draconic',
-            'typicalSpeakers': 'Kobolds, troglodytes, lizardfolk, dragons, dragonborn',
-        },
-        {
-            'name': 'Dwarvish',
-            'script': 'Dwarvish',
-            'typicalSpeakers': 'Dwarves'
-        },
-        {
-            'name': 'Elvish',
-            'script': 'Elvish',
-            'typicalSpeakers': 'Elves'
-        },
-        {
-            'name': 'Giant',
-            'script': 'Dwarvish',
-            'typicalSpeakers': 'Ogres, giants',
-        },
-        {
-            'name': 'Gnomish',
-            'script': 'Dwarvish',
-            'typicalSpeakers': 'Gnomes',
-        },
-        {
-            'name': 'Goblin',
-            'script': 'Dwarvish',
-            'typicalSpeakers': 'Goblinoids, hobgoblins, bugbears',
-        },
-        {
-            'name': 'Gnoll',
-            'script': 'Common',
-            'typicalSpeakers': 'Gnolls'
-        },
-        {
-            'name': 'Halfling',
-            'script': 'Common',
-            'typicalSpeakers': 'Halflings'
-        },
-        {
-            'name': 'Ignan',
-            'script': 'Draconic',
-            'typicalSpeakers': 'Fire-based creatures',
-        },
-        {
-            'name': 'Infernal',
-            'script': 'Infernal',
-            'typicalSpeakers': 'Devils, Tieflings',
-        },
-        {
-            'name': 'Orc',
-            'script': 'Dwarvish',
-            'typicalSpeakers': 'Orcs',
-        },
-        {
-            'name': 'Primordial',
-            'script': 'Dwarvish',
-            'typicalSpeakers': 'Elementals',
-        },
-        {
-            'name': 'Sylvan',
-            'script': 'Elvish',
-            'typicalSpeakers': 'Fey creatures (dryads, brownies, leprechauns)',
-        },
-        {
-            'name': 'Terran',
-            'script': 'Dwarvish',
-            'typicalSpeakers': 'Xorns and other earth-based creatures',
-        },
-        {
-            'name': 'Undercommon',
-            'script': 'Elvish',
-            'typicalSpeakers': 'Drow, Underdark traders',
-        },
+            {
+                'name': 'Abyssal',
+                'script': 'Infernal',
+                'typicalSpeakers': 'Demons, chaotic evil outsiders',
+            },
+            {
+                'name': 'Aquan',
+                'script': 'Elvish',
+                'typicalSpeakers': 'Water-based creatures',
+            },
+            {
+                'name': 'Auran',
+                'script': 'Draconic',
+                'typicalSpeakers': 'Air-based creatures'
+            },
+            {
+                'name': 'Celestial',
+                'script': 'Celestial',
+                'typicalSpeakers': 'Celestials (angels, devas)',
+            },
+            {
+                'name': 'Common',
+                'script': 'Common',
+                'typicalSpeakers': 'Humans, halflings, half-elves, half-orcs'
+            },
+            {
+                'name': 'Deep Speech',
+                'script': '--',
+                'typicalSpeakers': 'Mind flayers, beholders',
+            },
+            {
+                'name': 'Draconic',
+                'script': 'Draconic',
+                'typicalSpeakers': 'Kobolds, troglodytes, lizardfolk, dragons, dragonborn',
+            },
+            {
+                'name': 'Dwarvish',
+                'script': 'Dwarvish',
+                'typicalSpeakers': 'Dwarves'
+            },
+            {
+                'name': 'Elvish',
+                'script': 'Elvish',
+                'typicalSpeakers': 'Elves'
+            },
+            {
+                'name': 'Giant',
+                'script': 'Dwarvish',
+                'typicalSpeakers': 'Ogres, giants',
+            },
+            {
+                'name': 'Gnomish',
+                'script': 'Dwarvish',
+                'typicalSpeakers': 'Gnomes',
+            },
+            {
+                'name': 'Goblin',
+                'script': 'Dwarvish',
+                'typicalSpeakers': 'Goblinoids, hobgoblins, bugbears',
+            },
+            {
+                'name': 'Gnoll',
+                'script': 'Common',
+                'typicalSpeakers': 'Gnolls'
+            },
+            {
+                'name': 'Halfling',
+                'script': 'Common',
+                'typicalSpeakers': 'Halflings'
+            },
+            {
+                'name': 'Ignan',
+                'script': 'Draconic',
+                'typicalSpeakers': 'Fire-based creatures',
+            },
+            {
+                'name': 'Infernal',
+                'script': 'Infernal',
+                'typicalSpeakers': 'Devils, Tieflings',
+            },
+            {
+                'name': 'Orc',
+                'script': 'Dwarvish',
+                'typicalSpeakers': 'Orcs',
+            },
+            {
+                'name': 'Primordial',
+                'script': 'Dwarvish',
+                'typicalSpeakers': 'Elementals',
+            },
+            {
+                'name': 'Sylvan',
+                'script': 'Elvish',
+                'typicalSpeakers': 'Fey creatures (dryads, brownies, leprechauns)',
+            },
+            {
+                'name': 'Terran',
+                'script': 'Dwarvish',
+                'typicalSpeakers': 'Xorns and other earth-based creatures',
+            },
+            {
+                'name': 'Undercommon',
+                'script': 'Elvish',
+                'typicalSpeakers': 'Drow, Underdark traders',
+            },
 
 
-    ],
+        ],
         'STANDARD': [
             {
                 'name': 'Aquan',
@@ -1249,7 +1249,7 @@ const AppDictionary = {
                 'name': 'Terran',
                 'script': 'Dwarvish',
                 'typicalSpeakers': 'Xorns and other earth-based creatures',
-            },    
+            },
         ],
         'EXOTIC': [
             {
@@ -1292,10 +1292,10 @@ const AppDictionary = {
                 'script': 'Elvish',
                 'typicalSpeakers': 'Drow, Underdark traders',
             },
-    
-    
+
+
         ],
-},
+    },
     'SKILLS': {
         ByAttrDep: {
             'Strength': [
@@ -2703,7 +2703,11 @@ const AppDictionary = {
             "Navigator’s tools",
             "Thieves’ tools",
             "Vehicles (land or water)",
-        ]
+        ],
+        'GAMING_SET': [
+            "Dice Set",
+            "Playing Card Set",
+        ],
     },
 }
 
