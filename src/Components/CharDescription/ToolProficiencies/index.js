@@ -126,7 +126,7 @@ function _getValidOptions(tools, extraEquipment) {
 function _areToolOptionChoicesRequired(toolOptsArray) {
 
     for (const tool of toolOptsArray) {
-        debugger;
+        
         if (_checkForNotAutoGrantedOrExceptionStrings(tool)) {
             return true;
         }
