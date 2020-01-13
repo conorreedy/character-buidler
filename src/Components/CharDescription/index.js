@@ -202,7 +202,8 @@ class CharDescription extends React.Component {
                     <div>Background</div>
                     <div>
                         <select className="form-control" onChange={this.handleBgSelection}>
-                            <option value="" key="" selected>Choose a Background</option>
+                            <option value="" selected>-- Choose a Background ---</option>
+                            <option value="">Custom Background</option>
                             {
                                 this.state.backgroundData.map(bg => {
                                     return <option key={bg.name}>{bg.name}</option>

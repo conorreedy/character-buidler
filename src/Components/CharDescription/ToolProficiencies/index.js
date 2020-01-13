@@ -1,12 +1,21 @@
 import React from "react";
 import "./ToolProficiencies.css";
+import SkillProficienciesSelector from "../SkillProficiencies";
 
-// TODO - need to integrate the actual musical instruments and artisan tools
-// this can either be done 2 ways:
-    // 1. replace the general 'musical instrument' option with its list 
-    // 2. just add a couple more dropdowns. 
-// 1 is a PITA because eventually we'll need to filter the rest of the type when selected, but 2 is prob more annoying to user
-// note: the data is passed in under this.props.equipment
+// TODO - 
+// 1. need to integrate the actual musical instruments and artisan tools
+//     this can either be done 2 ways:
+//         * replace the general 'musical instrument' option with its list 
+//         * just add a couple more dropdowns. 
+//     1 is a PITA because eventually we'll need to filter the rest of the type when selected, but 2 is prob more annoying to user
+//     note: the data is passed in under this.props.equipment
+// 2. need to add custom rules
+//     put this in a separate component
+//     OPTIONS:
+//          * 2 skills, 2 languages
+//          * 2 skills, 2 tools
+//          * 2 skills, 1 tool, 1 language
+//          + any background feature
 
 class ToolProficienciesSelector extends React.Component {
     constructor(props) {
