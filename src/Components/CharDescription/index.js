@@ -5,6 +5,14 @@ import AppDictionary from '../../Dictionary';
 import SkillProficienciesSelector from './SkillProficiencies';
 import ToolProficienciesSelector from './ToolProficiencies';
 import LanguageSelector from './LanguageSelections';
+import CustomBgSelector from './CustomBg';
+import { unstable_batchedUpdates } from 'react-dom';
+
+// TODO :
+// 1. eventually - we should have the related dropdowns update on selection 
+// - eg - on selection of skill, remove that skill from the other related dropdown
+// - eg - on selection of a higher order item, like instruments - remove that subset of options from array,
+// this is not MVP - this will be a PITA 
 
 
 class CharDescription extends React.Component {
@@ -15,6 +23,7 @@ class CharDescription extends React.Component {
             skillsData: AppDictionary.SKILLS,
             languagesData: AppDictionary.LANGUAGES,
             backgroundData: AppDictionary.BACKGROUNDS,
+            bgFeatures: AppDictionary.BACKGROUND_FEATURES,
             equipment: AppDictionary.EQUIPMENT,
             selectedBg: false,
         }
@@ -28,6 +37,13 @@ class CharDescription extends React.Component {
                 })
             }
 
+            if (chosenBgName == 'customBg') {
+                this.setState({
+                    selectedBg: chosenBgName,
+                })
+                return;
+            }
+
             for (const bg of this.state.backgroundData) {
                 if (chosenBgName == bg.name) {
                     this.setState({
@@ -38,18 +54,27 @@ class CharDescription extends React.Component {
             }
         }
 
-        this.handleToolSelection = event => {
-
-        
-        }
-        
-
         this.buildHtmlChunks = () => {
 
             let htmlBlockForUserSelectedBackground;
 
             if (this.state.selectedBg == false) {
                 return htmlBlockForUserSelectedBackground = <div></div>;
+            }
+
+            // make sure to return early in this condition state since the bg will no longer
+            // be false, but it will not be the full object
+            if (this.state.selectedBg == 'customBg') {
+
+                htmlBlockForUserSelectedBackground = (
+                    <CustomBgSelector
+                        skillsData={this.state.skillsData}
+                        languageData={this.state.languagesData}
+                        equipment={this.state.equipment}
+                        bgFeatures={this.state.bgFeatures}></CustomBgSelector>
+                )
+
+                return htmlBlockForUserSelectedBackground;
             }
 
             const skillsChunk = () => {
@@ -190,25 +215,60 @@ class CharDescription extends React.Component {
             return htmlBlockForUserSelectedBackground;
         }
 
+        this.buildPhysicalCharacteristicsChunk = () => {
+            return (
+                <div className="space-sequence-20">
+                    <div><strong>Physical Characteristics:</strong></div>
+                    <div>
+                        <div><strong>Hair</strong></div>
+                        <div><input className="form-control"></input></div>
+                    </div>
+                    <div>
+                        <div><strong>Skin</strong></div>
+                        <div><input className="form-control"></input></div>
+                    </div>
+                    <div>
+                        <div><strong>Eyes</strong></div>
+                        <div><input className="form-control"></input></div>
+                    </div>
+                    <div>
+                        <div><strong>Height</strong></div>
+                        <div><input className="form-control"></input></div>
+                    </div>
+                    <div>
+                        <div><strong>Weight</strong></div>
+                        <div><input className="form-control"></input></div>
+                    </div>
+                    <div>
+                        <div><strong>Age</strong></div>
+                        <div><input className="form-control"></input></div>
+                    </div>
+                    <div>
+                        <div><strong>Gender</strong></div>
+                        <div><input className="form-control"></input></div>
+                    </div>
+                </div>
+            )
+        }
     }
 
     render() {
         const selectedBackgroundHtmlChunk = this.buildHtmlChunks();
-
+        const physicalCharacteristicsHtmlChunk = this.buildPhysicalCharacteristicsChunk();
         return (
             <div className="space-sequence-20">
                 <div>
                     <div>
-                        <label>Character Name</label>
+                        <div><strong>Character Name:</strong></div>
                         <input className="form-control"></input>
                     </div>
                 </div>
                 <div>
-                    <div>Background</div>
+                    <div><strong>Background:</strong></div>
                     <div>
                         <select className="form-control" onChange={this.handleBgSelection}>
                             <option value="" selected>-- Choose a Background ---</option>
-                            <option value="">Custom Background</option>
+                            <option value="customBg">Custom Background</option>
                             {
                                 this.state.backgroundData.map(bg => {
                                     return <option key={bg.name}>{bg.name}</option>
@@ -218,8 +278,10 @@ class CharDescription extends React.Component {
                     </div>
                 </div>
 
-                { selectedBackgroundHtmlChunk }
-                
+                {selectedBackgroundHtmlChunk}
+
+                {physicalCharacteristicsHtmlChunk}
+
             </div>
         )
     }

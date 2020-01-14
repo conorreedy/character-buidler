@@ -1,27 +1,6 @@
 import React from "react";
 import "./ToolProficiencies.css";
 
-// TODO - 
-// 1. need to add custom rules
-//     put this in a separate component
-//     OPTIONS:
-//          * 2 skills, 2 languages
-//          * 2 skills, 2 tools
-//          * 2 skills, 1 tool, 1 language
-//          + any background feature
-// 2. add basic input details
-        // Alignment, 
-        // Gender,
-        // Eyes,
-        // Size: Medium,
-        // Height,
-        // Faith,
-        // Hair,
-        // Skin,
-        // Age,
-        // Weight,
-
-
 class ToolProficienciesSelector extends React.Component {
     constructor(props) {
 
