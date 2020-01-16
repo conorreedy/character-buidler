@@ -1,3 +1,33 @@
+### basic character creation
+
+#### race selection:
+  Includes races, subraces, asi bumps, and racial features
+
+#### class selection:
+
+#### attribute score selection:
+
+Options: 
+  
+* Point Buy
+* Standard Array
+* Manual 
+
+#### background selection:
+#### equipment & item adding:
+#### character sheet generation:
+
+
+
+
+
+
+
+
+
+
+--------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

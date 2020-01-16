@@ -1,0 +1,70 @@
+
+/* font stuff */
+.content-wrap .asi-heading {
+    font-weight: 600;
+    font-family: Roboto,sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.content-wrap .asi-points-val-total {
+    font-size: 20px;
+    color: #353535;
+    font-weight: 600;
+}
+
+
+/* table row */
+.content-wrap .big-ole-table-outer {
+    display: table;
+    width: 100%;
+}
+
+.content-wrap .big-ole-table-outer .tbl-row {
+    display: table-row;
+}
+
+.content-wrap .big-ole-table-outer .tbl-row .tbl-cell {
+    display: table-cell;
+    padding: 0 10px;
+}
+
+.asi-val-select-outer {
+    margin-top: 10px;
+}
+
+
+
+/* attribute display blocks */
+.attr-block {
+    max-width: 100%;
+    border: solid 1px #ddd;
+}
+
+.attr-block .attr-title-bar {
+    background: #272727;
+    padding: 10px;
+    color: #efefef;
+}
+.attr-block .attr-content .attr-row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-top: solid 1px #ddd;
+    line-height: 2;
+}
+
+.attr-block .attr-content .attr-row .label-left, .attr-block .attr-content .attr-row .score {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/* .attr-block .attr-content .attr-row .label-left {} */
+
+.attr-block .attr-content .attr-row .score {
+    background: #FAF8F7;
+    font-weight: 700;
+    font-size: 22px;
+}
