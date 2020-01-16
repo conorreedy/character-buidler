@@ -119,6 +119,28 @@ const AppDictionary = {
         },
         {
             id: 4,
+            name: 'Centaur',
+            summary: 'The upper bodies of centaurs are comparable to human torsos in size, and their lower equine bodies average about 4 feet tall at the withers. They fill similar roles as cavalry warriors, messengers, outriders, and scouts.',
+            asis: [
+                { 'Str': 2 },
+                { 'Wis': 1 },
+            ],
+            movement: 40,
+            size: 'Centaurs stand between 6 and 7 feet tall, with their equine bodies reaching about 4 feet at the withers. Your size is Medium.',
+            languages: ['Common', 'Sylvan'],
+            lifespan: 'Centaurs mature and age at about the same rate as humans.',
+            alignment: 'Centaurs are inclined toward neutrality. Those who join the Selesnya are more often neutral good, while those who join the Gruul are typically chaotic neutral.',
+            features: [
+                { 'Fey': 'Your creature type is fey, rather than humanoid.' },
+                { 'Charge': 'If you move at least 30 feet straight toward a target and then hit it with a melee weapon attack on the same turn, you can immediately follow that attack with a bonus action, making one attack against the target with your hooves.' },
+                { 'Hooves': 'Your hooves are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.' },
+                { 'Equine Build': 'You count as one size larger when determining your carrying capacity and the weight you can push or drag. In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot.' },
+                { 'Survivor': 'You have proficiency in one of the following skills of your choice: Animal Handling, Medicine, Nature, or Survival.' },
+            ],
+            subraces: [],
+        },
+        {
+            id: 5,
             name: 'Changeling',
             summary: 'A changeling can shift its face and form with a thought as a form of artistic and emotional expression.',
             asis: [
@@ -137,7 +159,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 5,
+            id: 6,
             name: 'Dragonborn',
             summary: 'Dragonborn look very much like dragons standing erect in humanoid form, though they lack wings or a tail.',
             asis: [
@@ -157,7 +179,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 6,
+            id: 7,
             name: 'Dwarf',
             summary: 'Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal.',
             asis: [
@@ -227,7 +249,7 @@ const AppDictionary = {
             ]
         },
         {
-            id: 7,
+            id: 8,
             name: 'Elf',
             summary: 'Elves are a magical people of otherworldly grace, living in the world but not entirely part of it.',
             asis: [
@@ -353,7 +375,7 @@ const AppDictionary = {
             ]
         },
         {
-            id: 8,
+            id: 9,
             name: 'Firbolg',
             summary: 'Firbolg tribes cloister in remote forest strongholds, preferring to spend their days in quiet harmony with the woods.',
             asis: [
@@ -375,7 +397,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 9,
+            id: 10,
             name: 'Genasi',
             summary: 'Genasi carry the power of the elemental planes of air, earth, fire, and water in their blood.',
             asis: [
@@ -442,7 +464,7 @@ const AppDictionary = {
             ]
         },
         {
-            id: 10,
+            id: 11,
             name: 'Gith',
             summary: 'Long ago, the gith rose up to overthrow the mind flayers that held them in servitude, but two factions arose that remain bitter enemies today.',
             asis: [
@@ -483,7 +505,7 @@ const AppDictionary = {
             ]
         },
         {
-            id: 11,
+            id: 12,
             name: 'Gnome',
             summary: 'A gnome’s energy and enthusiasm for living shines through every inch of his or her tiny body.',
             asis: [
@@ -553,7 +575,7 @@ const AppDictionary = {
             ]
         },
         {
-            id: 12,
+            id: 13,
             name: 'Goblin',
             summary: 'Goblins occupy an uneasy place in a dangerous world, and they react by lashing out at any creatures they believe they can bully.',
             asis: [
@@ -573,7 +595,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 13,
+            id: 14,
             name: 'Goliath',
             summary: 'Strong and reclusive, every day brings a new challenge to a goliath.',
             asis: [
@@ -594,7 +616,7 @@ const AppDictionary = {
             subraces: [],
         },
         {
-            id: 14,
+            id: 15,
             name: 'Half-elf',
             summary: 'Half-elves combine what some say are the best qualities of their elf and human parents.',
             asis: [
@@ -615,7 +637,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 15,
+            id: 16,
             name: 'Half-orc',
             summary: 'Half-orcs’ grayish pigmentation, sloping foreheads, jutting jaws, prominent teeth, and towering builds make their orcish heritage plain for all to see.',
             asis: [
@@ -636,7 +658,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 16,
+            id: 17,
             name: 'Halfling',
             summary: 'The diminutive halflings survive in a world full of larger creatures by avoiding notice or, barring that, avoiding offense.',
             asis: [
@@ -689,7 +711,7 @@ const AppDictionary = {
             ]
         },
         {
-            id: 17,
+            id: 18,
             name: 'Hobgoblin',
             summary: 'War is the lifeblood of hobgoblins. Its glories are the dreams that inspire them. Its horrors don’t feature in their nightmares.',
             asis: [
@@ -709,7 +731,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 18,
+            id: 19,
             name: 'Human',
             summary: 'Humans are the most adaptable and ambitious people among the common races. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.',
             asis: [
@@ -729,7 +751,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 19,
+            id: 20,
             name: 'Human Variant',
             summary: 'Humans are the most adaptable and ambitious people among the common races. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds. If your campaign uses the optional feat rules from the Player’s Handbook, your Dungeon Master might allow these variant traits, all of which replace the human’s Ability Score Increase trait.',
             asis: [
@@ -746,7 +768,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 20,
+            id: 21,
             name: 'Kalashtar',
             summary: 'The kalashtar are a compound people created from the union of humanity and renegade spirits from the plane of dreams.',
             asis: [
@@ -767,7 +789,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 21,
+            id: 22,
             name: 'Kenku',
             summary: 'Haunted by an ancient crime that robbed them of their wings, the kenku wander the world as vagabonds and burglars who live at the edge of human society.',
             asis: [
@@ -787,7 +809,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 22,
+            id: 23,
             name: 'Kobold',
             summary: 'Kobolds are typically timid and shy away from conflict, but they are dangerous and vicious if cornered.',
             asis: [
@@ -808,7 +830,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 23,
+            id: 24,
             name: 'Lizardfolk',
             summary: 'Lizardfolk possess an alien and inscrutable mindset, their desires and thoughts driven by a different set of basic principles than those of warm-blooded creatures.',
             asis: [
@@ -833,6 +855,49 @@ const AppDictionary = {
         },
         {
             id: 24,
+            name: 'Loxodon',
+            summary: 'Humanoid elephants, loxodons are strong, calm, and wise.',
+            asis: [
+                { 'Con': 2 },
+                { 'Wis': 1 }
+            ],
+            movement: 30,
+            size: 'Loxodons stand between 7 and 8 feet tall. Their massive bodies weigh between 300 and 400 pounds. Your size is Medium.',
+            languages: ['Common', 'Loxodon'],
+            lifespan: 'Loxodons physically mature at the same rate as humans, but they live about 450 years. They highly value the weight of wisdom and experience and are considered young until they reach the age of 60.',
+            alignment: 'Most loxodons are lawful, believing in the value of a peaceful, ordered life. They also tend toward good.',
+            features: [
+                { 'Powerful Build': 'You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.' },
+                { 'Loxodon Serenity': 'You have advantage on saving throws against being charmed or frightened.' },
+                { 'Natural Armor': 'You have thick, leathery skin. When you aren’t wearing armor, your AC is 12 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.' },
+                { 'Trunk': 'You can grasp things with your trunk, and you can use it as a snorkel. It has a reach of 5 feet, and it can lift a number of pounds equal to five times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be added to that list of options. Your trunk can’t wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.' },
+                { 'Keen Smell': 'Thanks to your sensitive trunk, you have advantage on Wisdom (Perception), Wisdom (Survival), and Intelligence (Investigation) checks that involve smell.' },
+            ],
+            subraces: []
+        },
+        {
+            id: 25,
+            name: 'Minotaur',
+            summary: 'The minotaurs of Ravnica are strong in body, dedication, and courage. They are at home on the battlefield, willing to fight for their various causes.',
+            asis: [
+                { 'Str': 2 },
+                { 'Con': 1 },
+            ],
+            movement: 30,
+            size: 'Minotaurs average over 6 feet in height, and they have stocky builds. Your size is Medium.',
+            languages: ['Common', 'Minotaur'],
+            lifespan: 'Orcs reach adulthood at age 12 and live up to 50 years.',
+            alignment: 'Most minotaurs who join the Boros Legion lean toward lawful alignments, while those associated with the Cult of Rakdos or the Gruul Clans tend toward chaotic alignments.',
+            features: [
+                { 'Horns': 'Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.' },
+                { 'Goring Rus': 'Immediately after you use the Dash action on your turn and move at least 20 feet, you can make one melee attack with your horns as a bonus action.' },
+                { 'Hammering Horns': 'Immediately after you hit a creature with a melee attack as part of the Attack action on your turn, you can use a bonus action to attempt to shove that target with your horns. The target must be no more than one size larger than you and within 5 feet of you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you push it up to 10 feet away from you.' },
+                { 'Imposing Presence': 'You have proficiency in one of the following skills of your choice: Intimidation or Persuasion.' },
+            ],
+            subraces: []
+        },
+        {
+            id: 26,
             name: 'Orc',
             summary: 'Orcs live a life that has no place for weakness, and every warrior must be strong enough to take what is needed by force.',
             asis: [
@@ -853,7 +918,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 25,
+            id: 27,
             name: 'Shifter',
             summary: 'Shifters - sometimes called the weretouched - are humanoids with a bestial aspect.',
             asis: [],
@@ -923,7 +988,27 @@ const AppDictionary = {
             ]
         },
         {
-            id: 26,
+            id: 28,
+            name: 'Simic Hybrid',
+            summary: 'The Simic Combine uses magic to transfer the traits of animals into humans, elves, and vedalken.',
+            asis: [
+                { 'Con': 2 },
+                { 'ANY': 1 }
+            ],
+            movement: 30,
+            size: 'Your size is Medium, within the normal range of your humanoid base race.',
+            languages: ['Common', 'Elvish (or Vedalken)' ],
+            lifespan: 'Hybrids begin their lives as adult humans, elves, or vedalken. They age at a slightly accelerated rate, so their maximum life spans are probably reduced somewhat. The Guardian Project has not been operating long enough to observe the full effect of this phenomenon.',
+            alignment: 'Most hybrids share the generally neutral outlook of the Simic Combine. They are more interested in scientific research and the standing of their guild than in moral or ethical questions. Those who leave the Combine, however, often do so because their philosophical outlook and alignment are more in line with a different guild’s.',
+            features: [
+                { 'Darkvision': 60 },
+                { 'Animal Enhancement: 1st Level': 'Your body has been altered to incorporate certain animal characteristics. You choose one animal enhancement now and a second enhancement at 5th level. Choose one of the following options: Manta Glide - You have ray-like fins that you can use as wings to slow your fall or allow you to glide. When you fall and aren’t incapacitated, you can subtract up to 100 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend.Nimble Climber - You have a climbing speed equal to your walking speed.Underwater Adaptation - You can breathe air and water, and you have a swimming speed equal to your walking speed.' },
+                { 'Animal Enhancement: 5h Level': 'Your body has been altered to incorporate certain animal characteristics. You choose one animal enhancement now and a second enhancement at 5th level. Choose one of the following options: Grappling Appendages - You have two special appendages growing alongside your arms. Choose whether they’re both claws or tentacles. As an action, you can use one of them to try to grapple a creature. Each one is also a natural weapon, which you can use to make an unarmed strike. If you hit with it, the target takes bludgeoning damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. Immediately after hitting, you can try to grapple the target as a bonus action. These appendages can’t precisely manipulate anything and can’t wield weapons, magic items, or other specialized equipment. Carapace - Your skin in places is covered by a thick shell. You gain a +1 bonus to AC when you’re not wearing heavy armor. Acid Spit - As an action, you can spray acid from glands in your mouth, targeting one creature or object you can see within 30 feet of you. The target takes 2d10 acid damage unless it succeeds on a Dexterity saving throw against a DC equal to 8 + your Constitution modifier + your proficiency bonus. This damage increases by 1d10 when you reach 11th level (3d10) and 17th level (4d10). You can use this trait a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.' },
+            ],
+            subraces: []
+        },
+        {
+            id: 29,
             name: 'Tabaxi',
             summary: 'Hailing from a strange and distant land, wandering tabaxi are catlike humanoids driven by curiosity to collect interesting artifacts, gather tales and stories, and lay eyes on all the world’s wonders.',
             asis: [
@@ -945,7 +1030,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 27,
+            id: 30,
             name: 'Tiefling',
             summary: 'To be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling.',
             asis: [],
@@ -988,7 +1073,7 @@ const AppDictionary = {
             ]
         },
         {
-            id: 28,
+            id: 31,
             name: 'Tortle',
             summary: 'What many tortles consider a simple life, others might call a life of adventure. They are nomad survivalists eager to explore the wilderness.',
             asis: [
@@ -1010,7 +1095,7 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 29,
+            id: 32,
             name: 'Triton',
             summary: 'Long-established guardians of the deep ocean floor, in recent years the noble tritons have become increasingly active in the world above.',
             asis: [
@@ -1031,21 +1116,48 @@ const AppDictionary = {
             subraces: []
         },
         {
-            id: 30,
-            name: 'Warforged',
-            summary: '',
-            asis: [],
-            movement: '',
-            size: '',
-            languages: [],
-            matureAge: '',
-            lifespan: '',
-            alignment: '',
-            features: [],
+            id: 33,
+            name: 'Vedalken',
+            summary: 'The blue-skinned vedalken strive for perfection above all else.',
+            asis: [
+                {'Int': 2 },
+                {'Wis': 1 },
+            ],
+            movement: 30,
+            size: 'Tall and slender, Vedalken stand 6 to 6½ feet tall on average and usually weigh less than 200 pounds. Your size is Medium.',
+            languages: ['Common', 'Vedlaken', 'ANY'],
+            lifespan: 'Vedalken mature slower than humans do, reaching maturity around age 40. Their life span is typically 350 years, with some living to the age of 500.',
+            alignment: 'Vedalken are usually lawful and non-evil.',
+            features: [
+                {'Vedalken Dispassion' : 'You have advantage on all Intelligence, Wisdom, and Charisma saving throws.' },
+                {'Tireless Precision' : 'You are proficient in one of the following skills of your choice: Arcana, History, Investigation, Medicine, Performance, or Sleight of Hand. You are also proficient with one tool of your choice. Whenever you make an ability check with the chosen skill or tool, roll a d4, and add the number rolled to the check\'s total.'},
+                {'Partially Amphibious' : 'By absorbing oxygen through your skin, you can breathe underwater for up to 1 hour. Once you’ve reached that limit, you can’t use this trait again until you finish a long rest.'},
+            ],
             subraces: []
         },
         {
-            id: 31,
+            id: 34,
+            name: 'Warforged',
+            summary: 'Warforged are made from wood and metal, but they can feel pain and emotion. Built as weapons, they must now find a purpose beyond war.',
+            asis: [
+                { 'Con': 2 },
+                { 'ANY': 1 },
+            ],
+            movement: 30,
+            size: 'Your size is Medium.',
+            languages: ['Common', 'ANY' ],
+            lifespan: 'A typical warforged is between two and thirty years old. The maximum warforged lifespan remains a mystery; so far, warforged have shown no signs of deterioration due to age. You are immune to magical aging effects.',
+            alignment: 'Most warforged take comfort in order and discipline, tending toward law and neutrality. But some have absorbed the morality, or lack thereof, of the beings with which they served.',
+            features: [
+                { 'Constructed Resilience': 'You were created to have remarkable fortitude, represented by the following benefits: You have advantage on saving throws against being poisoned, and you have resistance to poison damage. You don’t need to eat, drink, or breathe. You are immune to disease. You don’t need to sleep, and magic can’t put you to sleep.' },
+                { 'Sentry\’s Rest': 'When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn’t render you unconscious, and you can see and hear as normal.' },
+                { 'Integrated Protection': 'Your body has built-in defensive layers, which can be enhanced with armor: You gain a +1 bonus to Armor Class. You can don only armor with which you have proficiency. To don armor, you must incorporate it into your body over the course of 1 hour, during which you remain in contact with the armor. To doff armor, you must spend 1 hour removing it. You can rest while donning or doffing armor in this way. While you live, your armor can’t be removed from your body against your will.' },
+                { 'Specialized Design': 'You gain one skill proficiency and one tool proficiency of your choice.' },
+            ],
+            subraces: []
+        },
+        {
+            id: 35,
             name: 'Yuan-ti Pureblood',
             summary: 'The serpent creatures known as yuan-ti are all that remains of an ancient, decadent human empire.',
             asis: [
@@ -1157,6 +1269,16 @@ const AppDictionary = {
                 'typicalSpeakers': 'Devils, Tieflings',
             },
             {
+                'name': 'Loxodon',
+                'script': 'Loxodon',
+                'typicalSpeakers': 'Elvish',
+            },
+            {
+                'name': 'Minotaur',
+                'script': 'Minotaur',
+                'typicalSpeakers': 'Minotaurs',
+            },
+            {
                 'name': 'Orc',
                 'script': 'Dwarvish',
                 'typicalSpeakers': 'Orcs',
@@ -1165,6 +1287,16 @@ const AppDictionary = {
                 'name': 'Primordial',
                 'script': 'Dwarvish',
                 'typicalSpeakers': 'Elementals',
+            },
+            {
+                'name': 'Quori',
+                'script': 'Quori',
+                'typicalSpeakers': 'Kalashtar',
+            },
+            {
+                'name': 'Riedran',
+                'script': 'UNKNOWN',
+                'typicalSpeakers': 'UNKNOWN',
             },
             {
                 'name': 'Sylvan',
@@ -1181,8 +1313,11 @@ const AppDictionary = {
                 'script': 'Elvish',
                 'typicalSpeakers': 'Drow, Underdark traders',
             },
-
-
+            {
+                'name': 'Vedalken',
+                'script': 'Vedalken',
+                'typicalSpeakers': 'Vedalken',
+            },
         ],
         'STANDARD': [
             {
@@ -1249,6 +1384,11 @@ const AppDictionary = {
                 'name': 'Terran',
                 'script': 'Dwarvish',
                 'typicalSpeakers': 'Xorns and other earth-based creatures',
+            },
+            {
+                'name': 'Vedalken',
+                'script': 'Elvish',
+                'typicalSpeakers': 'Vedalken Elves',
             },
         ],
         'EXOTIC': [
