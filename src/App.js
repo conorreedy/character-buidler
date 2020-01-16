@@ -8,11 +8,10 @@ import {
   Link
 } from "react-router-dom";
 
-import Helmet from 'react-helmet';
-
 // import DndClasses from './Components/DndClasses';
 import RaceSelectionForm from './Components/RaceForm';
 import AsiGenerator from './Components/AbilityScore';
+import CharDescription from './Components/CharDescription';
 
 function NavBar() {
   return (
@@ -21,6 +20,7 @@ function NavBar() {
       <div><a href="/setup">Choose a Race</a></div>
       <div><a href="/asi">Set Ability Scores</a></div>
       <div><a href="">Choose a Class</a></div>
+      <div><a href="/description">Description</a></div>
     </div>
   );
 }
@@ -80,6 +80,12 @@ function App() {
         <Route path="/asi" >
           <div className="container asi">
             <AsiGenerator />
+          </div>
+        </Route>
+
+        <Route path="/description" >
+          <div className="container descript">
+            <CharDescription />
           </div>
         </Route>
 
