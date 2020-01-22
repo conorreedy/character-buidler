@@ -519,30 +519,51 @@ class Feats extends React.Component {
         this.state = this.feats[0];
 
         this.handleMethodChange = event => {
-            const feat = this.feats.filter(feat => feat.id == event.target.value)
+            let feat = this.feats.filter(feat => feat.id == event.target.value)
             this.setState(feat[0])
         }
     }
 
     render() {
 
+        let focusedFeat = this.state
+
+        let prereq
+        if (focusedFeat.prereq) {
+            prereq = focusedFeat.prereq
+        } else {
+            prereq = "None"
+        }
+
+        console.log(focusedFeat)
+
         return (
             <div className="space-sequence-20">
                 <div>
-                    <div>
-                        <select className="form-control" onChange={this.handleMethodChange}>
-                            { this.feats.map(feat => {
-                                return (
-                                    <option value={feat.id} key={feat.id}>{feat.name}</option>
-                                )
-                            })}
-                        </select>
-                    </div>
+                    <select className="form-control" onChange={this.handleMethodChange}>
+                        { this.feats.map(f => {
+                            return (
+                                <option value={f.id} key={f.id}>{f.name}</option>
+                            )
+                        })}
+                    </select>
                 </div>
 
                 <div className="space-sequence-20">
-                    {this.state.desc}
+                    {focusedFeat.desc}
                 </div>
+
+                {focusedFeat.points && focusedFeat.points.length > 0 &&
+                    <ul>  
+                        {focusedFeat.points.map(p => {
+                            return(
+                                <li>{p}</li>
+                            )
+                        })}
+                    </ul>
+                }
+
+                Prerequisite: {prereq}
             </div>
 
         );
