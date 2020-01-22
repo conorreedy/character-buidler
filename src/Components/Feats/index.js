@@ -520,8 +520,6 @@ class Feats extends React.Component {
 
         this.handleMethodChange = event => {
             const feat = this.feats.filter(feat => feat.id == event.target.value)
-            console.log(event.target.value)
-            console.log(feat[0])
             this.setState(feat[0])
         }
     }
