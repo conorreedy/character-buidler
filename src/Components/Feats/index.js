@@ -526,23 +526,45 @@ class Feats extends React.Component {
 
     render() {
 
+        let focusedFeat = this.state
+
+        let prereq
+
+        if (focusedFeat.prereq) {
+            prereq = focusedFeat.prereq
+        } else {
+            prereq = "none"
+        }
+
         return (
             <div className="space-sequence-20">
                 <div>
-                    <div>
-                        <select className="form-control" onChange={this.handleMethodChange}>
-                            { this.feats.map(feat => {
-                                return (
-                                    <option value={feat.id} key={feat.id}>{feat.name}</option>
-                                )
-                            })}
-                        </select>
-                    </div>
+                    <select className="form-control" onChange={this.handleMethodChange}>
+                        { this.feats.map(f => {
+                            return (
+                                <option value={f.id} key={f.id}>{f.name}</option>
+                            )
+                        })}
+                    </select>
                 </div>
 
-                <div className="space-sequence-20">
-                    {this.state.desc}
+                <div>
+                    {focusedFeat.desc}
                 </div>
+
+                <div>
+                    Prerequisite: {prereq}
+                </div>
+
+                {focusedFeat.points && focusedFeat.points.length > 0 &&
+                    <ul className="space-sequence-20">  
+                        {focusedFeat.points.map((p, i) => {
+                            return(
+                                <li key={i}>{p}</li>
+                            )
+                        })}
+                    </ul>
+                }
             </div>
 
         );
