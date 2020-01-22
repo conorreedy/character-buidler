@@ -1,9 +1,9 @@
 import React from 'react';
 import './AbilityScore.css';
 
-import PointBuy from './PointBuy';
+import PointBuy      from './PointBuy';
 import StandardArray from './StandardArray';
-import ManualOption from './Manual';
+import ManualOption  from './Manual';
 
 class AsiGenerator extends React.Component {
     constructor(props) {
