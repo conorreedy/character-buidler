@@ -519,7 +519,7 @@ class Feats extends React.Component {
         this.state = this.feats[0];
 
         this.handleMethodChange = event => {
-            let feat = this.feats.filter(feat => feat.id == event.target.value)
+            const feat = this.feats.filter(feat => feat.id == event.target.value)
             this.setState(feat[0])
         }
     }
@@ -529,13 +529,12 @@ class Feats extends React.Component {
         let focusedFeat = this.state
 
         let prereq
+
         if (focusedFeat.prereq) {
             prereq = focusedFeat.prereq
         } else {
-            prereq = "None"
+            prereq = "none"
         }
-
-        console.log(focusedFeat)
 
         return (
             <div className="space-sequence-20">
@@ -549,21 +548,23 @@ class Feats extends React.Component {
                     </select>
                 </div>
 
-                <div className="space-sequence-20">
+                <div>
                     {focusedFeat.desc}
                 </div>
 
+                <div>
+                    Prerequisite: {prereq}
+                </div>
+
                 {focusedFeat.points && focusedFeat.points.length > 0 &&
-                    <ul>  
-                        {focusedFeat.points.map(p => {
+                    <ul className="space-sequence-20">  
+                        {focusedFeat.points.map((p, i) => {
                             return(
-                                <li>{p}</li>
+                                <li key={i}>{p}</li>
                             )
                         })}
                     </ul>
                 }
-
-                Prerequisite: {prereq}
             </div>
 
         );
