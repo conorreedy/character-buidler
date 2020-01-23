@@ -13,6 +13,7 @@ import RaceSelectionForm from './Components/RaceForm';
 import AsiGenerator from './Components/AbilityScore';
 import CharDescription from './Components/CharDescription';
 import SpellsSelector from './Components/Spells';
+import Feats from './Components/Feats';
 
 function NavBar() {
   return (
@@ -23,6 +24,7 @@ function NavBar() {
       <div><a href="">Choose a Class</a></div>
       <div><a href="/description">Description</a></div>
       <div><a href="/spells">Spells</a></div>
+      <div><a href="/feats">Feats</a></div>
     </div>
   );
 }
@@ -94,6 +96,10 @@ function App() {
         <Route path="/spells" >
           <div className="container spells">
             <SpellsSelector />
+        <Route path="/feats" >
+          <div className="container">
+            <Feats />
+
           </div>
         </Route>
 
