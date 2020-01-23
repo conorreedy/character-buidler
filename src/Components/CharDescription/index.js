@@ -128,7 +128,7 @@ class CharDescription extends React.Component {
                         <div>
                             <LanguageSelector
                                 numberOfLanguagesGranted={this.state.selectedBg.numberOfExtraLanguages}
-                                languageOptions={this.state.selectedBg.languageOptions}
+                                languageOptionConstraints={this.state.selectedBg.languageOptions}
                                 languagesDictionary={AppDictionary.LANGUAGES}></LanguageSelector>
                         </div>
                     </div>
