@@ -7244,6 +7244,7 @@ const AppDictionary = {
         "material": "",
         "ritual": "no",
         "duration": "1 round",
+        "casting_time": "1 reaction",
         "concentration": false,
         "level": "1st-level",
         "level_int": 1,
@@ -7325,7 +7326,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a tiny strip of white cloth",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "casting_time": "1 action",
         "level": "2nd-level",
@@ -7354,7 +7355,8 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a tiny bell and a piece of fine silver wire",
         "ritual": "yes",
-        "duration": "8 hour",
+        "duration": "8 hours",
+        "casting_time": "1 minute",
         "concentration": false,
         "level": "1st-level",
         "level_int": 1,
@@ -7514,6 +7516,7 @@ const AppDictionary = {
         "material": "a drop of blood, a piece of flesh, and a pinch of bone dust",
         "ritual": "no",
         "duration": "Instantaneous",
+        "casting_time": "1 minute",
         "concentration": false,
         "level": "3rd-level",
         "level_int": 3,
@@ -7761,7 +7764,8 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "either a lump of alum soaked in vinegar for the antipathy effect or a drop of honey for the sympathy effect",
         "ritual": "no",
-        "duration": "10 day",
+        "duration": "10 days",
+        "casting_time": "1 hour",
         "concentration": false,
         "level": "8th-level",
         "level_int": 8,
@@ -7818,7 +7822,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "6th-level",
@@ -7856,7 +7860,8 @@ const AppDictionary = {
         "school": "Abjuration",
         "dnd_class": "Artificer, Artificer, Artificer (Revisited), Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "duration": "Until Dispelled"
       },
       {
         "slug": "armor-of-agathys",
@@ -7938,6 +7943,8 @@ const AppDictionary = {
         },
         "ritual": "no",
         "concentration": false,
+        "casting_time": "1 hour",
+        "duration": "Special",
         "level": "9th-level",
         "level_int": 9,
         "school": "Necromancy",
@@ -7976,6 +7983,7 @@ const AppDictionary = {
         },
         "ritual": "yes",
         "duration": "Instantaneous",
+        "casting_time": "1 minute",
         "concentration": false,
         "level": "2nd-level",
         "level_int": 2,
@@ -8001,7 +8009,7 @@ const AppDictionary = {
         "components": "V",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "4th-level",
@@ -8028,7 +8036,7 @@ const AppDictionary = {
         "components": "V",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "4th-level",
@@ -8087,6 +8095,7 @@ const AppDictionary = {
         },
         "ritual": "no",
         "duration": "Instantaneous",
+        "casting_time": "8 hours",
         "concentration": false,
         "level": "5th-level",
         "level_int": 5,
@@ -8248,7 +8257,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a bit of fur wrapped in a cloth",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "1st-level",
@@ -8397,7 +8406,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "6th-level",
@@ -8732,7 +8741,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "3rd-level",
@@ -8817,7 +8826,7 @@ const AppDictionary = {
         "components": "S, M",
         "material": "a pinch of sand",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": false,
         "casting_time": "1 action",
         "level": "3rd-level",
@@ -8918,6 +8927,7 @@ const AppDictionary = {
         },
         "ritual": "yes",
         "duration": "Instantaneous",
+        "casting_time": "1 hour",
         "concentration": false,
         "level": "1st-level",
         "level_int": 1,
@@ -9235,7 +9245,7 @@ const AppDictionary = {
         "components": "V",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "5th-level",
@@ -9267,7 +9277,8 @@ const AppDictionary = {
           "cost": 100
         },
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
+        "casting_time": "10 minutes",
         "concentration": true,
         "level": "3rd-level",
         "level_int": 3,
@@ -9298,6 +9309,7 @@ const AppDictionary = {
         },
         "ritual": "no",
         "duration": "Instantaneous",
+        "casting_time": "1 hour",
         "concentration": false,
         "level": "8th-level",
         "level_int": 8,
@@ -9354,7 +9366,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "5th-level",
@@ -9481,7 +9493,8 @@ const AppDictionary = {
         "school": "Divination",
         "dnd_class": "Cleric",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 min"
       },
       {
         "slug": "commune-with-nature",
@@ -9518,7 +9531,8 @@ const AppDictionary = {
         "school": "Divination",
         "dnd_class": "Druid, Ranger",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "compelled-duel",
@@ -9788,7 +9802,7 @@ const AppDictionary = {
         "desc": [
           "You summon a {@filter celestial of challenge rating 4 or lower|bestiary|challenge rating=[&0;&4]|type=celestial|miscellaneous=!swarm}, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends.",
           "The celestial is friendly to you and your companions for the duration. Roll initiative for the celestial, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the celestial, it defends itself from hostile creatures but otherwise takes no actions.",
-          "The DM has the celestial\'s statistics."
+          "The DM has the celestial's statistics."
         ],
         "higher_level": "When you cast this spell using a 9th-level spell slot, you summon a celestial of challenge rating 5 or lower.",
         "page": "phb 225",
@@ -9809,7 +9823,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Cleric",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "conjure-elemental",
@@ -9839,7 +9854,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Druid, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "conjure-fey",
@@ -9869,7 +9885,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Druid, Warlock",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "conjure-minor-elementals",
@@ -9908,7 +9925,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Druid, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "conjure-volley",
@@ -10001,7 +10019,8 @@ const AppDictionary = {
         "school": "Divination",
         "dnd_class": "Warlock, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "contagion",
@@ -10063,7 +10082,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "7 day",
+        "duration": "7 days",
         "concentration": false,
         "casting_time": "1 action",
         "level": "5th-level",
@@ -10094,14 +10113,15 @@ const AppDictionary = {
           "cost": 1500
         },
         "ritual": "no",
-        "duration": "10 day",
+        "duration": "10 days",
         "concentration": false,
         "level": "6th-level",
         "level_int": 6,
         "school": "Evocation",
         "dnd_class": "Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "continual-flame",
@@ -10130,7 +10150,8 @@ const AppDictionary = {
         "school": "Evocation",
         "dnd_class": "Artificer, Artificer, Artificer (Revisited), Cleric, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "duration": "Until Dispelled"
       },
       {
         "slug": "control-flames",
@@ -10218,7 +10239,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a drop of water and a pinch of dust",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "4th-level",
@@ -10353,14 +10374,15 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "burning incense and bits of earth and wood mixed in water",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": true,
         "level": "8th-level",
         "level_int": 8,
         "school": "Transmutation",
         "dnd_class": "Cleric, Druid, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "control-winds",
@@ -10429,7 +10451,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "four or more arrows or bolts",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "casting_time": "1 action",
         "level": "2nd-level",
@@ -10464,7 +10486,8 @@ const AppDictionary = {
         "school": "Abjuration",
         "dnd_class": "Sorcerer, Warlock, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 reaction"
       },
       {
         "slug": "create-bonfire",
@@ -10551,7 +10574,8 @@ const AppDictionary = {
         "school": "Transmutation",
         "dnd_class": "Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 hour"
       },
       {
         "slug": "create-or-destroy-water",
@@ -10625,7 +10649,8 @@ const AppDictionary = {
         "school": "Necromancy",
         "dnd_class": "Cleric, Warlock, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "creation",
@@ -10686,7 +10711,9 @@ const AppDictionary = {
         "level_int": 5,
         "dnd_class": "Artificer, Artificer (Revisited), Sorcerer, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute",
+        "duration": "Special"
       },
       {
         "slug": "crown-of-madness",
@@ -10876,7 +10903,7 @@ const AppDictionary = {
         "components": "V, M",
         "material": "bat fur and a drop of pitch or piece of coal",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "2nd-level",
@@ -10902,7 +10929,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "either a pinch of dried carrot or an agate",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "casting_time": "1 action",
         "level": "2nd-level",
@@ -10991,7 +11018,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "casting_time": "1 action",
         "level": "4th-level",
@@ -11104,7 +11131,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "1st-level",
@@ -11131,7 +11158,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "yes",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "1st-level",
@@ -11158,7 +11185,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a yew leaf",
         "ritual": "yes",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "1st-level",
@@ -11625,7 +11652,9 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute",
+        "duration": "Until Dispelled"
       },
       {
         "slug": "dream",
@@ -11638,18 +11667,22 @@ const AppDictionary = {
         ],
         "page": "phb 236",
         "range": {
-          "type": "special"
+          "type": "point",
+          "distance": {
+            "type": "self"
+          }
         },
         "components": "V, S, M",
         "material": "a handful of sand, a dab of ink, and a writing quill plucked from a sleeping bird",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "level": "5th-level",
         "level_int": 5,
         "dnd_class": "Bard, Warlock, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "druid-grove",
@@ -11716,7 +11749,8 @@ const AppDictionary = {
         "school": "Abjuration",
         "dnd_class": "Druid",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "druidcraft",
@@ -12268,7 +12302,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "casting_time": "1 action",
         "level": "7th-level",
@@ -12323,7 +12357,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 bonus action",
         "level": "1st-level",
@@ -12406,7 +12440,8 @@ const AppDictionary = {
         "school": "Transmutation",
         "dnd_class": "Artificer, Artificer, Artificer (Revisited), Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "faerie-fire",
@@ -12541,7 +12576,8 @@ const AppDictionary = {
         "school": "Transmutation",
         "dnd_class": "Artificer, Artificer (Revisited), Bard, Sorcerer, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 reaction "
       },
       {
         "slug": "feeblemind",
@@ -12635,7 +12671,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 hour"
       },
       {
         "slug": "find-greater-steed",
@@ -12665,7 +12702,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Paladin",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "find-steed",
@@ -12695,7 +12733,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Paladin",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "find-the-path",
@@ -12724,7 +12763,8 @@ const AppDictionary = {
         "school": "Divination",
         "dnd_class": "Bard, Cleric, Druid",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "find-traps",
@@ -12828,7 +12868,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a bit of phosphorus or a firefly",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": false,
         "casting_time": "1 action",
         "level": "4th-level",
@@ -12941,7 +12981,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "leaf of sumac",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 bonus action",
         "level": "2nd-level",
@@ -13056,7 +13096,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a wing feather from any bird",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "3rd-level",
@@ -13123,7 +13163,8 @@ const AppDictionary = {
         "school": "Abjuration",
         "dnd_class": "Cleric",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "forcecage",
@@ -13177,14 +13218,15 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a hummingbird feather",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "level": "9th-level",
         "level_int": 9,
         "school": "Divination",
         "dnd_class": "Bard, Druid, Warlock, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "freedom-of-movement",
@@ -13348,14 +13390,15 @@ const AppDictionary = {
         "components": "V",
         "material": "",
         "ritual": "no",
-        "duration": "30 day",
+        "duration": "30 days",
         "concentration": false,
         "level": "5th-level",
         "level_int": 5,
         "school": "Enchantment",
         "dnd_class": "Bard, Cleric, Druid, Paladin, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "gentle-repose",
@@ -13374,7 +13417,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a pinch of salt and one copper piece placed on each of the corpse's eyes, which must remain there for the duration",
         "ritual": "yes",
-        "duration": "10 day",
+        "duration": "10 days",
         "concentration": false,
         "casting_time": "1 action",
         "level": "2nd-level",
@@ -13404,7 +13447,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "4th-level",
@@ -13514,7 +13557,9 @@ const AppDictionary = {
         "school": "Abjuration",
         "dnd_class": "Artificer, Artificer, Artificer (Revisited), Bard, Cleric, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 hour",
+        "duration": "Until Dispelled or Triggered"
       },
       {
         "slug": "goodberry",
@@ -13709,7 +13754,7 @@ const AppDictionary = {
         "components": "V",
         "material": "",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "casting_time": "1 action",
         "level": "4th-level",
@@ -13845,7 +13890,8 @@ const AppDictionary = {
         "school": "Abjuration",
         "dnd_class": "Bard, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "guidance",
@@ -14091,7 +14137,9 @@ const AppDictionary = {
         "school": "Evocation",
         "dnd_class": "Cleric",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "24 hours",
+        "duration": "Until Dispelled"
       },
       {
         "slug": "hallucinatory-terrain",
@@ -14117,7 +14165,8 @@ const AppDictionary = {
         "level_int": 4,
         "dnd_class": "Bard, Druid, Warlock, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "harm",
@@ -14314,7 +14363,8 @@ const AppDictionary = {
         "school": "Evocation",
         "dnd_class": "Warlock",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 reaction"
       },
       {
         "slug": "heroes-feast",
@@ -14345,7 +14395,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Cleric, Druid",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "heroism",
@@ -14683,7 +14734,8 @@ const AppDictionary = {
         "school": "Divination",
         "dnd_class": "Artificer, Artificer (Revisited), Bard, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "illusory-dragon",
@@ -14737,13 +14789,14 @@ const AppDictionary = {
           "consume": true
         },
         "ritual": "yes",
-        "duration": "10 day",
+        "duration": "10 days",
         "concentration": false,
         "level": "1st-level",
         "level_int": 1,
         "dnd_class": "Bard, Warlock, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "immolation",
@@ -14838,10 +14891,19 @@ const AppDictionary = {
         "concentration": false,
         "level": "9th-level",
         "level_int": 9,
+        "range": {
+          "type": "point",
+          "distance": { 
+              "type": "feet",
+              "amount": 30,
+              }
+        },
         "school": "Abjuration",
         "dnd_class": "Warlock, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute",
+        "duration": "Until Dispelled"
       },
       {
         "slug": "incendiary-cloud",
@@ -14904,7 +14966,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Warlock, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "infestation",
@@ -14980,7 +15043,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a few grains of sugar, some kernels of grain, and a smear of fat",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "5th-level",
@@ -15014,7 +15077,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "6th-level",
@@ -15049,7 +15112,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "6th-level",
@@ -15083,7 +15146,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "6th-level",
@@ -15117,7 +15180,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "6th-level",
@@ -15173,7 +15236,7 @@ const AppDictionary = {
           "consume": true
         },
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "9th-level",
@@ -15267,7 +15330,8 @@ const AppDictionary = {
         "school": "Divination",
         "dnd_class": "Bard, Cleric, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "leomunds-secret-chest",
@@ -15319,14 +15383,15 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a small crystal bead",
         "ritual": "yes",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "level": "3rd-level",
         "level_int": 3,
         "school": "Evocation",
         "dnd_class": "Bard, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "lesser-restoration",
@@ -15373,7 +15438,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "either a small leather loop or a piece of golden wire bent into a cup shape with a long shank on one end",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "2nd-level",
@@ -15596,7 +15661,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a forked twig",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "2nd-level",
@@ -15651,7 +15716,7 @@ const AppDictionary = {
         "components": "V, M",
         "material": "a drop of pitch mixed with a drop of mercury",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "8th-level",
@@ -15704,7 +15769,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a piece of cured leather",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "casting_time": "1 action",
         "level": "1st-level",
@@ -15782,7 +15847,8 @@ const AppDictionary = {
         "school": "Abjuration",
         "dnd_class": "Cleric, Paladin, Warlock, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "magic-jar",
@@ -15815,7 +15881,9 @@ const AppDictionary = {
         "school": "Necromancy",
         "dnd_class": "Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute",
+        "duration": "Until Dispelled"
       },
       {
         "slug": "magic-missile",
@@ -15873,7 +15941,9 @@ const AppDictionary = {
         "level_int": 2,
         "dnd_class": "Artificer, Artificer (Revisited), Bard, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute",
+        "duration": "Until Dispelled"
       },
       {
         "slug": "magic-stone",
@@ -15949,7 +16019,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a bit of fleece",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "3rd-level",
@@ -16152,7 +16222,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "8th-level",
@@ -16180,7 +16250,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "yes",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "casting_time": "1 action",
         "level": "3rd-level",
@@ -16235,7 +16305,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "niter, sulfur, and pine tar formed into a bead",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "3rd-level",
@@ -16269,7 +16339,8 @@ const AppDictionary = {
         "school": "Transmutation",
         "dnd_class": "Artificer, Artificer (Revisited), Bard, Cleric, Druid, Sorcerer, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 action"
       },
       {
         "slug": "mental-prison",
@@ -16387,7 +16458,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "mind-blank",
@@ -16491,13 +16563,14 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 day",
+        "duration": "10 days",
         "concentration": false,
         "level": "7th-level",
         "level_int": 7,
         "dnd_class": "Bard, Druid, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "mirror-image",
@@ -16699,7 +16772,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a tiny silver whistle, a piece of bone, and a thread",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "casting_time": "1 action",
         "level": "4th-level",
@@ -16738,7 +16811,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Bard, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "mordenkainens-private-sanctum",
@@ -16778,7 +16852,8 @@ const AppDictionary = {
         "school": "Abjuration",
         "dnd_class": "Artificer, Artificer, Artificer (Revisited), Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "mordenkainens-sword",
@@ -16890,7 +16965,7 @@ const AppDictionary = {
           "consume": true
         },
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "casting_time": "1 action",
         "level": "3rd-level",
@@ -17163,7 +17238,8 @@ const AppDictionary = {
         "level_int": 3,
         "dnd_class": "Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "planar-ally",
@@ -17194,7 +17270,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Cleric",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "planar-binding",
@@ -17226,7 +17303,8 @@ const AppDictionary = {
         "school": "Abjuration",
         "dnd_class": "Bard, Cleric, Druid, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 hour"
       },
       {
         "slug": "plane-shift",
@@ -17483,7 +17561,8 @@ const AppDictionary = {
         "school": "Evocation",
         "dnd_class": "Cleric",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "prestidigitation",
@@ -17731,7 +17810,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": false,
         "casting_time": "1 action",
         "level": "9th-level",
@@ -17759,7 +17838,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": false,
         "casting_time": "1 action",
         "level": "Cantrip",
@@ -17798,7 +17877,8 @@ const AppDictionary = {
         "level_int": 6,
         "dnd_class": "Bard, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "duration": "Until Dispelled"
       },
       {
         "slug": "project-image",
@@ -17878,7 +17958,7 @@ const AppDictionary = {
           "consume": true
         },
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "1st-level",
@@ -18042,7 +18122,8 @@ const AppDictionary = {
         "school": "Necromancy",
         "dnd_class": "Bard, Cleric, Paladin",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 hour"
       },
       {
         "slug": "rarys-telepathic-bond",
@@ -18180,7 +18261,8 @@ const AppDictionary = {
         "school": "Transmutation",
         "dnd_class": "Bard, Cleric, Druid",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "reincarnate",
@@ -18330,18 +18412,18 @@ const AppDictionary = {
                     "max": 96
                   }
                 },
-                "{@race Human"
+                "Human"
               ],
               [
                 {
                   "type": "cell",
                   "roll": {
                     "min": 97,
-                    "max": 0,
+                    "max": 100,
                     "pad": true
                   }
                 },
-                "{@race Tiefling"
+                "Tiefling"
               ]
             ]
           },
@@ -18368,7 +18450,8 @@ const AppDictionary = {
         "school": "Transmutation",
         "dnd_class": "Druid",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 hour"
       },
       {
         "slug": "remove-curse",
@@ -18453,7 +18536,8 @@ const AppDictionary = {
         "school": "Necromancy",
         "dnd_class": "Bard, Cleric",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 hour"
       },
       {
         "slug": "reverse-gravity",
@@ -18729,14 +18813,15 @@ const AppDictionary = {
           "cost": 1000
         },
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "level": "5th-level",
         "level_int": 5,
         "school": "Divination",
         "dnd_class": "Bard, Cleric, Druid, Warlock, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "10 minutes"
       },
       {
         "slug": "searing-smite",
@@ -18811,7 +18896,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "casting_time": "1 action",
         "level": "5th-level",
@@ -18876,7 +18961,8 @@ const AppDictionary = {
         "school": "Transmutation",
         "dnd_class": "Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "duration": "Until Dispelled"
       },
       {
         "slug": "shadow-blade",
@@ -19058,7 +19144,8 @@ const AppDictionary = {
         "school": "Abjuration",
         "dnd_class": "Sorcerer, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 reaction"
       },
       {
         "slug": "shield-of-faith",
@@ -19077,7 +19164,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a small parchment with a bit of holy text written on it",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 bonus action",
         "level": "1st-level",
@@ -19158,7 +19245,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "4th-level",
@@ -19185,7 +19272,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "yes",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "2nd-level",
@@ -19213,7 +19300,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a bit of fleece",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "1st-level",
@@ -19250,7 +19337,9 @@ const AppDictionary = {
         "level_int": 7,
         "dnd_class": "Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "12 hours",
+        "duration": "Until Dispelled"
       },
       {
         "slug": "skill-empowerment",
@@ -19417,14 +19506,15 @@ const AppDictionary = {
           "consume": true
         },
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "level": "1st-level",
         "level_int": 1,
         "school": "Abjuration",
         "dnd_class": "Artificer, Artificer (Revisited), Druid, Ranger, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "snillocs-snowball-swarm",
@@ -19503,14 +19593,15 @@ const AppDictionary = {
           "cost": 100
         },
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "level": "6th-level",
         "level_int": 6,
         "school": "Necromancy",
         "dnd_class": "Warlock, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 reaction"
       },
       {
         "slug": "spare-the-dying",
@@ -19554,7 +19645,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "yes",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": false,
         "casting_time": "1 action",
         "level": "1st-level",
@@ -19582,7 +19673,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "burning incense",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": false,
         "casting_time": "1 action",
         "level": "3rd-level",
@@ -19613,7 +19704,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": false,
         "casting_time": "1 action",
         "level": "3rd-level",
@@ -19667,7 +19758,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "seven sharp thorns or seven small twigs, each sharpened to a point",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "2nd-level",
@@ -19696,7 +19787,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a holy symbol",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "3rd-level",
@@ -19980,7 +20071,7 @@ const AppDictionary = {
         "components": "V, M",
         "material": "a snake's tongue and either a bit of honeycomb or a drop of sweet oil",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": true,
         "casting_time": "1 action",
         "level": "2nd-level",
@@ -20294,7 +20385,9 @@ const AppDictionary = {
         "school": "Abjuration",
         "dnd_class": "Bard, Cleric, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute",
+        "duration": "Until Dispelled or Triggered"
       },
       {
         "slug": "synaptic-static",
@@ -20386,7 +20479,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "5th-level",
@@ -20587,7 +20680,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Bard, Sorcerer, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "temple-of-the-gods",
@@ -20623,7 +20717,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Cleric",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 hour"
       },
       {
         "slug": "tensers-floating-disk",
@@ -20682,7 +20777,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a few hairs from a bull",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "6th-level",
@@ -20943,14 +21038,15 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "level": "3rd-level",
         "level_int": 3,
         "school": "Transmutation",
         "dnd_class": "Artificer, Artificer (Revisited), Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "toll-the-dead",
@@ -21046,7 +21142,8 @@ const AppDictionary = {
         "school": "Transmutation",
         "dnd_class": "Artificer, Artificer (Revisited), Druid, Wizard",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "duration": "Until Dispelled"
       },
       {
         "slug": "transport-via-plants",
@@ -21184,7 +21281,8 @@ const AppDictionary = {
         "school": "Necromancy",
         "dnd_class": "Cleric, Druid",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 hour"
       },
       {
         "slug": "true-seeing",
@@ -21269,7 +21367,8 @@ const AppDictionary = {
         "school": "Conjuration",
         "dnd_class": "Druid",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "unseen-servant",
@@ -21431,7 +21530,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a pinch of powder made by crushing a clear gemstone",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "5th-level",
@@ -21461,7 +21560,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a small piece of quartz",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "6th-level",
@@ -21492,7 +21591,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a hand mirror",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "5th-level",
@@ -21519,7 +21618,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a handful of sand",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "3rd-level",
@@ -21551,7 +21650,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a small block of granite",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "5th-level",
@@ -21581,7 +21680,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a handful of thorns",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "6th-level",
@@ -21609,7 +21708,7 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "a drop of water",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "3rd-level",
@@ -21675,7 +21774,7 @@ const AppDictionary = {
         "components": "V",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": true,
         "casting_time": "1 action",
         "level": "2nd-level",
@@ -21875,14 +21974,15 @@ const AppDictionary = {
         "components": "V, S, M",
         "material": "fire and holy water",
         "ritual": "no",
-        "duration": "8 hour",
+        "duration": "8 hours",
         "concentration": false,
         "level": "6th-level",
         "level_int": 6,
         "school": "Transmutation",
         "dnd_class": "Druid",
         "archetype": "",
-        "circles": ""
+        "circles": "",
+        "casting_time": "1 minute"
       },
       {
         "slug": "wind-wall",
@@ -21926,7 +22026,7 @@ const AppDictionary = {
               "You create one object of up to 25,000 gp in value that isn't a magic item. The object can be no more than 300 feet in any dimension, and it appears in an unoccupied space you can see on the ground.",
               "You allow up to twenty creatures that you can see to regain all hit points, and you end all effects on them described in the greater restoration spell.",
               "You grant up to ten creatures that you can see resistance to a damage type you choose.",
-              "You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours. For instance, you could make yourself and all your companions immune to a lich\'s life drain attack.",
+              "You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours. For instance, you could make yourself and all your companions immune to a lich's life drain attack.",
               "You undo a single recent event by forcing a reroll of any roll made within the last round (including your last turn). Reality reshapes itself to accommodate the new result. For example, a wish spell could undo an opponent's successful save, a foe's critical hit, or a friend's failed save. You can force the reroll to be made with advantage or disadvantage, and you can choose whether to use the reroll or the original roll."
             ]
           },
@@ -22163,7 +22263,7 @@ const AppDictionary = {
         "components": "V, S",
         "material": "",
         "ritual": "no",
-        "duration": "10 minute",
+        "duration": "10 minutes",
         "concentration": false,
         "casting_time": "1 action",
         "level": "2nd-level",
@@ -22175,7 +22275,6 @@ const AppDictionary = {
       }
     ],
 }
-
 
 
 export default AppDictionary;

@@ -18,30 +18,60 @@ class Spell extends React.Component {
         this.getSpellDescriptHtmlBlock = () => {
             const spell = this.props.spell;
             
-            spell.desc.map(chunk => {
-                return <div>{chunk}</div>;
+            spell.desc.map( chunk => {
+                return <div key={_getRandoNum()}>{chunk}</div>;
             })
         }
 
+        this.rangeTextHash = {
+            "point": {
+                "touch": "Touch",
+                "self": "Self",
+                "sight": "Sight",
+                "unlimited": "Unlimited",
+                "amount": `${this.props.spell.range.distance.amount} ${this.props.spell.range.distance.type}`,
+            },
+            "radius": `${this.props.spell.range.distance.amount} ${this.props.spell.range.distance.type} radius`,
+            "sphere": `${this.props.spell.range.distance.amount} ${this.props.spell.range.distance.type} sphere`,
+            "cone": `${this.props.spell.range.distance.amount} ${this.props.spell.range.distance.type} cone`,
+        }
+
+        this.getRangeTextFromHash = () => {
+            const range = this.props.spell.range ;
+            const type = this.props.spell.range.type;
+
+            if (type == 'point') {
+                
+                if (range.distance.hasOwnProperty('amount')) {
+                    return this.rangeTextHash.point.amount;
+                }
+
+                return this.rangeTextHash.point[range.distance.type];
+            }
+            
+            return this.rangeTextHash[type];
+
+        }
+
         this.buildDescTypeStr = desc => {
-            return <div>{desc}</div>;
+            return <div key={_getRandoNum()}>{desc}</div>;
         }
 
         this.buildDescTypeEntries= desc => {
             return (
-                <div className="label-text-pair-outer space-sequence-20">
-                    <div>{desc.name}</div>
+                <div className="label-text-pair-outer space-sequence-20" key={_getRandoNum()}>
+                    <div>{desc.name}.</div>
                     { 
-                        desc.entries.map(entry => {
+                        desc.entries.map( entry => {
                             if (typeof entry == 'string') {
-                                return <div>{entry}</div>;
+                                return <div key={_getRandoNum()}>{entry}</div>;
                             }
                             if (entry.type) {
                                 return (
-                                    <ul>
+                                    <ul key={_getRandoNum()}>
                                     { 
-                                        entry.items.map(item => {
-                                            return <li>{item}</li>;
+                                        entry.items.map( item => {
+                                            return <li key={_getRandoNum()}>{item}</li>;
                                         })
                                     }
                                     </ul>
@@ -55,11 +85,11 @@ class Spell extends React.Component {
 
         this.buildDescTypeList = desc => {
             return (
-                <div>
+                <div key={_getRandoNum()}>
                     <ul>
                         { 
-                            desc.items.map(item => {
-                                return <li>{item}</li>;
+                            desc.items.map( item => {
+                                return <li key={_getRandoNum()}>{item}</li>;
                             })
                         }
                     </ul>
@@ -68,8 +98,8 @@ class Spell extends React.Component {
         }
 
         this.buildDescTypeTable = desc => {
-            // there appear to be two types of tables
-            //def need to figure out a less awful way to differentiate
+            // there are two types of tables
+            //prob need to figure out a less awful way to differentiate
             let isType2 = false;
             
             try {
@@ -80,27 +110,62 @@ class Spell extends React.Component {
             }
 
             if (isType2 == true) {
-                return '';
+                return (
+                    <div className="table-outer" key={_getRandoNum()}>
+                        <div className="caption">({desc.caption})</div>
+                        <div className="table-inner">
+                            <div className="table-header">
+                                { 
+                                    desc.colLabels.map( label => {
+                                        return <div className="table-col" key={_getRandoNum()}>{label}</div>
+                                    })
+                                }
+                            </div>
+                            {
+                                desc.rows.map( row => {
+                                    return (
+                                        <div key={_getRandoNum()} className="table-row">
+                                            {
+                                                row.map( col => {
+                                                    if (typeof col != "string") {
+                                                        const min = col.roll.min < 10 ? `0${col.roll.min}` : col.roll.min;
+                                                        const max = col.roll.max < 10 ? `0${col.roll.max}` : col.roll.max;
+                                                        const str = `${min} - ${max}`;
+                                                        
+                                                        return <div className="table-col" key={_getRandoNum()}>{str}</div>
+                                                    }
+
+                                                   return <div className="table-col" key={_getRandoNum()}>{col}</div>
+                                                })
+                                            }
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                )
+                
             }
 
             return (
-                <div className="table-outer">
+                <div className="table-outer" key={_getRandoNum()}>
                     <div className="caption">({desc.caption})</div>
                     <div className="table-inner">
                         <div className="table-header">
                             { 
-                                desc.colLabels.map(label => {
-                                    return <div className="table-col" key={label}>{label}</div>
+                                desc.colLabels.map( label => {
+                                    return <div className="table-col" key={_getRandoNum()}>{label}</div>
                                 })
                             }
                         </div>
                         {
-                            desc.rows.map(row => {
+                            desc.rows.map( row => {
                                 return (
-                                    <div className="table-row">
+                                    <div key={_getRandoNum()} className="table-row">
                                         {
-                                            row.map(colTxt => {
-                                               return <div className="table-col">{colTxt}</div>
+                                            row.map( colTxt => {
+                                               return <div className="table-col" key={_getRandoNum()}>{colTxt}</div>
                                             })
                                         }
                                     </div>
@@ -130,8 +195,9 @@ class Spell extends React.Component {
     
     render() {
         const spell = this.props.spell;
+
         const _buildSpellDescriptHtml = () => {
-            let htmlDescriptChunkInner = [];
+            const htmlDescriptChunkInner = [];
 
             for (const desc of this.props.spell.desc) {
                 
@@ -148,6 +214,7 @@ class Spell extends React.Component {
                     if (type == "table")    { htmlDescriptChunkInner.push(this.buildDescTypeTable(desc)); }
 
                 }
+
             }
 
             return (
@@ -162,32 +229,32 @@ class Spell extends React.Component {
             <div>
                 <div className="spell-preview" onClick={this.toggleDetailDisplayState}>
                     <div className="spell-preview-name">{spell.name}</div> 
-                    <div className="spell-preview-subhead">{spell.level} {spell.concentration === true ? " - Concentration" : ""}</div>
+                    <div className="spell-preview-subhead">{spell.level} {spell.concentration === true ? <span>&bull; Concentration</span> : ""}</div>
                     <span className="expand-spell">
                         { this.state.detailsActive == false ? '+' : '-' }
                     </span>
                 </div>
                 <div className={this.state.detailsActive ? "spell-detail active space-sequence-20" : "spell-detail"}>
-                    <div>{spell.level} {spell.school}</div>
+                    <div className="italic-lead">{spell.level} {spell.school}</div>
                     <div>
                         <div className="label-text-pair-outer">
-                            <div>Casting Time</div>
+                            <div>Casting Time.</div>
                             <div>{spell.casting_time}</div>
                         </div>
                         <div className="label-text-pair-outer">
-                            <div>Range/Area</div>
-                            <div>THIS IS GONNA NEED A BIT O PROCESSING</div>
+                            <div>Range/Area.</div>
+                            <div>{this.getRangeTextFromHash()}</div>
                         </div>
                         <div className="label-text-pair-outer">
-                            <div>Components</div>
+                            <div>Components.</div>
                             <div>{spell.components} { spell.material ? `(${spell.material})` : '' }</div>
                         </div>
                         <div className="label-text-pair-outer">
-                            <div>Duration</div>
+                            <div>Duration.</div>
                             <div>{spell.duration}</div>
                         </div>
                         <div className="label-text-pair-outer">
-                            <div>Source</div>
+                            <div>Source.</div>
                             <div>{spell.page}</div>
                         </div>
                     </div>
@@ -202,3 +269,9 @@ class Spell extends React.Component {
 }
 
 export default Spell;
+
+
+
+function _getRandoNum() {
+    return Math.random();
+}

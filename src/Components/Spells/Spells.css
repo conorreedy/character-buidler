@@ -21,7 +21,12 @@
 
 .content-block .spell-detail.active {
     display: block;
-    border-top: solid 1px rgb(236, 233, 233);
+    border-top: solid 3px rgb(236, 233, 233);
+}
+.content-block .spell-detail.active .italic-lead {
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
 }
 
 .content-block .spell-detail.active .label-text-pair-outer > div {
