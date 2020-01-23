@@ -5,6 +5,7 @@ class Spell extends React.Component {
     constructor(props) {
         super(props);
         
+        
         this.state = {
             detailsActive: false,
         };
@@ -13,33 +14,148 @@ class Spell extends React.Component {
             const currentState = this.state.detailsActive;
             this.setState({ detailsActive: !currentState });
         };
-
-        this.sanitizeString = (str) => {
-            if (typeof str == "string") {
-                return str;
-            }
-            return '';
+        
+        this.getSpellDescriptHtmlBlock = () => {
+            const spell = this.props.spell;
+            
+            spell.desc.map(chunk => {
+                return <div>{chunk}</div>;
+            })
         }
-    }
 
-    
-    
-    render() {
-        const spell = this.props.spell;
+        this.buildDescTypeStr = desc => {
+            return <div>{desc}</div>;
+        }
 
-        const atHigherLevel = () => {
+        this.buildDescTypeEntries= desc => {
+            return (
+                <div className="label-text-pair-outer space-sequence-20">
+                    <div>{desc.name}</div>
+                    { 
+                        desc.entries.map(entry => {
+                            if (typeof entry == 'string') {
+                                return <div>{entry}</div>;
+                            }
+                            if (entry.type) {
+                                return (
+                                    <ul>
+                                    { 
+                                        entry.items.map(item => {
+                                            return <li>{item}</li>;
+                                        })
+                                    }
+                                    </ul>
+                                );
+                            }
+                        })
+                    }
+                </div>
+            );
+        }
 
-            if (spell.higher_level) {
-                const safeString = this.sanitizeString(spell.higher_level);
-                
+        this.buildDescTypeList = desc => {
+            return (
+                <div>
+                    <ul>
+                        { 
+                            desc.items.map(item => {
+                                return <li>{item}</li>;
+                            })
+                        }
+                    </ul>
+                </div>
+            );
+        }
+
+        this.buildDescTypeTable = desc => {
+            // there appear to be two types of tables
+            //def need to figure out a less awful way to differentiate
+            let isType2 = false;
+            
+            try {
+                isType2 = desc.rows[0][0].type ? true : false;
+            }
+            catch {
+                isType2 = false;
+            }
+
+            if (isType2 == true) {
+                return '';
+            }
+
+            return (
+                <div className="table-outer">
+                    <div className="caption">({desc.caption})</div>
+                    <div className="table-inner">
+                        <div className="table-header">
+                            { 
+                                desc.colLabels.map(label => {
+                                    return <div className="table-col" key={label}>{label}</div>
+                                })
+                            }
+                        </div>
+                        {
+                            desc.rows.map(row => {
+                                return (
+                                    <div className="table-row">
+                                        {
+                                            row.map(colTxt => {
+                                               return <div className="table-col">{colTxt}</div>
+                                            })
+                                        }
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+            )
+
+        }
+
+        this.buildHigherLevelHtml = higher_level => {
+            if (higher_level) {
                 return (
                     <div className="label-text-pair-outer">
                         <div>At Higher Levels.</div>
-                        <div>{safeString}</div>
+                        <div>{higher_level}</div>
                     </div>
                 )
             }
             return '';
+        }
+
+    }
+
+    
+    render() {
+        const spell = this.props.spell;
+        const _buildSpellDescriptHtml = () => {
+            let htmlDescriptChunkInner = [];
+
+            for (const desc of this.props.spell.desc) {
+                
+                if (typeof desc == "string") {
+                    htmlDescriptChunkInner.push(this.buildDescTypeStr(desc));
+                    continue;
+                }
+
+                if (desc.hasOwnProperty("type")) {
+                    const type = desc.type;
+                
+                    if (type == "entries")  { htmlDescriptChunkInner.push(this.buildDescTypeEntries(desc)); }
+                    if (type == "list")     { htmlDescriptChunkInner.push(this.buildDescTypeList(desc)); }
+                    if (type == "table")    { htmlDescriptChunkInner.push(this.buildDescTypeTable(desc)); }
+
+                }
+            }
+
+            return (
+                <div className="space-sequence-20">
+                    {htmlDescriptChunkInner}
+                </div>
+            )
+        
         }
 
         return (
@@ -51,7 +167,7 @@ class Spell extends React.Component {
                         { this.state.detailsActive == false ? '+' : '-' }
                     </span>
                 </div>
-                <div className={this.state.detailsActive ? "spell-detail active" : "spell-detail"}>
+                <div className={this.state.detailsActive ? "spell-detail active space-sequence-20" : "spell-detail"}>
                     <div>{spell.level} {spell.school}</div>
                     <div>
                         <div className="label-text-pair-outer">
@@ -64,7 +180,7 @@ class Spell extends React.Component {
                         </div>
                         <div className="label-text-pair-outer">
                             <div>Components</div>
-                            <div>{spell.components} {'('+spell.material+')'}</div>
+                            <div>{spell.components} { spell.material ? `(${spell.material})` : '' }</div>
                         </div>
                         <div className="label-text-pair-outer">
                             <div>Duration</div>
@@ -76,13 +192,9 @@ class Spell extends React.Component {
                         </div>
                     </div>
                     <div>
-                        {/* {
-                            spell.desc.map(chunk => {
-                                return <div>{chunk}</div>;
-                            })
-                        } */}
+                        { _buildSpellDescriptHtml() }
                     </div>
-                    { atHigherLevel() }
+                    { this.buildHigherLevelHtml(spell.higher_level) }
                 </div>
             </div>
         )

@@ -9723,10 +9723,10 @@ const AppDictionary = {
           {
             "type": "list",
             "items": [
-              "One {@filter beast of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=beast|miscellaneous=!swarm}",
-              "Two {@filter beasts of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}",
-              "Four {@filter beasts of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=beast|miscellaneous=!swarm}",
-              "Eight {@filter beasts of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=beast|miscellaneous=!swarm}"
+              "One beast of challenge rating 2 or lower",
+              "Two beasts of challenge rating 1 or lower",
+              "Four beasts of challenge rating 1/2 or lower",
+              "Eight beasts of challenge rating 1/4 or lower"
             ]
           },
           "Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends.",
@@ -9945,10 +9945,10 @@ const AppDictionary = {
           {
             "type": "list",
             "items": [
-              "One {@filter fey creature of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=fey|miscellaneous=!swarm}",
-              "Two {@filter fey creatures of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=fey|miscellaneous=!swarm}",
-              "Four {@filter fey creatures of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=fey|miscellaneous=!swarm}",
-              "Eight {@filter fey creatures of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=fey|miscellaneous=!swarm}"
+              "One fey creature of challenge rating 2 or lower",
+              "Two fey creatures of challenge rating 1 or lower",
+              "Four fey creatures of challenge rating 1/2 or lower",
+              "Eight fey creatures of challenge rating 1/4 or lower"
             ]
           },
           "A summoned creature disappears when it drops to 0 hit points or when the spell ends.",
