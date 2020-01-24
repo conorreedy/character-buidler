@@ -99,6 +99,9 @@ function App() {
         <Route path="/spells" >
           <div className="container spells">
             <SpellsSelector />
+          </div>
+        </Route>
+        
         <Route path="/feats" >
           <div className="container">
             <Feats feats={Dictionary.FEAT_DATA} />
