@@ -14,6 +14,10 @@ import AsiGenerator from './Components/AbilityScore';
 import CharDescription from './Components/CharDescription';
 import Feats from './Components/Feats';
 
+
+//
+import Dictionary from './Dictionary';
+
 function NavBar() {
   return (
     <div>
@@ -63,7 +67,7 @@ function App() {
 
     <Router>
     
-    <div className="navbar">
+      <div className="navbar">
         <NavBar />
       </div>
     
@@ -93,7 +97,7 @@ function App() {
 
         <Route path="/feats" >
           <div className="container">
-            <Feats />
+            <Feats feats={Dictionary.FEAT_DATA} />
           </div>
         </Route>
 
