@@ -8,15 +8,14 @@ import {
   Link
 } from "react-router-dom";
 
+// Import data dictionaries
+import Dictionary from './Dictionary';
+
 // import DndClasses from './Components/DndClasses';
 import RaceSelectionForm from './Components/RaceForm';
 import AsiGenerator from './Components/AbilityScore';
 import CharDescription from './Components/CharDescription';
 import Feats from './Components/Feats';
-
-
-//
-import Dictionary from './Dictionary';
 
 function NavBar() {
   return (
