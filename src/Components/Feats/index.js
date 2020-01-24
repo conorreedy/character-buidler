@@ -7,12 +7,10 @@ class Feats extends React.Component {
 
         super(props)
 
-        this.feats = props.feats
-
         this.state = props.feats[0]
 
         this.handleMethodChange = event => {
-            const feat = this.feats.filter(feat => feat.id == event.target.value)
+            const feat = this.props.feats.filter(feat => feat.id == event.target.value)
             this.setState(feat[0])
         }
     }
@@ -33,7 +31,7 @@ class Feats extends React.Component {
             <div className="space-sequence-20">
                 <div>
                     <select className="form-control" onChange={this.handleMethodChange}>
-                        { this.feats.map(f => {
+                        { this.props.feats.map(f => {
                             return (
                                 <option value={f.id} key={f.id}>{f.name}</option>
                             )
