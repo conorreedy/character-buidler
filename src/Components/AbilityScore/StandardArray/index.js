@@ -1,5 +1,5 @@
 import React from 'react';
-import './StandardArray.css';
+import './StandardArray.scss';
 
 
 

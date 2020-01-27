@@ -1,5 +1,5 @@
 import React from "react";
-import "./ToolProficiencies.css";
+import "./ToolProficiencies.scss";
 
 class ToolProficienciesSelector extends React.Component {
     constructor(props) {

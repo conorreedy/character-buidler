@@ -1,5 +1,5 @@
 import React from "react";
-import "./DndClasses.css";
+import "./DndClasses.scss";
 
 class DndClasses extends React.Component {
     
