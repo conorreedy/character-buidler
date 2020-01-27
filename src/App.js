@@ -8,6 +8,9 @@ import {
   Link
 } from "react-router-dom";
 
+// Import data dictionaries
+import Dictionary from './Dictionary';
+
 // import DndClasses from './Components/DndClasses';
 import RaceSelectionForm from './Components/RaceForm';
 import AsiGenerator from './Components/AbilityScore';
@@ -65,7 +68,7 @@ function App() {
 
     <Router>
     
-    <div className="navbar">
+      <div className="navbar">
         <NavBar />
       </div>
     
@@ -96,12 +99,12 @@ function App() {
         <Route path="/spells" >
           <div className="container spells">
             <SpellsSelector />
-            </div>
+          </div>
         </Route>
-
+        
         <Route path="/feats" >
           <div className="container">
-            <Feats />
+            <Feats feats={Dictionary.FEAT_DATA} />
           </div>
         </Route>
 
