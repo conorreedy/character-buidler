@@ -1419,8 +1419,8 @@ const AppDictionary = {
               {
                 "name": "Survival Instincts",
                 "entries": [
-                  "{@i 2nd-level barbarian feature (replaces Danger Sense)}",
-                  "You become proficient in your choice of two of the following skills: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, or {@skill Survival}.",
+                  "2nd-level barbarian feature (replaces Danger Sense)",
+                  "You become proficient in your choice of two of the following skills: Animal Handling, Medicine, Nature, Perception, or Survival.",
                   "Your proficiency bonus is doubled for any ability check you make that uses either of those skills."
                 ],
                 "source": "UAClassFeatureVariants",
