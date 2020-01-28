@@ -8062,7 +8062,7 @@ const AppDictionary = {
             ],
             "rows": [
               [
-                "Tiny}",
+                "Tiny",
                 "20",
                 "18",
                 "+8 to hit, 1d4 + 4 damage",
