@@ -1,7 +1,7 @@
 import React from 'react';
 import './Feats.css';
 
-class Feats extends React.Component {
+class FeatSelector extends React.Component {
     
     constructor(props) {
 
@@ -63,4 +63,4 @@ class Feats extends React.Component {
 }
 
 
-export default Feats;
+export default FeatSelector;

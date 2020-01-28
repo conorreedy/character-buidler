@@ -16,7 +16,7 @@ import RaceSelectionForm from './Components/RaceForm';
 import AsiGenerator from './Components/AbilityScore';
 import CharDescription from './Components/CharDescription';
 import SpellsSelector from './Components/Spells';
-import Feats from './Components/Feats';
+import FeatSelector from './Components/FeatSelector';
 
 function NavBar() {
   return (
@@ -104,7 +104,7 @@ function App() {
         
         <Route path="/feats" >
           <div className="container">
-            <Feats feats={Dictionary.FEAT_DATA} />
+            <FeatSelector feats={Dictionary.FEAT_DATA} />
           </div>
         </Route>
 
