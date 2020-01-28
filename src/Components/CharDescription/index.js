@@ -1,5 +1,5 @@
 import React from 'react';
-import './CharDescription.css';
+import './CharDescription.scss';
 import AppDictionary from '../../Dictionary';
 
 import SkillProficienciesSelector from './SkillProficiencies';

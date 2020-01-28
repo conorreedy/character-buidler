@@ -1,5 +1,5 @@
 import React from "react";
-import "./LanguageSelections.css";
+import "./LanguageSelections.scss";
 
 
 class LanguageSelector extends React.Component {

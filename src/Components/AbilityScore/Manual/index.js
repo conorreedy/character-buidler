@@ -1,5 +1,5 @@
 import React from 'react';
-import './Manual.css';
+import './Manual.scss';
 
 
 class ManualOption extends React.Component {

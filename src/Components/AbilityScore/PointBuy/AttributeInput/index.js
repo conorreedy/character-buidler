@@ -1,5 +1,5 @@
 import React from "react";
-import './AttributeInput.css';
+import './AttributeInput.scss';
 
 
 class AttributeInputBlock extends React.Component {

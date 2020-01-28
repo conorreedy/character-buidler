@@ -1,5 +1,5 @@
 import React from 'react';
-import './AbilityScore.css';
+import './AbilityScore.scss';
 
 import PointBuy      from './PointBuy';
 import StandardArray from './StandardArray';

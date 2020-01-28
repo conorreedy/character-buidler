@@ -1,5 +1,5 @@
 import React from 'react';
-import './Subraces.css';
+import './Subraces.scss';
 
 
 class Subraces extends React.Component {
