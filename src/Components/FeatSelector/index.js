@@ -1,5 +1,5 @@
 import React from 'react';
-import './Feats.css';
+import './Feats.scss';
 
 class FeatSelector extends React.Component {
     

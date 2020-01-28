@@ -1,5 +1,5 @@
 import React from "react";
-import './PointBuy.css';
+import './PointBuy.scss';
 
 import AttributeInputBlock from '../PointBuy/AttributeInput';
 

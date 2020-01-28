@@ -1,5 +1,5 @@
 import React from "react";
-import './CustomBg.css';
+import './CustomBg.scss';
 
 // TODO
 // for background features: 

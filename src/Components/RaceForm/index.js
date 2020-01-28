@@ -1,5 +1,5 @@
 import React from "react";
-import './RaceForm.css';
+import './RaceForm.scss';
 
 import AppDictionary from '../../Dictionary';
 import Races from '../Races/index.js';

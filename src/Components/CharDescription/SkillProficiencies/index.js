@@ -1,5 +1,5 @@
 import React from "react";
-import "./SkillProficiencies.css";
+import "./SkillProficiencies.scss";
 
 
 class SkillProficienciesSelector extends React.Component {
