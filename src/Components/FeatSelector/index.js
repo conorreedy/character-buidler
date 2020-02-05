@@ -1,5 +1,5 @@
 import React from 'react';
-import './Feats.scss';
+import './FeatSelector.scss';
 
 class FeatSelector extends React.Component {
     
@@ -52,6 +52,16 @@ class FeatSelector extends React.Component {
                         {focusedFeat.points.map((p, i) => {
                             return(
                                 <li key={i}>{p}</li>
+                            )
+                        })}
+                    </ul>
+                }
+
+                {focusedFeat.options && focusedFeat.options.length > 0 &&
+                    <ul className="space-sequence-20">  
+                        {(focusedFeat.options).map((o, i) => {
+                            return(
+                                <li key={i}>{o}</li>
                             )
                         })}
                     </ul>
