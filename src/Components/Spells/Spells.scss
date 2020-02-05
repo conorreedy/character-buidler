@@ -1,3 +1,43 @@
+
+
+.filter-block  {
+    .spell-level-block > div {
+                
+        display: inline-block;
+        height: 40px;
+        width: 45px;
+        margin-left: 15px;
+        
+        &:first-child {
+            margin-left: 0;
+        }
+
+        position: relative;
+    
+        > span {
+            position: absolute;
+            top: 50%;
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+        }
+    
+        border: solid 1px #6d74dd;
+        border-radius: 5px;
+        color: #6d74dd; 
+        
+        &.active {
+            background: #6d74dd;
+            color: white;
+        }
+    }
+
+    > div:hover {
+        cursor: pointer;
+    }
+    
+}
+
 .content-block {
 
     & .spell-preview, & .spell-detail {
@@ -92,3 +132,4 @@
         }
     }
 }
+
