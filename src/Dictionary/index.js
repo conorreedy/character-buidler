@@ -1592,7 +1592,7 @@ const AppDictionary = {
           "casterProgression": "1/3",
           "classTableGroups": [{
               "colLabels": [
-                "{@filter Spells Known|spells|class=artificer (uaa)}"
+                "Spells Known"
               ],
               "rows": [
                 [
@@ -1660,10 +1660,10 @@ const AppDictionary = {
             {
               "title": "Spell Slots per Spell Level",
               "colLabels": [
-                "{@filter 1st|spells|level=1|class=Artificer (UAA)}",
-                "{@filter 2nd|spells|level=2|class=Artificer (UAA)}",
-                "{@filter 3rd|spells|level=3|class=Artificer (UAA)}",
-                "{@filter 4th|spells|level=4|class=Artificer (UAA)}"
+                "1st",
+                "2nd",
+                "3rd",
+                "4th"
               ],
               "rows": [
                 [
@@ -6608,8 +6608,8 @@ const AppDictionary = {
         "casterProgression": "full",
         "classTableGroups": [{
             "colLabels": [
-              "{@filter Cantrips Known|spells|level=0|class=bard}",
-              "{@filter Spells Known|spells|class=bard}"
+              "Cantrips Known",
+              "Spells Known"
             ],
             "rows": [
               [
@@ -6697,15 +6697,15 @@ const AppDictionary = {
           {
             "title": "Spell Slots per Spell Level",
             "colLabels": [
-              "{@filter 1st|spells|level=1|class=bard}",
-              "{@filter 2nd|spells|level=2|class=bard}",
-              "{@filter 3rd|spells|level=3|class=bard}",
-              "{@filter 4th|spells|level=4|class=bard}",
-              "{@filter 5th|spells|level=5|class=bard}",
-              "{@filter 6th|spells|level=6|class=bard}",
-              "{@filter 7th|spells|level=7|class=bard}",
-              "{@filter 8th|spells|level=8|class=bard}",
-              "{@filter 9th|spells|level=9|class=bard}"
+              "1st",
+              "2nd",
+              "3rd",
+              "4th",
+              "5th",
+              "6th",
+              "7th",
+              "8th",
+              "9th"
             ],
             "rows": [
               [
@@ -8414,7 +8414,7 @@ const AppDictionary = {
         "casterProgression": "full",
         "classTableGroups": [{
             "colLabels": [
-              "{@filter Cantrips Known|spells|level=0|class=Cleric}"
+              "Cantrips Known"
             ],
             "rows": [
               [
@@ -8482,15 +8482,15 @@ const AppDictionary = {
           {
             "title": "Spell Slots per Spell Level",
             "colLabels": [
-              "{@filter 1st|spells|level=1|class=Cleric}",
-              "{@filter 2nd|spells|level=2|class=Cleric}",
-              "{@filter 3rd|spells|level=3|class=Cleric}",
-              "{@filter 4th|spells|level=4|class=Cleric}",
-              "{@filter 5th|spells|level=5|class=Cleric}",
-              "{@filter 6th|spells|level=6|class=Cleric}",
-              "{@filter 7th|spells|level=7|class=Cleric}",
-              "{@filter 8th|spells|level=8|class=Cleric}",
-              "{@filter 9th|spells|level=9|class=Cleric}"
+              "1st",
+              "2nd",
+              "3rd",
+              "4th",
+              "5th",
+              "6th",
+              "7th",
+              "8th",
+              "9th"
             ],
             "rows": [
               [
@@ -12286,7 +12286,7 @@ const AppDictionary = {
         "casterProgression": "full",
         "classTableGroups": [{
             "colLabels": [
-              "{@filter Cantrips Known|spells|level=0|class=Druid}"
+              "Cantrips Known"
             ],
             "rows": [
               [
@@ -12354,15 +12354,15 @@ const AppDictionary = {
           {
             "title": "Spell Slots per Spell Level",
             "colLabels": [
-              "{@filter 1st|spells|level=1|class=Druid}",
-              "{@filter 2nd|spells|level=2|class=Druid}",
-              "{@filter 3rd|spells|level=3|class=Druid}",
-              "{@filter 4th|spells|level=4|class=Druid}",
-              "{@filter 5th|spells|level=5|class=Druid}",
-              "{@filter 6th|spells|level=6|class=Druid}",
-              "{@filter 7th|spells|level=7|class=Druid}",
-              "{@filter 8th|spells|level=8|class=Druid}",
-              "{@filter 9th|spells|level=9|class=Druid}"
+              "1st",
+              "2nd",
+              "3rd",
+              "4th",
+              "5th",
+              "6th",
+              "7th",
+              "8th",
+              "9th"
             ],
             "rows": [
               [
@@ -15517,12 +15517,12 @@ const AppDictionary = {
         "startingEquipment": {
           "additionalFromBackground": true,
           "default": [
-            "(a) {@item chain mail|phb} or (b) {@item leather armor|phb|leather}, {@item longbow|phb}, and {@item arrows (20)|phb|20 arrows}",
-            "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
-            "(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) two {@item handaxe|phb|handaxes}",
-            "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+            "(a) chain mail or (b) leather armor, longbow, and arrows (20)",
+            "(a) a martial weapon and a shield or (b) two martial weapons",
+            "(a) a light crossbow and crossbow bolts (20) or (b) two handaxe",
+            "(a) a dungeoneer's pack or (b) an explorer's pack"
           ],
-          "goldAlternative": "{@dice 5d4×10|5d4 × 10|Starting Gold}"
+          "goldAlternative": "5d4×10 Starting Gold"
         },
         "multiclassing": {
           "requirements": {
@@ -21775,11 +21775,11 @@ const AppDictionary = {
         "classTableGroups": [{
           "title": "Spell Slots per Spell Level",
           "colLabels": [
-            "{@filter 1st|spells|level=1|class=Paladin}",
-            "{@filter 2nd|spells|level=2|class=Paladin}",
-            "{@filter 3rd|spells|level=3|class=Paladin}",
-            "{@filter 4th|spells|level=4|class=Paladin}",
-            "{@filter 5th|spells|level=5|class=Paladin}"
+            "1st",
+            "2nd",
+            "3rd",
+            "4th",
+            "5th"
           ],
           "rows": [
             [
@@ -21952,12 +21952,12 @@ const AppDictionary = {
         "startingEquipment": {
           "additionalFromBackground": true,
           "default": [
-            "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
-            "(a) five {@item javelin|phb|javelins} or (b) any {@filter simple melee weapon|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
-            "(a) a {@item priest's pack|phb} or (b) an {@item explorer's pack|phb}",
-            "{@item Chain mail|phb} and a {@item holy symbol|phb}"
+            "(a) a martial weapon and a shield or (b) two martial weapons",
+            "(a) five javelins or (b) any simple melee weapon",
+            "(a) a priest's pack or (b) an explorer's pack",
+            "Chain mail and a holy symbol"
           ],
-          "goldAlternative": "{@dice 5d4×10|5d4 × 10|Starting Gold}"
+          "goldAlternative": "5d4 × 10 Starting Gold}"
         },
         "multiclassing": {
           "requirements": {
@@ -22175,6 +22175,7 @@ const AppDictionary = {
                 "When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose from the list of available oaths.",
                 "Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.",
                 {
+                  "type": "entries",
                   "name": "Oath Spells",
                   "entries": [
                     "Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.",
@@ -22182,6 +22183,7 @@ const AppDictionary = {
                   ]
                 },
                 {
+                  "type": "entries",
                   "name": "Channel Divinity",
                   "entries": [
                     "Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.",
@@ -24630,7 +24632,7 @@ const AppDictionary = {
           "casterProgression": "1/2",
           "classTableGroups": [{
               "colLabels": [
-                "{@filter Spells Known|spells|class=ranger}"
+                "Spells Known"
               ],
               "rows": [
                 [
@@ -24698,11 +24700,11 @@ const AppDictionary = {
             {
               "title": "Spell Slots per Spell Level",
               "colLabels": [
-                "{@filter 1st|spells|level=1|class=Ranger}",
-                "{@filter 2nd|spells|level=2|class=Ranger}",
-                "{@filter 3rd|spells|level=3|class=Ranger}",
-                "{@filter 4th|spells|level=4|class=Ranger}",
-                "{@filter 5th|spells|level=5|class=Ranger}"
+                "1st",
+                "2nd",
+                "3rd",
+                "4th",
+                "5th"
               ],
               "rows": [
                 [
@@ -32456,8 +32458,8 @@ const AppDictionary = {
           },
           {
             "colLabels": [
-              "{@filter Cantrips Known|spells|level=0|class=Sorcerer}",
-              "{@filter Spells Known|spells|class=Sorcerer}"
+              "Cantrips Known",
+              "Spells Known"
             ],
             "rows": [
               [
@@ -32545,15 +32547,15 @@ const AppDictionary = {
           {
             "title": "Spell Slots per Spell Level",
             "colLabels": [
-              "{@filter 1st|spells|level=1|class=Sorcerer}",
-              "{@filter 2nd|spells|level=2|class=Sorcerer}",
-              "{@filter 3rd|spells|level=3|class=Sorcerer}",
-              "{@filter 4th|spells|level=4|class=Sorcerer}",
-              "{@filter 5th|spells|level=5|class=Sorcerer}",
-              "{@filter 6th|spells|level=6|class=Sorcerer}",
-              "{@filter 7th|spells|level=7|class=Sorcerer}",
-              "{@filter 8th|spells|level=8|class=Sorcerer}",
-              "{@filter 9th|spells|level=9|class=Sorcerer}"
+              "1st",
+              "2nd",
+              "3rd",
+              "4th",
+              "5th",
+              "6th",
+              "7th",
+              "8th",
+              "9th"
             ],
             "rows": [
               [
@@ -32804,12 +32806,12 @@ const AppDictionary = {
         "startingEquipment": {
           "additionalFromBackground": true,
           "default": [
-            "(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-            "(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
-            "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
-            "Two {@item dagger|phb|daggers}"
+            "(a) a light crossbow and {@item crossbow bolts (20) or (b) any {@filter simple weapon",
+            "(a) a {@item component pouch or (b) an {@item arcane focus",
+            "(a) a {@item dungeoneer's pack or (b) an {@item explorer's pack",
+            "Two daggers"
           ],
-          "goldAlternative": "{@dice 3d4×10|3d4 × 10|Starting Gold}"
+          "goldAlternative": "3d4 × 10 Starting Gold}"
         },
         "multiclassing": {
           "requirements": {
@@ -35350,151 +35352,151 @@ const AppDictionary = {
         "spellcastingAbility": "cha",
         "classTableGroups": [{
           "colLabels": [
-            "{@filter Cantrips Known|spells|level=0|class=Warlock}",
-            "{@filter Spells Known|spells|class=Warlock}",
+            "Cantrips Known",
+            "Spells Known",
             "Spell Slots",
             "Slot Level",
-            "{@filter Invocations Known|optionalfeatures|feature type=ei}"
+            "Invocations Known|"
           ],
           "rows": [
             [
               2,
               2,
               1,
-              "{@filter 1st|spells|level=1|class=Warlock}",
+              "1st",
               0
             ],
             [
               2,
               3,
               2,
-              "{@filter 1st|spells|level=1|class=Warlock}",
+              "1st",
               2
             ],
             [
               2,
               4,
               2,
-              "{@filter 2nd|spells|level=2|class=Warlock}",
+              "2nd",
               2
             ],
             [
               3,
               5,
               2,
-              "{@filter 2nd|spells|level=2|class=Warlock}",
+              "2nd",
               2
             ],
             [
               3,
               6,
               2,
-              "{@filter 3rd|spells|level=3|class=Warlock}",
+              "3rd",
               3
             ],
             [
               3,
               7,
               2,
-              "{@filter 3rd|spells|level=3|class=Warlock}",
+              "3rd",
               3
             ],
             [
               3,
               8,
               2,
-              "{@filter 4th|spells|level=4|class=Warlock}",
+              "4th",
               4
             ],
             [
               3,
               9,
               2,
-              "{@filter 4th|spells|level=4|class=Warlock}",
+              "4th",
               4
             ],
             [
               3,
               10,
               2,
-              "{@filter 5th|spells|level=5|class=Warlock}",
+              "5th",
               5
             ],
             [
               4,
               10,
               2,
-              "{@filter 5th|spells|level=5|class=Warlock}",
+              "5th",
               5
             ],
             [
               4,
               11,
               3,
-              "{@filter 5th|spells|level=5|class=Warlock}",
+              "5th",
               5
             ],
             [
               4,
               11,
               3,
-              "{@filter 5th|spells|level=5|class=Warlock}",
+              "5th",
               6
             ],
             [
               4,
               12,
               3,
-              "{@filter 5th|spells|level=5|class=Warlock}",
+              "5th",
               6
             ],
             [
               4,
               12,
               3,
-              "{@filter 5th|spells|level=5|class=Warlock}",
+              "5th",
               6
             ],
             [
               4,
               13,
               3,
-              "{@filter 5th|spells|level=5|class=Warlock}",
+              "5th",
               7
             ],
             [
               4,
               13,
               3,
-              "{@filter 5th|spells|level=5|class=Warlock}",
+              "5th",
               7
             ],
             [
               4,
               14,
               4,
-              "{@filter 5th|spells|level=5|class=Warlock}",
+              "5th",
               7
             ],
             [
               4,
               14,
               4,
-              "{@filter 5th|spells|level=5|class=Warlock}",
+              "5th",
               8
             ],
             [
               4,
               15,
               4,
-              "{@filter 5th|spells|level=5|class=Warlock}",
+              "5th",
               8
             ],
             [
               4,
               15,
               4,
-              "{@filter 5th|spells|level=5|class=Warlock}",
+              "5th",
               8
             ]
           ]
@@ -35524,12 +35526,12 @@ const AppDictionary = {
         "startingEquipment": {
           "additionalFromBackground": true,
           "default": [
-            "(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-            "(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
-            "(a) a {@item scholar's pack|phb} or (b) a {@item dungeoneer's pack|phb}",
-            "{@item Leather armor|phb}, any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}, and two {@item dagger|phb|daggers}"
+            "(a) a light crossbow and crossbow bolts (20) or (b) any simple weapon",
+            "(a) a component pouch or (b) an arcane focus",
+            "(a) a scholar's pack or (b) a dungeoneer's pack",
+            "Leather armor, any simple weapon, and two daggers"
           ],
-          "goldAlternative": "{@dice 4d4×10|4d4 × 10|Starting Gold}"
+          "goldAlternative": "4d4 × 10 Starting Gold}"
         },
         "multiclassing": {
           "requirements": {
@@ -37845,1125 +37847,6 @@ const AppDictionary = {
         ],
         "page": 105
       }]
-    },
-    {
-      "class": [{
-          "name": "Warrior Sidekick",
-          "source": "UASidekicks",
-          "classFeatures": [
-            [{
-                "type": "inset",
-                "name": "Sidekick Class",
-                "entries": [
-                  "{@note Note: this class is intended for NPC {@variantrule sidekicks|uasidekicks}.}"
-                ]
-              },
-              {
-                "name": "Bonus Proficiencies",
-                "entries": [
-                  "At 1st level, the sidekick gains proficiency in one saving throw of your choice: Strength, Dexterity, or Constitution.",
-                  "In addition, the sidekick gains proficiency in three skills of your choice from the following list: {@skill Acrobatics}, {@skill Animal Handling}, {@skill Athletics}, {@skill Intimidation}, {@skill Nature}, {@skill Perception}, and {@skill Survival}. If the sidekick is a humanoid, it also gains proficiency with all armor, shields, and simple and martial weapons."
-                ]
-              },
-              {
-                "name": "Second Wind",
-                "entries": [
-                  "Starting at 1st level, the sidekick can use a bonus action on its turn to regain hit points equal to 1d10 + its level in this class. Once it uses this feature, it must finish a short or long rest before it can use it again.",
-                  "The sidekick can use this feature twice between rests starting at 18th level."
-                ]
-              }
-            ],
-            [{
-              "name": "Danger Sense",
-              "entries": [
-                "Beginning at 2nd level, the sidekick has advantage on Dexterity saving throws against effects that it can see, such as traps and spells. This feature doesn't work if the sidekick is incapacitated."
-              ]
-            }],
-            [{
-              "name": "Improved Critical",
-              "entries": [
-                "Starting at 3rd level, the sidekick's attack rolls score a critical hit on a roll of 19 or 20 on the d20."
-              ]
-            }],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 4th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [{
-              "name": "Extra Attack (1 extra)",
-              "entries": [
-                "Beginning at 5th level, the sidekick can attack twice, instead of once, whenever it takes the Attack action on its turn.",
-                "The number of attacks increases to three when the sidekick reaches 11th level and to four when it reaches 20th level."
-              ]
-            }],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 6th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 6th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [{
-              "name": "Battle Readiness",
-              "entries": [
-                "After the sidekick reaches 7th level, it has advantage on initiative rolls."
-              ]
-            }],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 8th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 8th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [{
-              "name": "Indomitable (1 use)",
-              "entries": [
-                "Starting at 9th level, the sidekick can reroll a saving throw that it fails, but it must use the new roll. When it uses this feature, it can't use the feature again unless it finishes a long rest.",
-                "The sidekick can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level."
-              ]
-            }],
-            [{
-              "name": "Improved Defense",
-              "entries": [
-                "At 10th level, the sidekick's Armor Class increases by 1."
-              ]
-            }],
-            [{
-              "name": "Extra Attack (2 extra)",
-              "entries": [
-                "At 11th level, you gain another Extra Attack."
-              ]
-            }],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 12th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 12th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [{
-              "name": "Indomitable (2 uses)",
-              "entries": [
-                "At 13th level, you gain another use of Indomitable."
-              ]
-            }],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 14th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 14th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [{
-              "name": "Superior Critical",
-              "entries": [
-                "Starting at 15th level, the sidekick's attack rolls score a critical hit on a roll of 18-20 on the d20."
-              ]
-            }],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 16th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 16th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [{
-              "name": "Indomitable (3 uses)",
-              "entries": [
-                "At 17th level, you gain another use of Indomitable."
-              ]
-            }],
-            [{
-              "name": "Second Wind (2 uses)",
-              "entries": [
-                "At 18th level, you gain another use of Second Wind."
-              ]
-            }],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 19th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 19th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [{
-              "name": "Extra Attack (3 extra)",
-              "entries": [
-                "At 20th level, you gain another Extra Attack."
-              ]
-            }]
-          ],
-          "fluff": [{
-            "entries": [
-              "A warrior sidekick grows in martial prowess as it fights by your side. It might be a soldier, a town guard, a battle-trained beast, or any other creature honed for combat."
-            ],
-            "source": "UASidekicks",
-            "page": 2
-          }],
-          "page": 2
-        },
-        {
-          "name": "Expert Sidekick",
-          "source": "UASidekicks",
-          "classFeatures": [
-            [{
-                "type": "inset",
-                "name": "Sidekick Class",
-                "entries": [
-                  "To gain the expert class, a creature must have at least one language in its stat block that it can speak.",
-                  "{@note Note: this class is intended for NPC {@variantrule sidekicks|uasidekicks}.}"
-                ]
-              },
-              {
-                "name": "Bonus Proficiencies",
-                "entries": [
-                  "At 1st level, the sidekick gains proficiency in one saving throw of your choice: Dexterity, Intelligence, or Constitution.",
-                  "In addition, the sidekick gains proficiency in five skills of your choice. If the sidekick is a humanoid, it also gains proficiency with light armor, simple weapons, and two tools of your choice.",
-                  "At 13th level, the sidekick gains proficiency in one skill of your choice. If the sidekick is a humanoid, it also gains proficiency with one tool of your choice."
-                ]
-              },
-              {
-                "name": "Expertise",
-                "entries": [
-                  "At 1st level, choose two of the sidekick's skill proficiencies. The sidekick's proficiency bonus is doubled for any ability check it makes that uses either of the chosen proficiencies.",
-                  "At 6th level and again at 17th level, choose two more of the sidekick's skill proficiencies to gain this benefit."
-                ]
-              },
-              {
-                "name": "Helpful",
-                "entries": [
-                  "The sidekick is adept at giving well-timed assistance; the sidekick can take the Help action as a bonus action."
-                ]
-              }
-            ],
-            [{
-              "name": "Cunning Action",
-              "entries": [
-                "Starting at 2nd level, the sidekick's agility or quick thinking allows it to act speedily. On its turn in combat, it can take the Dash, Disengage, or Hide action as a bonus action."
-              ]
-            }],
-            [{
-              "name": "Jack of Many Trades",
-              "entries": [
-                "Beginning at 3rd level, the sidekick can add half its proficiency bonus to any ability check it makes that uses a skill but doesn't already include its proficiency bonus."
-              ]
-            }],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "When you reach 4th level, and again at 8th, 10th, 12th, 14th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 4th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [{
-              "name": "Extra Attack",
-              "entries": [
-                "Starting at 5th level, the sidekick can attack twice, instead of once, whenever it takes the Attack action on its turn."
-              ]
-            }],
-            [{
-              "name": "Expertise",
-              "entries": [
-                "At 6th level, you gain another Expertise."
-              ]
-            }],
-            [{
-              "name": "Evasion",
-              "entries": [
-                "Beginning at 7th level, because of extraordinary good luck, the sidekick is skilled at avoiding certain dangers. When the sidekick is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it failed. The sidekick doesn't benefit from this feature while incapacitated."
-              ]
-            }],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 8th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 8th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [{
-              "name": "Inspiring Help (1d6)",
-              "entries": [
-                "Starting at 9th level, the sidekick's assistance becomes especially inspiring. When the sidekick uses its Helpful bonus action, the creature who receives the help also gains a 1d6 bonus to the d20 roll. If that roll is an attack roll, the creature can forgo adding the bonus to it, and then if the attack hits, the creature can add the bonus to the attack's damage roll against one target.",
-                "At 18th level, the bonus increases to 2d6."
-              ]
-            }],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 10th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 10th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [{
-              "name": "Reliable Talent",
-              "entries": [
-                "By 11th level, the sidekick has refined its skills to an exceptional degree. Whenever the sidekick makes an ability check that includes its whole proficiency bonus, it can treat a d20 roll of 9 or lower as a 10."
-              ]
-            }],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 12th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 12th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [{
-              "name": "Bonus Proficiencies",
-              "entries": [
-                "At 13th level, you gain more Bonus Proficiencies."
-              ]
-            }],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 14th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 14th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [{
-              "name": "Sharp Mind",
-              "entries": [
-                "At 15th level, the sidekick gains proficiency in Intelligence, Wisdom, or Charisma saving throws (your choice)."
-              ]
-            }],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 16th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 16th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [{
-              "name": "Expertise",
-              "entries": [
-                "At 17th level, you gain another Expertise."
-              ]
-            }],
-            [{
-              "name": "Inspiring Help (2d6)",
-              "entries": [
-                "At 18th level, your Inspiring Help bonus increases to 2d6."
-              ]
-            }],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 19th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 19th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [{
-              "name": "Stroke of Luck",
-              "entries": [
-                "At 20th level, the sidekick has an uncanny knack for turning failure into success. If the sidekick's attack misses a target within range, it can turn the miss into a hit. Alternatively, if it fails an ability check, it can treat the d20 roll as a 20.",
-                "Once it uses this feature, the sidekick can't use it again until it finishes a short or long rest."
-              ]
-            }]
-          ],
-          "fluff": [{
-            "entries": [
-              "The expert is a master of certain tasks or knowledge. This sidekick follows a path that favors cunning over brawn or spellcasting. It might be a scout, a musician, a librarian, a clever street kid, a wily merchant, or a burglar."
-            ],
-            "source": "UASidekicks",
-            "page": 3
-          }],
-          "page": 3
-        },
-        {
-          "name": "Spellcaster Sidekick",
-          "source": "UASidekicks",
-          "classTableGroups": [{
-              "colLabels": [
-                "{@filter Cantrips Known|spells|level=0}"
-              ],
-              "rows": [
-                [
-                  3
-                ],
-                [
-                  3
-                ],
-                [
-                  3
-                ],
-                [
-                  4
-                ],
-                [
-                  4
-                ],
-                [
-                  4
-                ],
-                [
-                  4
-                ],
-                [
-                  4
-                ],
-                [
-                  4
-                ],
-                [
-                  5
-                ],
-                [
-                  5
-                ],
-                [
-                  5
-                ],
-                [
-                  5
-                ],
-                [
-                  5
-                ],
-                [
-                  5
-                ],
-                [
-                  5
-                ],
-                [
-                  5
-                ],
-                [
-                  5
-                ],
-                [
-                  5
-                ],
-                [
-                  5
-                ]
-              ]
-            },
-            {
-              "colLabels": [
-                "{@filter Spells Known|spells|level=!0}"
-              ],
-              "rows": [
-                [
-                  3
-                ],
-                [
-                  3
-                ],
-                [
-                  4
-                ],
-                [
-                  5
-                ],
-                [
-                  6
-                ],
-                [
-                  7
-                ],
-                [
-                  8
-                ],
-                [
-                  9
-                ],
-                [
-                  10
-                ],
-                [
-                  11
-                ],
-                [
-                  12
-                ],
-                [
-                  12
-                ],
-                [
-                  13
-                ],
-                [
-                  13
-                ],
-                [
-                  14
-                ],
-                [
-                  14
-                ],
-                [
-                  15
-                ],
-                [
-                  15
-                ],
-                [
-                  16
-                ],
-                [
-                  16
-                ]
-              ]
-            },
-            {
-              "title": "Spell Slots per Spell Level",
-              "colLabels": [
-                "{@filter 1st|spells|level=1}",
-                "{@filter 2nd|spells|level=2}",
-                "{@filter 3rd|spells|level=3}",
-                "{@filter 4th|spells|level=4}",
-                "{@filter 5th|spells|level=5}",
-                "{@filter 6th|spells|level=6}",
-                "{@filter 7th|spells|level=7}",
-                "{@filter 8th|spells|level=8}",
-                "{@filter 9th|spells|level=9}"
-              ],
-              "rows": [
-                [
-                  2,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                [
-                  3,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                [
-                  4,
-                  2,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                [
-                  4,
-                  3,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                [
-                  4,
-                  3,
-                  2,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  1,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  2,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  3,
-                  1,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  3,
-                  2,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  3,
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  3,
-                  2,
-                  1,
-                  0,
-                  0,
-                  0
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  3,
-                  2,
-                  1,
-                  1,
-                  0,
-                  0
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  3,
-                  2,
-                  1,
-                  1,
-                  0,
-                  0
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  3,
-                  2,
-                  1,
-                  1,
-                  1,
-                  0
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  3,
-                  2,
-                  1,
-                  1,
-                  1,
-                  0
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  3,
-                  3,
-                  1,
-                  1,
-                  1,
-                  1
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  3,
-                  3,
-                  1,
-                  1,
-                  1,
-                  1
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  3,
-                  3,
-                  2,
-                  1,
-                  1,
-                  1
-                ],
-                [
-                  4,
-                  3,
-                  3,
-                  3,
-                  3,
-                  2,
-                  2,
-                  1,
-                  1
-                ]
-              ]
-            }
-          ],
-          "classFeatures": [
-            [{
-                "type": "inset",
-                "name": "Sidekick Class",
-                "entries": [
-                  "To gain the spellcaster class, a creature must have at least one language in its stat block that it can speak.",
-                  "{@note Note: this class is intended for NPC {@variantrule sidekicks|uasidekicks}.}"
-                ]
-              },
-              {
-                "name": "Bonus Proficiencies",
-                "entries": [
-                  "When the sidekick joins this class, the sidekick gains proficiency in one saving throw of your choice: Wisdom, Intelligence, or Charisma.",
-                  "In addition, the sidekick gains proficiency in three skills of your choice from the following list: {@skill Arcana}, {@skill History}, {@skill Insight}, {@skill Investigation}, {@skill Medicine}, {@skill Performance}, {@skill Persuasion}, and {@skill Religion}. If the sidekick is a humanoid, it also gains proficiency with simple weapons and light armor."
-                ]
-              },
-              {
-                "name": "Spellcasting",
-                "entries": [
-                  "At 1st level, the sidekick gains the ability to cast spells. (If the creature already has the Spellcasting trait, this feature replaces that trait.) Choose a class: bard, cleric, druid, sorceror, warlock, or wizard. This choice determines the spell list, spellcasting ability, and spellcasting focus used by the sidekick, as shown on the Spellcasting table.",
-                  {
-                    "type": "table",
-                    "caption": "Spellcasting",
-                    "colLabels": [
-                      "Spell List",
-                      "Ability",
-                      "Focus"
-                    ],
-                    "colStyles": [
-                      "col-4",
-                      "col-4",
-                      "col-4"
-                    ],
-                    "rows": [
-                      [
-                        "{@filter Bard|spells|class=Bard}",
-                        "Charisma",
-                        "{@filter Musical instrument|items|type=instrument}"
-                      ],
-                      [
-                        "{@filter Cleric|spells|class=Cleric}",
-                        "Wisdom",
-                        "{@item Holy Symbol|PHB}"
-                      ],
-                      [
-                        "{@filter Druid|spells|class=Druid}",
-                        "Wisdom",
-                        "{@item Druidic Focus|PHB}"
-                      ],
-                      [
-                        "{@filter Sorceror|spells|class=Sorceror}",
-                        "Charisma",
-                        "{@item Arcane Focus|PHB}"
-                      ],
-                      [
-                        "{@filter Warlock|spells|class=Warlock}",
-                        "Charisma",
-                        "{@item Arcane Focus|PHB}"
-                      ],
-                      [
-                        "{@filter Wizard|spells|class=Wizard}",
-                        "Intelligence",
-                        "{@item Arcane Focus|PHB}"
-                      ]
-                    ]
-                  },
-                  {
-                    "type": "entries",
-                    "name": "Cantrips",
-                    "entries": [
-                      "At first level, the sidekick knows three cantrips of your choice from its spell list. The sidekick learns additional cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Spellcaster table."
-                    ]
-                  },
-                  {
-                    "type": "entries",
-                    "name": "Spell Slots",
-                    "entries": [
-                      "The Spellcaster table shows how many spell slots the sidekick has to cast its spellcaster spells of 1st level and higher. To cast one of these spells, the sidekick must expend a slot of the spell's level or higher. The spellcaster regains all expended spell slots when it finishes a long rest.",
-                      "For example, if the sidekick knows the 1st-level spell {@spell cure wounds} and has a 1st-level and a 2nd-level spell slot available, it can cast the spell using either slot."
-                    ]
-                  },
-                  {
-                    "type": "entries",
-                    "name": "Spells Known",
-                    "entries": [
-                      "The sidekick knows three 1st-level spells of your choice from its spell list.",
-                      "The Spells Known column of the Spellcaster table shows when the sidekick learns more spells of your choice. Each of these spells must be of a level for which the sidekick has spell slots, as shown on the table. For instance when the sidekick reaches 3rd level in this class, it can learn one new spell of 1st or 2nd level.",
-                      "Additionally, when the sidekick gains a level in this class, you can choose one of the spells it knows from this class and replace it with another spell from its spell list, which also must be of a level for which it has spell slots."
-                    ]
-                  },
-                  {
-                    "type": "entries",
-                    "name": "Spellcasting Ability",
-                    "entries": [
-                      "The sidekick's spellcasting ability for these spells depends on the choice you made on the Spellcasting table.",
-                      "The sidekick uses its spellcasting ability whenever a spell refers to that ability. In addition, it uses its spellcasting ability modifier when setting the saving throw DC for a spell it casts and when making an attack roll with one.",
-                      {
-                        "type": "abilityDc",
-                        "name": "Spell",
-                        "attributes": [
-                          "spellcasting modifier"
-                        ]
-                      },
-                      {
-                        "type": "abilityAttackMod",
-                        "name": "Spell",
-                        "attributes": [
-                          "spellcasting modifier"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "entries",
-                    "name": "Spellcasting Focus",
-                    "entries": [
-                      "The sidekick can use a focus for its spells depending on the choice you made on the Spellcasting table."
-                    ]
-                  }
-                ]
-              }
-            ],
-            [{
-              "name": "Magical Recovery",
-              "entries": [
-                "Beginning at 2nd level, when the sidekick finishes a short rest, it can recover expended spell slots. The spell slots can have a combined level that is equal to or less than half its level in this class (rounded up), and none of the spell slots can be 6th level or higher.",
-                "Once the sidekick uses this feature, it can't use the feature again until it finishes a long rest."
-              ]
-            }],
-            [],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 4th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [],
-            [{
-              "name": "Potent Cantrips",
-              "entries": [
-                "Starting at 6th level, the sidekick can add its spellcasting ability modifier to the damage it deals with any cantrip."
-              ]
-            }],
-            [],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 8th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 8th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [],
-            [{
-              "name": "Empowered Spells",
-              "entries": [
-                "At 10th level, choose one school of magic. Whenever the sidekick casts a spell of that school by expending a spell slot, the sidekick can add its spellcasting ability modifier to the spell's damage roll or healing roll, if any."
-              ]
-            }],
-            [],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 12th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 12th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [],
-            [{
-              "name": "Focused Casting",
-              "entries": [
-                "Starting at 14th level, the sidekick has advantage on any Constitution saving throw it makes to maintain its concentration on a spell."
-              ]
-            }],
-            [],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 16th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 16th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [],
-            [{
-                "name": "Ability Score Improvement",
-                "entries": [
-                  "At 18th level, you gain another Ability Score Improvement."
-                ]
-              },
-              {
-                "type": "entries",
-                "name": "Proficiency Versatility",
-                "entries": [
-                  "{@i 18th-level feature (enhances Ability Score Improvement)}",
-                  "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-                  "This change represents one of your skills atrophying as you focus on a different skill."
-                ],
-                "source": "UAClassFeatureVariants",
-                "page": 1
-              }
-            ],
-            [],
-            [{
-              "name": "Signature Spells",
-              "entries": [
-                "At 20th level, choose two spells that the sidekick knows from this class. Eligible spells are of 1st, 2nd, and 3rd level. The sidekick can cast each of the chosen spell once at 3rd level without expending a spell slot. After the sidekick casts a spell in this way, the sidekick regains the ability to cast that spell with this feature when it finishes a short or long rest."
-              ]
-            }]
-          ],
-          "fluff": [{
-            "entries": [
-              "A sidekick who becomes a spellcaster walks the paths of magic. The sidekick might be a hedge wizard, a priest, a soothsayer, a spell-wielding performer, or a person with magic in their veins."
-            ],
-            "source": "UASidekicks",
-            "page": 4
-          }],
-          "page": 4
-        }
-      ]
     },
     {
       "class": [{

@@ -7,10 +7,6 @@ class PcClass extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            pcClass: this.props.pcClass,
-        }
-
         this.buildClassTableGroups = cts => {
             // early exit 
             if (!cts) return "";
@@ -31,6 +27,23 @@ class PcClass extends React.Component {
                         {
                             cts.map( ct => {
                                 return ct.rows[index].map(col => {
+                                    if (col.type) {
+                                        
+                                        if (col.type == "bonusSpeed") {
+                                            return <div className="table-col">{col.value > 0 ? `+${col.value} ft.` : "-"}</div>        
+                                        }
+
+                                        if (col.type == "bonus") {
+                                            return <div className="table-col">{col.value > 0 ? col.value : "-"}</div>        
+                                        }
+
+                                        if (col.type == "dice") {
+                                            const toRoll = col.toRoll[0];
+                                            return <div className="table-col">{toRoll.number > 0 ? `${toRoll.number}d${toRoll.faces}` : "-"}</div>
+                                        }
+
+                                    }
+
                                     return <div className="table-col">{col > 0 ? col : "-"}</div>
                                 })
                             })
@@ -151,8 +164,12 @@ class PcClass extends React.Component {
     }
 
     render() {
-
-        const x = this.state.pcClass;
+        
+        const x = this.props.pcClass;
+        
+        if (x == null) {
+            return '';
+        }
             
         return (
             <div className="space-sequence-20">

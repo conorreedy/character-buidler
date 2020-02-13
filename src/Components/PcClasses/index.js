@@ -10,7 +10,6 @@ class PcClasses extends React.Component {
         this.state = {
             pcClasses: this.props.pcClasses,
             activePcClass: null,
-            activePcClassName: null,
         }
 
         this.setActivePcClass = event => {
@@ -19,15 +18,12 @@ class PcClasses extends React.Component {
             
             this.setState({
                 activePcClass: activeClass.class[0],
-                activePcClassName: activeClass.class[0].name,
             })
         }
     }
 
     render() {
         
-        const activeClass = this.state.activePcClassName ? <PcClass pcClass={this.state.activePcClass} /> : "";
-
         return (
             <div className="space-sequence-20">
                 <div>
@@ -41,7 +37,8 @@ class PcClasses extends React.Component {
                     </select>
                 </div>
 
-                <div>{activeClass}</div>
+                <PcClass 
+                    pcClass={this.state.activePcClass} />
             </div>
         )
     }
