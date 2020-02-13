@@ -1,8 +1,7 @@
 import React from "react";
+import './PcClasses.scss';
 
-import Barbarian from "./Barbarian";
-import Fighter from "./Fighter";
-import Wizard from "./Wizard";
+import PcClass from "./PcClass";
 
 class PcClasses extends React.Component {
     constructor (props) {
@@ -11,44 +10,23 @@ class PcClasses extends React.Component {
         this.state = {
             pcClasses: this.props.pcClasses,
             activePcClass: null,
-            classIdHash: _buildClassIdHash(this.props.pcClasses)
+            activePcClassName: null,
         }
 
         this.setActivePcClass = event => {
             const val = event.target.value;
             const activeClass = this.state.pcClasses.find(x => x.class[0].name === val);
-
+            
             this.setState({
-                activePcClass: activeClass.class[0].name.toLowerCase().trim()
+                activePcClass: activeClass.class[0],
+                activePcClassName: activeClass.class[0].name,
             })
         }
     }
 
     render() {
-        let activeClass;
-        
-
-        //TODO: 
-        //  1. integrate more reliable method of matching these 
-        //  2. refactor this nightmare
-        
-        //barbarian 
-        if (this.state.activePcClass == this.state.classIdHash.barbarian.name) {
-            const index = this.state.classIdHash.barbarian.indexReference;
-            activeClass = <Barbarian data={this.state.pcClasses[index].class[0]} />
-        }
-
-        //fighter
-        if (this.state.activePcClass == this.state.classIdHash.fighter.name) {
-            const index = this.state.classIdHash.fighter.indexReference;
-            activeClass = <Fighter data={this.state.pcClasses[index].class[0]} />
-        }
-
-        //wizard
-        if (this.state.activePcClass == this.state.classIdHash.wizard.name) {
-            const index = this.state.classIdHash.wizard.indexReference;
-            activeClass = <Wizard data={this.state.pcClasses[index].class[0]} />
-        }
+        debugger;
+        const activeClass = this.state.activePcClassName ? <PcClass pcClass={this.state.activePcClass} /> : "";
 
         return (
             <div className="space-sequence-20">
@@ -72,20 +50,3 @@ class PcClasses extends React.Component {
 
 export default PcClasses;
 
-
-function _buildClassIdHash(pcClasses) {
-    if (!pcClasses) return {};
-
-    let hash = {};
-    
-    for (let i=0; i < pcClasses.length; i++) {
-        let className = pcClasses[i].class[0].name.toLowerCase().trim();
-
-        hash[className] = {
-            name: className,
-            indexReference: i,
-        }
-    }
-
-    return hash;
-}

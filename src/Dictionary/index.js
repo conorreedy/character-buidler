@@ -24613,7 +24613,6 @@ const AppDictionary = {
         "page": 82
       }]
     },
-    
     {
       "class": [{
           "name": "Ranger",
@@ -32373,7 +32372,6 @@ const AppDictionary = {
         "page": 94
       }]
     },
-    
     {
       "class": [{
         "name": "Sorcerer",
@@ -35336,7 +35334,6 @@ const AppDictionary = {
         "page": 99
       }]
     },
-    
     {
       "class": [{
         "name": "Warlock",
@@ -39312,10 +39309,10 @@ const AppDictionary = {
         "startingEquipment": {
           "additionalFromBackground": true,
           "default": [
-            "(a) a {@item quarterstaff|phb} or (b) a {@item dagger|phb}",
-            "(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
-            "(a) a {@item scholar's pack|phb} or (b) an {@item explorer's pack|phb}",
-            "A {@item spellbook|phb}"
+            "(a) a quarterstaff or (b) a dagger",
+            "(a) a component pouch or (b) an arcane focus",
+            "(a) a scholar's pack or (b) an explorer's pack",
+            "A spellbook"
           ],
           "goldAlternative": "{@dice 4d4×10|4d4 × 10|Starting Gold}"
         },
@@ -39336,7 +39333,7 @@ const AppDictionary = {
             {
               "name": "Spellcasting",
               "entries": [
-                "As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power. See {@book chapter 10|PHB|10} for the general rules of spellcasting and chapter 11 for the {@filter wizard spell list|spells|class=wizard}.",
+                "As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power. See chapter 10 of the PHB for the general rules of spellcasting and chapter 11 for the wizard spell list.",
                 {
                   "type": "entries",
                   "name": "Cantrips",
@@ -39450,7 +39447,7 @@ const AppDictionary = {
             {
               "name": "Cantrip Versatility",
               "entries": [
-                "{@i 1st-level wizard feature (enhances Spellcasting)}",
+                "1st-level wizard feature (enhances Spellcasting)",
                 "Whenever you gain a level in this class, you can replace one cantrip you learned from this Spellcasting feature with another cantrip from the wizard spell list."
               ],
               "source": "UAClassFeatureVariants",
@@ -39476,7 +39473,7 @@ const AppDictionary = {
               "type": "entries",
               "name": "Proficiency Versatility",
               "entries": [
-                "{@i 4th-level feature (enhances Ability Score Improvement)}",
+                "4th-level feature (enhances Ability Score Improvement)",
                 "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
               ],
@@ -39504,7 +39501,7 @@ const AppDictionary = {
               "type": "entries",
               "name": "Proficiency Versatility",
               "entries": [
-                "{@i 8th-level feature (enhances Ability Score Improvement)}",
+                "8th-level feature (enhances Ability Score Improvement)",
                 "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
               ],
@@ -39532,7 +39529,7 @@ const AppDictionary = {
               "type": "entries",
               "name": "Proficiency Versatility",
               "entries": [
-                "{@i 12th-level feature (enhances Ability Score Improvement)}",
+                "12th-level feature (enhances Ability Score Improvement)",
                 "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
               ],
@@ -39560,7 +39557,7 @@ const AppDictionary = {
               "type": "entries",
               "name": "Proficiency Versatility",
               "entries": [
-                "{@i 16th-level feature (enhances Ability Score Improvement)}",
+                "16th-level feature (enhances Ability Score Improvement)",
                 "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
               ],
@@ -39587,7 +39584,7 @@ const AppDictionary = {
               "type": "entries",
               "name": "Proficiency Versatility",
               "entries": [
-                "{@i 19th-level feature (enhances Ability Score Improvement)}",
+                "19th-level feature (enhances Ability Score Improvement)",
                 "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
               ],
