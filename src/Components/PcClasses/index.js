@@ -25,7 +25,7 @@ class PcClasses extends React.Component {
     }
 
     render() {
-        debugger;
+        
         const activeClass = this.state.activePcClassName ? <PcClass pcClass={this.state.activePcClass} /> : "";
 
         return (
