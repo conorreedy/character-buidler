@@ -1,6 +1,6 @@
 import React from "react";
+import './Spells.scss';
 import { AppDictionary } from '../../Dictionary';
-
 import Spell from './Spell';
 
 class SpellsSelector extends React.Component {
