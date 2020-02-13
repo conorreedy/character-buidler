@@ -1366,7 +1366,7 @@ const AppDictionary = {
               "(a) two handaxes or (b) any simple weapon",
               "An explorer's pack, and four javelins"
             ],
-            "goldAlternative": "{@dice 2d4×10|2d4 × 10|Starting Gold}"
+            "goldAlternative": "2d4×10 Starting Gold"
           },
           "multiclassing": {
             "requirements": {
@@ -1398,7 +1398,7 @@ const AppDictionary = {
                     ]
                   },
                   "If you are able to cast spells, you can't cast them or concentrate on them while raging.",
-                  "Your rage lasts for 1 minute. It ends early if you are knocked {@condition unconscious} or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.",
+                  "Your rage lasts for 1 minute. It ends early if you are knocked {@condition unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.",
                   "Once you have raged the maximum number of times for your barbarian level, you must finish a long rest before you can rage again. You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th."
                 ]
               },
@@ -1413,7 +1413,7 @@ const AppDictionary = {
               {
                 "name": "Danger Sense",
                 "entries": [
-                  "At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be {@condition blinded}, {@condition deafened}, or {@condition incapacitated}."
+                  "At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be {@condition blinded, {@condition deafened}, or {@condition incapacitated}."
                 ]
               },
               {
@@ -23822,7 +23822,7 @@ const AppDictionary = {
           "type": "entries",
           "name": "Object into Creature",
           "entries": [
-            "You can turn an object into any kind of creature, as long as the creature's size is no larger than the object's size and the creature's challenge rating is {@filter 9 or lower|bestiary|challenge rating=[&0;&9]|miscellaneous=!swarm}. The creature is friendly to you and your companions. It acts on each of your turns. You decide what action it takes and how it moves. The DM has the creature's statistics and resolves all of its actions and movement."
+            "You can turn an object into any kind of creature, as long as the creature's size is no larger than the object's size and the creature's challenge rating is {@filter 9 or lower. The creature is friendly to you and your companions. It acts on each of your turns. You decide what action it takes and how it moves. The DM has the creature's statistics and resolves all of its actions and movement."
           ]
         },
         "If the spell becomes permanent, you no longer control the creature. It might remain friendly to you, depending on how you have treated it.",
@@ -24879,5 +24879,30 @@ const AppDictionary = {
   ],
 }
 
+const ProfBonusesPerLevel = {
+  "1": 2,
+  "2": 2,
+  "3": 2,
+  "4": 2,
+  "5": 3,
+  "6": 3,
+  "7": 3,
+  "8": 3,
+  "9": 4,
+  "10": 4,
+  "11": 4,
+  "12": 4,
+  "13": 5,
+  "14": 5,
+  "15": 5,
+  "16": 5,
+  "17": 6,
+  "18": 6,
+  "19": 6,
+  "20": 6,
+}
 
-export default AppDictionary;
+export { 
+  AppDictionary, 
+  ProfBonusesPerLevel 
+}

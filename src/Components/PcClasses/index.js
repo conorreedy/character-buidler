@@ -1,5 +1,4 @@
 import React from "react";
-import "./PcClasses.scss";
 
 import Barbarian from "./Barbarian";
 
@@ -9,14 +8,32 @@ class PcClasses extends React.Component {
 
         this.state = {
             pcClasses: this.props.pcClasses,
+            activePcClass: null,
+            classIdHash: _buildClassIdHash(this.props.pcClasses)
+        }
+
+        this.setActivePcClass = event => {
+            const val = event.target.value;
+            const activeClass = this.state.pcClasses.find(x => x.class[0].name === val);
+
+            this.setState({
+                activePcClass: activeClass.class[0].name.toLowerCase()
+            })
         }
     }
 
     render() {
+        let activeClass;
+        
+        //barbarian -> this needs a better solution for matching
+        if (this.state.activePcClass == this.state.classIdHash.barbarian) {
+            activeClass = <Barbarian data={this.state.pcClasses[0].class[0]} />
+        }
+
         return (
             <div className="space-sequence-20">
                 <div>
-                    <select className="form-control">
+                    <select className="form-control" onChange={this.setActivePcClass}>
                         <option value="">Select a Class</option>
                         {
                             this.state.pcClasses.map(pc => {
@@ -25,9 +42,8 @@ class PcClasses extends React.Component {
                         }
                     </select>
                 </div>
-                <div>
-                    <Barbarian data={this.state.pcClasses[0].class[0]} />
-                </div>
+
+                <div>{activeClass}</div>
             </div>
         )
     }
@@ -35,3 +51,18 @@ class PcClasses extends React.Component {
 
 
 export default PcClasses;
+
+
+function _buildClassIdHash(pcClasses) {
+
+    let hash = {};
+    
+    if (!pcClasses) return hash;
+
+    for (let pcClass of pcClasses) {
+        let className = pcClass.class[0].name.toLowerCase();
+        hash[className] = className;
+    }
+
+    return hash;
+}

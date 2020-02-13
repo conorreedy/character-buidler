@@ -1,6 +1,6 @@
 import React from 'react';
 import './CharDescription.scss';
-import AppDictionary from '../../Dictionary';
+import { AppDictionary } from '../../Dictionary';
 
 import SkillProficienciesSelector from './SkillProficiencies';
 import ToolProficienciesSelector from './ToolProficiencies';

@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 // Import data dictionaries
-import Dictionary from './Dictionary';
+import { AppDictionary } from './Dictionary';
 
 import PcClasses from './Components/PcClasses';
 import RaceSelectionForm from './Components/RaceForm';
@@ -86,7 +86,7 @@ function App() {
 
         <Route path="/class" >
           <div className="container races">
-            <PcClasses pcClasses={Dictionary.PC_CLASSES} />
+            <PcClasses pcClasses={AppDictionary.PC_CLASSES} />
           </div>
         </Route>
 
@@ -110,7 +110,7 @@ function App() {
         
         <Route path="/feats" >
           <div className="container">
-            <Feats feats={Dictionary.FEAT_DATA} />
+            <Feats feats={AppDictionary.FEAT_DATA} />
           </div>
         </Route>
 
