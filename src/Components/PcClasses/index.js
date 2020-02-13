@@ -1,6 +1,8 @@
 import React from "react";
 
 import Barbarian from "./Barbarian";
+import Fighter from "./Fighter";
+import Wizard from "./Wizard";
 
 class PcClasses extends React.Component {
     constructor (props) {
@@ -17,7 +19,7 @@ class PcClasses extends React.Component {
             const activeClass = this.state.pcClasses.find(x => x.class[0].name === val);
 
             this.setState({
-                activePcClass: activeClass.class[0].name.toLowerCase()
+                activePcClass: activeClass.class[0].name.toLowerCase().trim()
             })
         }
     }
@@ -25,9 +27,27 @@ class PcClasses extends React.Component {
     render() {
         let activeClass;
         
-        //barbarian -> this needs a better solution for matching
-        if (this.state.activePcClass == this.state.classIdHash.barbarian) {
-            activeClass = <Barbarian data={this.state.pcClasses[0].class[0]} />
+
+        //TODO: 
+        //  1. integrate more reliable method of matching these 
+        //  2. refactor this nightmare
+        
+        //barbarian 
+        if (this.state.activePcClass == this.state.classIdHash.barbarian.name) {
+            const index = this.state.classIdHash.barbarian.indexReference;
+            activeClass = <Barbarian data={this.state.pcClasses[index].class[0]} />
+        }
+
+        //fighter
+        if (this.state.activePcClass == this.state.classIdHash.fighter.name) {
+            const index = this.state.classIdHash.fighter.indexReference;
+            activeClass = <Fighter data={this.state.pcClasses[index].class[0]} />
+        }
+
+        //wizard
+        if (this.state.activePcClass == this.state.classIdHash.wizard.name) {
+            const index = this.state.classIdHash.wizard.indexReference;
+            activeClass = <Wizard data={this.state.pcClasses[index].class[0]} />
         }
 
         return (
@@ -54,14 +74,17 @@ export default PcClasses;
 
 
 function _buildClassIdHash(pcClasses) {
+    if (!pcClasses) return {};
 
     let hash = {};
     
-    if (!pcClasses) return hash;
+    for (let i=0; i < pcClasses.length; i++) {
+        let className = pcClasses[i].class[0].name.toLowerCase().trim();
 
-    for (let pcClass of pcClasses) {
-        let className = pcClass.class[0].name.toLowerCase();
-        hash[className] = className;
+        hash[className] = {
+            name: className,
+            indexReference: i,
+        }
     }
 
     return hash;

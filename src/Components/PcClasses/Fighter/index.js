@@ -1,11 +1,11 @@
 import React from "react";
 
 import { ProfBonusesPerLevel } from "../../../Dictionary";
-import Subclass from './Subclass';
+// TODO : if SUBCLASS COMPONENT turns out to be compatible, then extract it to the parent dir
+import Subclass from '../Barbarian/Subclass'; 
 
 
-
-class Barbarian extends React.Component {
+class Fighter extends React.Component {
     constructor(props) {
         super(props);
 
@@ -31,7 +31,7 @@ class Barbarian extends React.Component {
                                         return (
                                             <div className="table-row">
                                                 <div className="table-col">{index+1}</div>
-                                                <div className="table-col">+{_getProfBonus(index+1)}</div>
+                                                <div className="table-col">+{_getProfBonus(index)}</div>
                                                 <div className="table-col">{row[0]}</div>
                                                 <div className="table-col">+{row[1].value}</div>
                                             </div>
@@ -48,20 +48,20 @@ class Barbarian extends React.Component {
 
     render() {
         const x = this.state.data;
-        let pcClassTables = '';
+        let barbarianTables = '';
         
         if (x.classTableGroups.length) {
-            pcClassTables = this.buildClassTableGroups(x.classTableGroups);
+            barbarianTables = this.buildClassTableGroups(x.classTableGroups);
         }
             
 
         return (
             <div className="space-sequence-20">
                 <h4>{x.name}</h4>
-                <div>{pcClassTables}</div>
+                <div>{barbarianTables}</div>
                 <div>
                     <div><strong>Hit Points:</strong></div>
-                    <div>Hit Dice: {x.hd.number}d{x.hd.faces} per {x.name} level</div>
+                    <div>Hit Dice: {x.hd.number}d{x.hd.faces} per Barbarian level</div>
                     <div>Hit Points at 1st Level: {x.hd.faces}+ your Constitution modifier</div>
                     <div>Hit Points at Higher Levels: {x.hd.number}d{x.hd.faces} (or {x.hd.faces/2+1}) + your Constitution modifier per barbarian level after 1st</div>
                 </div>
@@ -124,9 +124,9 @@ class Barbarian extends React.Component {
 }
 
 
-export default Barbarian;
+export default Fighter;
 
 
-function _getProfBonus(level) {
-    return ProfBonusesPerLevel[level];
+function _getProfBonus(index) {
+    return ProfBonusesPerLevel[index+1];
 }

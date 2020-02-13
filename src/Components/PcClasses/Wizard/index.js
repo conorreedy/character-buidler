@@ -1,11 +1,11 @@
 import React from "react";
 
 import { ProfBonusesPerLevel } from "../../../Dictionary";
-import Subclass from './Subclass';
+import Subclass from '../Barbarian/Subclass';
 
 
 
-class Barbarian extends React.Component {
+class Wizard extends React.Component {
     constructor(props) {
         super(props);
 
@@ -13,35 +13,51 @@ class Barbarian extends React.Component {
             data: this.props.data,
         }
 
-        this.buildClassTableGroups = x => {
+        this.buildClassTableGroups = cts => {
+            const tableRowChunks = [];
+
+            const maxPlayerLevel = 20;
+            const startingLevel = 1;
+            let currentLevel = 1;
+            let index = 0;
+
+            for (let i = startingLevel; i <= maxPlayerLevel; i++) {
+                
+                let row = (
+                    <div className="table-row">
+                        <div className="table-col">{currentLevel}</div>
+                        <div className="table-col">+{_getProfBonus(currentLevel)}</div>
+                        {
+                            cts.map( ct => {
+                                return ct.rows[index].map(col => {
+                                    return <div className="table-col">{col > 0 ? col : "-"}</div>
+                                })
+                            })
+                        }
+                    </div>
+                );
+
+                tableRowChunks.push(row);
+                currentLevel++;
+                index++;
+            }
+
             return (
-                x.map(ct => {
-                    return (
-                        <div className="table-outer">
-                            <div className="table-inner">
-                                <div className="table-header">
-                                    <div className="table-col">Level</div>
-                                    <div className="table-col">Proficiency Bonus</div>
-                                    {
-                                        ct.colLabels.map(cl => <div className="table-col">{cl}</div>)
-                                    }
-                                </div>
-                                { 
-                                    ct.rows.map( (row, index) => {
-                                        return (
-                                            <div className="table-row">
-                                                <div className="table-col">{index+1}</div>
-                                                <div className="table-col">+{_getProfBonus(index+1)}</div>
-                                                <div className="table-col">{row[0]}</div>
-                                                <div className="table-col">+{row[1].value}</div>
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </div>
+                <div className="table-outer">
+                    <div className="table-inner">
+                        <div className="table-header">
+                            <div className="table-col">Level</div>
+                            <div className="table-col">Proficiency Bonus</div>
+                            { 
+                                cts.map(ct => {
+                                    return ct.colLabels.map(cl => <div className="table-col">{cl}</div>)
+                                })
+                            }                            
                         </div>
-                    )
-                })
+                        {tableRowChunks}
+                    </div>
+                </div>
+
             )
         }
     }
@@ -67,9 +83,9 @@ class Barbarian extends React.Component {
                 </div>
                 <div>
                     <div><strong>Proficiencies:</strong></div>
-                    <div>Armor: {x.startingProficiencies.armor.join(", ")}</div>
-                    <div>Weapons: {x.startingProficiencies.weapons.join(", ")}</div>
-                    <div>Tools: {x.startingProficiencies.tools || "none"}</div>
+                    <div>Armor: {x.startingProficiencies.armor ? x.startingProficiencies.armor.join(", ") : "none"}</div>
+                    <div>Weapons: {x.startingProficiencies.weapons ? x.startingProficiencies.weapons.join(", ") : "none"}</div>
+                    <div>Tools: {x.startingProficiencies.tools ? x.startingProficiencies.tools.join(", ") : "none"}</div>
                     <div>Saving Throws: {x.proficiency.join(", ")}</div>
                     <div>Skills: {`Choose ${x.startingProficiencies.skills[0].choose.count} from ${x.startingProficiencies.skills[0].choose.from.join(", ")}`}</div>
                 </div>
@@ -124,7 +140,7 @@ class Barbarian extends React.Component {
 }
 
 
-export default Barbarian;
+export default Wizard;
 
 
 function _getProfBonus(level) {
