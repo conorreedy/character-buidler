@@ -5,7 +5,6 @@ class Subclass extends React.Component {
         super(props);
 
         this.state = {
-            sc: this.props.subclass,
             detailsActive: false,
         }
 
@@ -26,7 +25,7 @@ class Subclass extends React.Component {
         }
 
         this.buildEntry = entry => {
-            
+            const that = this;
             const entryHtmlChunk = [];
 
             _buildEntryChunksRecursively(entry);
@@ -35,6 +34,14 @@ class Subclass extends React.Component {
                 if (typeof entry == "string") {
                     entryHtmlChunk.push(entry);
                     return;
+                }
+
+                if (entry.type == "table") {
+                    entryHtmlChunk.push(that.buildEntryTypeTable(entry));
+                }
+
+                if (entry.type == "list") {
+                    entryHtmlChunk.push(that.buildEntryTypeList(entry));
                 }
 
                 if (entry.name) {
@@ -53,14 +60,68 @@ class Subclass extends React.Component {
 
         }
 
+        this.buildEntryTypeTable = entry => {
+            
+            return (
+                <div className="table-outer">
+                    <div className="caption">({entry.caption})</div>
+                    <div className="table-inner">
+                        <div className="table-header">
+                            { 
+                                entry.colLabels.map( label => {
+                                    return <div className="table-col" key={label.trim()}>{label}</div>
+                                })
+                            }
+                        </div>
+                        {
+                            entry.rows.map( row => {
+                                return (
+                                    <div className="table-row">
+                                        {
+                                            row.map( (colTxt, index) => {
+                                               return <div className="table-col" key={index}>{colTxt}</div>
+                                            })
+                                        }
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+            )
+
+        }
+
+        this.buildEntryTypeList = entry => {
+            
+            function _getItemText(item) {
+                if (item.type) {
+                    return <li><strong>{item.name}</strong> {item.entry}</li>;
+                }
+                return <li>{item}</li>;
+            }
+
+            return (
+                <ul>
+                    { 
+                        entry.items.map( item => {
+                            return _getItemText(item);
+                        })
+                    }
+                </ul>
+            )
+        }
+
         this.toggleDetailVisibility = () => {
             const currentState = this.state.detailsActive;
             this.setState({ detailsActive: !currentState });
         }
     }
 
+
     render() {
-        const sc = this.state.sc;
+        
+        const sc = this.props.subclass;
         
         return (
             <div className="content-block">
@@ -72,7 +133,7 @@ class Subclass extends React.Component {
                             </span>
                         </div>
                     <div className={this.state.detailsActive ? "content-detail active space-sequence-10" : "content-detail"}>
-                        { sc.subclassFeatures.map(feature => this.buildFeature(feature)) }
+                        { sc.subclassFeatures.map(feature => this.buildFeature(feature) ) }
                     </div>
             </div>                        
         )
