@@ -17,7 +17,7 @@ class PcClasses extends React.Component {
             const activeClass = this.state.pcClasses.find(x => x.class[0].name === val);
             
             this.setState({
-                activePcClass: activeClass.class[0],
+                activePcClass: activeClass ? activeClass.class[0] : null,
             })
         }
     }
