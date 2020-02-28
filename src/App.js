@@ -9,9 +9,9 @@ import {
 } from "react-router-dom";
 
 // Import data dictionaries
-import Dictionary from './Dictionary';
+import { AppDictionary } from './Dictionary';
 
-// import DndClasses from './Components/DndClasses';
+import PcClasses from './Components/PcClasses';
 import RaceSelectionForm from './Components/RaceForm';
 import AsiGenerator from './Components/AbilityScore';
 import CharDescription from './Components/CharDescription';
@@ -22,9 +22,9 @@ function NavBar() {
   return (
     <div>
       <div>This is what we have so far:</div>
-      <div><a href="/setup">Choose a Race</a></div>
+      <div><a href="/race">Choose a Race</a></div>
+      <div><a href="/class">Choose a Class</a></div>
       <div><a href="/asi">Set Ability Scores</a></div>
-      <div><a href="">Choose a Class</a></div>
       <div><a href="/description">Description</a></div>
       <div><a href="/spells">Spells</a></div>
       <div><a href="/feats">Feats</a></div>
@@ -78,9 +78,15 @@ function App() {
           <Home />
         </Route>
 
-        <Route path="/setup" >
+        <Route path="/race" >
           <div className="container setup">
             <Setup />
+          </div>
+        </Route>
+
+        <Route path="/class" >
+          <div className="container races">
+            <PcClasses pcClasses={AppDictionary.PC_CLASSES} />
           </div>
         </Route>
 
@@ -104,7 +110,7 @@ function App() {
         
         <Route path="/feats" >
           <div className="container">
-            <Feats feats={Dictionary.FEAT_DATA} />
+            <Feats feats={AppDictionary.FEAT_DATA} />
           </div>
         </Route>
 

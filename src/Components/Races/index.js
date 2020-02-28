@@ -1,6 +1,6 @@
 import React from "react";
 import "./Races.scss";
-import AppDictionary from '../../Dictionary';
+import { AppDictionary } from '../../Dictionary';
 
 class Races extends React.Component {
     

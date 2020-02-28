@@ -1,5 +1,4 @@
 import React from "react";
-import './Spell.scss';
 
 class Spell extends React.Component {
     constructor(props) {
@@ -227,14 +226,14 @@ class Spell extends React.Component {
 
         return (
             <div>
-                <div className="spell-preview" onClick={this.toggleDetailDisplayState}>
-                    <div className="spell-preview-name">{spell.name}</div> 
-                    <div className="spell-preview-subhead">{spell.level} {spell.concentration === true ? <span>&bull; Concentration</span> : ""}</div>
-                    <span className="expand-spell">
+                <div className="content-preview" onClick={this.toggleDetailDisplayState}>
+                    <div className="content-preview-name">{spell.name}</div> 
+                    <div className="content-preview-subhead">{spell.level} {spell.concentration === true ? <span>&bull; Concentration</span> : ""}</div>
+                    <span className="toggle-content-visibility">
                         { this.state.detailsActive == false ? '+' : '-' }
                     </span>
                 </div>
-                <div className={this.state.detailsActive ? "spell-detail active space-sequence-20" : "spell-detail"}>
+                <div className={this.state.detailsActive ? "content-detail active space-sequence-20" : "content-detail"}>
                     <div className="italic-lead">{spell.level} {spell.school}</div>
                     <div>
                         <div className="label-text-pair-outer">

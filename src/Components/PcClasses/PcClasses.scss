@@ -1,0 +1,27 @@
+
+
+
+
+.inset-block {
+    padding: 10px;
+    border: solid 1px #ddd;
+    background: #e9ecda;
+  
+    .inset-header {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  
+    .inset-label {
+      font-weight: 600;
+      font-style: italic;
+      padding-right: 5px;
+      float: left;
+    }
+  
+  }
+
+.feature-name-label {
+    font-weight: 700;
+    border-bottom: solid 1px #ddd;
+}
